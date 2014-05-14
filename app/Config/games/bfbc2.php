@@ -11,8 +11,6 @@
  * @package       app.Config.games
  * @since         XLRstats v3.0
  * @version       0.1
- *
- * Last edited by Nathan @ Blackpulse on 5/13/2014
  */
 
 $config = array(
