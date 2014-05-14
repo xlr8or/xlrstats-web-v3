@@ -11,6 +11,8 @@
  * @package       app.Config.games
  * @since         XLRstats v3.0
  * @version       0.1
+ *
+ * Last edited by Nathan @ Blackpulse on 5/13/2014
  */
 
 $config = array(
@@ -35,125 +37,127 @@ $config = array(
  * Weapon: name, description, image
  */
  	'weapons' => array(
-
+		//Weapons Image Path
+		'image_path' => 'http://battlefieldbadass.com/media/files/gameinfo/',
+		
 		//Assault
-		'AEK971' => array('AEK-971 Vintovka', 'description', 'image.png'),
-		'XM8' => array('XM8 Prototype', 'description', 'image.png'),
-		'F2000' => array('F2000 Assault', 'description', 'image.png'),
-		'AUG' => array('Stg.77 AUG', 'description', 'image.png'),
-		'AN94' => array('AN-94 Abakan', 'description', 'image.png'),
-		'M416' => array('M416', 'description', 'image.png'),
-		'M16' => array('M16A2', 'description', 'image.png'),
-		'M16K' => array('M162A - SPECTACT', 'description', 'image.png'),
+		'AEK971' => array('AEK-971 Vintovka', 'description', '__weap_assault_aek971_png_270x270_q85.png'),
+		'XM8' => array('XM8 Prototype', 'description', '__weap_assault_xm8_png_270x270_q85.png'),
+		'F2000' => array('F2000 Assault', 'description', '__weap_assault_f2000_png_270x270_q85.png'),
+		'AUG' => array('Stg.77 AUG', 'description', '__weap_assault_aug_png_270x270_q85.png'),
+		'AN94' => array('AN-94 Abakan', 'description', '__weap_assault_an94_png_270x270_q85.png'),
+		'M416' => array('M416', 'description', '__weap_assault_m416_png_270x270_q85.png'),
+		'M16' => array('M16A2', 'description', '__weap_assault_m16_png_270x270_q85.png'),
+		'M16K' => array('M162A - SPECTACT', 'description', '__weap_assault_m16_png_270x270_q85.png'),
 
 		//Engineer
-		'9A91' => array('9A-91 Avtomat', 'description', 'image.png'),
-		'SCAR' => array('SCAR-L Carbine', 'description', 'image.png'),
-		'XM8C' => array('XM8 Compact', 'description', 'image.png'),
-		'AKS74u' => array('AKS-74U Krinkov', 'description', 'image.png'),
-		'UZI' => array('UZI', 'description', 'image.png'),
-		'PP2000' => array('PP-2000 Avtomat', 'description', 'image.png'),
-		'UMP' => array('UMP-45', 'description', 'image.png'),
-		'UMPK' => array('UMP - SPECTACT', 'description', 'image.png'),
+		'9A91' => array('9A-91 Avtomat', 'description', '__weap_engineer_9a91_png_270x270_q85.png'),
+		'SCAR' => array('SCAR-L Carbine', 'description', '__weap_engineer_scar_png_270x270_q85.png'),
+		'XM8C' => array('XM8 Compact', 'description', '__weap_engineer_xm8c_png_270x270_q85.png'),
+		'AKS74u' => array('AKS-74U Krinkov', 'description', '__weap_engineer_aks74u_png_270x270_q85.png'),
+		'UZI' => array('UZI', 'description', '__weap_engineer_uzi_png_270x270_q85.png'),
+		'PP2000' => array('PP-2000 Avtomat', 'description', '__weap_engineer_pp2000_png_270x270_q85.png'),
+		'UMP' => array('UMP-45', 'description', '__weap_engineer_ump45_png_270x270_q85.png'),
+		'UMPK' => array('UMP - SPECTACT', 'description', '__weap_engineer_ump45_png_270x270_q85.png'),
 
 		//Medic
-		'PKM' => array('PKM LMG', 'description', 'image.png'),
-		'M249' => array('M249 Saw', 'description', 'image.png'),
-		'QJU88' => array('Type 88 LMG', 'description', 'image.png'),
-		'M60' => array('M60 LMG', 'description', 'image.png'),
-		'XM8 LMG' => array('XM8 LMG', 'description', 'image.png'),
-		'MG36' => array('MG36', 'description', 'image.png'),
-		'MG3' => array('MG3', 'description', 'image.png'),
-		'MG3K' => array('MG3 - SPECTACT', 'description', 'image.png'),
+		'PKM' => array('PKM LMG', 'description', '__weap_medic_pkm_png_270x270_q85.png'),
+		'M249' => array('M249 Saw', 'description', '__weap_medic_m249_png_270x270_q85.png'),
+		'QJU88' => array('Type 88 LMG', 'description', '__weap_medic_gjy88_png_270x270_q85.png'),
+		'M60' => array('M60 LMG', 'description', '__weap_medic_m60_png_270x270_q85.png'),
+		'XM8 LMG' => array('XM8 LMG', 'description', '__weap_medic_xm8lmg_png_270x270_q85.png'),
+		'MG36' => array('MG36', 'description', '__weap_medic_mg36_png_270x270_q85.png'),
+		'MG3' => array('MG3', 'description', '__weap_medic_mg3_png_270x270_q85.png'),
+		'MG3K' => array('MG3 - SPECTACT', 'description', '__weap_medic_mg3_png_270x270_q85.png'),
 
 		//Recon
-		'M24' => array('M24 Sniper', 'description', 'image.png'),
-		'QBU88' => array('Type 88 Sniper', 'description', 'image.png'),
-		'SV98' => array('SV98 Snaiperskaya', 'description', 'image.png'),
-		'SVU' => array('SVU Snaiperskaya Short', 'description', 'image.png'),
-		'GOL' => array('GOL Sniper Magnum', 'description', 'image.png'),
-		'VSS' => array('VSS Snaiperskaya Special', 'description', 'image.png'),
-		'M95' => array('M95 Sniper', 'description', 'image.png'),
-		'M95K' => array('M95 - SPECTACT', 'description', 'image.png'),
+		'M24' => array('M24 Sniper', 'description', '__weap_recon_m24_png_270x270_q85.png'),
+		'QBU88' => array('Type 88 Sniper', 'description', '__weap_recon_qby88_png_270x270_q85.png'),
+		'SV98' => array('SV98 Snaiperskaya', 'description', '__weap_recon_sv98_png_270x270_q85.png'),
+		'SVU' => array('SVU Snaiperskaya Short', 'description', '__weap_recon_svu_png_270x270_q85.png'),
+		'GOL' => array('GOL Sniper Magnum', 'description', '__weap_recon_gol_png_270x270_q85.png'),
+		'VSS' => array('VSS Snaiperskaya Special', 'description', '__weap_recon_vss_png_270x270_q85.png'),
+		'M95' => array('M95 Sniper', 'description', '__weap_recon_m95_png_270x270_q85.png'),
+		'M95K' => array('M95 - SPECTACT', 'description', '__weap_recon_m95_png_270x270_q85.png'),
 
 		//Other Kits
-		'870MCS' => array('870 Combat', 'description', 'image.png'),
-		'S20K' => array('Saiga 20k Semi', 'description', 'image.png'),
-		'M1A1 Thompson' => array('WWII M1A1 Thompson', 'description', 'image.png'),
-		'SPAS12' => array('SPAS-12 Combat', 'description', 'image.png'),
-		'Mk14EBR' => array('M14 Mod 0 Enhanced', 'description', 'image.png'),
-		'NS2000' => array('NEOSTEAD 2000 Combat', 'description', 'image.png'),
-		'usas12' => array('USAS-12 Auto', 'description', 'image.png'),
-		'G3' => array('G3', 'description', 'image.png'),
-		'Garand' => array('M1 Garand', 'description', 'image.png'),
+		'870MCS' => array('870 Combat', 'description', '__weap_all_870mcs_png_270x270_q85.png'),
+		'S20K' => array('Saiga 20k Semi', 'description', '__weap_all_s20k_png_270x270_q85.png'),
+		'M1A1 Thompson' => array('WWII M1A1 Thompson', 'description', '__weap_all_m1a1_png_270x270_q85.png'),
+		'SPAS12' => array('SPAS-12 Combat', 'description', '__weap_all_spas12_png_270x270_q85.png'),
+		'Mk14EBR' => array('M14 Mod 0 Enhanced', 'description', '__weap_all_m14_png_270x270_q85.png'),
+		'NS2000' => array('NEOSTEAD 2000 Combat', 'description', '__weap_all_ns2000_png_270x270_q85.png'),
+		'usas12' => array('USAS-12 Auto', 'description', '__weap_all_usas12_png_270x270_q85.png'),
+		'G3' => array('G3', 'description', '__weap_all_g3_png_270x270_q85.png'),
+		'Garand' => array('M1 Garand', 'description', '__weap_all_m1_png_270x270_q85.png'),
 
 		//Sidearms
-		'M9' => array('M9 Pistol', 'description', 'image.png'),
-		'MP443' => array('MP-443 Grach', 'description', 'image.png'),
-		'M1911' => array('WWII M1911 .45', 'description', 'image.png'),
-		'MP412' => array('MP-412 Rex', 'description', 'image.png'),
-		'M9-3' => array('M93R Burst', 'description', 'image.png'),
+		'M9' => array('M9 Pistol', 'description', '__weap_all_m9_png_270x270_q85.png'),
+		'MP443' => array('MP-443 Grach', 'description', '__weap_all_mp443_png_270x270_q85.png'),
+		'M1911' => array('WWII M1911 .45', 'description', '__weap_all_m1911_png_270x270_q85.png'),
+		'MP412' => array('MP-412 Rex', 'description', '__weap_all_mp412_png_270x270_q85.png'),
+		'M9-3' => array('M93R Burst', 'description', '__weap_all_m93r_png_270x270_q85.png'),
 
 		//*********************
 		// Vehicle names
 		//*********************
 
 		//Light
-		'HUMV#Gun' => array('HMMWV 4WD', 'description', 'image.png'),
-		'VODN#KORD' => array('VODNIK 4WD', 'description', 'image.png'),
-		'COBR#Kord' => array('COBRA 4WD', 'description', 'image.png'),
+		'HUMV#Gun' => array('HMMWV 4WD', 'description', '__vehicle_humv_png_270x270_q85.png'),
+		'VODN#KORD' => array('VODNIK 4WD', 'description', '__vehicle_vodn_png_270x270_q85.png'),
+		'COBR#Kord' => array('COBRA 4WD', 'description', '__vehicle_cobr_png_270x270_q85.png'),
 
 		//Heavy
-		'M1A2#Maingun' => array('M1A2 Abrams (Main Gun)', 'description', 'image.png'),
-		'M1A2#CoaxMG' => array('M1A2 Abrams (Coax MG)', 'description', 'image.png'),
-		'M1A2#RemoteGun' => array('M1A2 Abrams (Remote Gun)', 'description', 'image.png'),
+		'M1A2#Maingun' => array('M1A2 Abrams (Main Gun)', 'description', '__vehicle_m1a2_png_270x270_q85.png'),
+		'M1A2#CoaxMG' => array('M1A2 Abrams (Coax MG)', 'description', '__vehicle_m1a2_png_270x270_q85.png'),
+		'M1A2#RemoteGun' => array('M1A2 Abrams (Remote Gun)', 'description', '__vehicle_m1a2_png_270x270_q85.png'),
 
-		'T90R#MainGun' => array('T-90 MBT (Main Gun)', 'description', 'image.png'),
-		'T90R#CoaxMG' => array('T-90 MBT (Coax MG)', 'description', 'image.png'),
-		'T90R#RemoteGun' => array('T-90 MBT (Remote Gun)', 'description', 'image.png'),
+		'T90R#MainGun' => array('T-90 MBT (Main Gun)', 'description', '__vehicle_t90r_png_270x270_q85.png'),
+		'T90R#CoaxMG' => array('T-90 MBT (Coax MG)', 'description', '__vehicle_t90r_png_270x270_q85.png'),
+		'T90R#RemoteGun' => array('T-90 MBT (Remote Gun)', 'description', '__vehicle_t90r_png_270x270_q85.png'),
 
-		'M3A3#IFVAutoCannon' => array('M3A3 Bradley (Auto Cannon)', 'description', 'image.png'),
-		'M3A3#TOW' => array('M3A3 Bradley (Tow)', 'description', 'image.png'),
-		'M3A3#RemoteMG' => array('M3A3 Bradley (Remote MG)', 'description', 'image.png'),
-		'M3A3#PFW RearLeft' => array('M3A3 Bradley (Rear Left Gun)', 'description', 'image.png'),
-		'M3A3#PFW RearRight' => array('M3A3 Bradley (Rear Right Gun)', 'description', 'image.png'),
+		'M3A3#IFVAutoCannon' => array('M3A3 Bradley (Auto Cannon)', 'description', '__vehicle_m3a3_png_270x270_q85.png'),
+		'M3A3#TOW' => array('M3A3 Bradley (Tow)', 'description', '__vehicle_m3a3_png_270x270_q85.png'),
+		'M3A3#RemoteMG' => array('M3A3 Bradley (Remote MG)', 'description', '__vehicle_m3a3_png_270x270_q85.png'),
+		'M3A3#PFW RearLeft' => array('M3A3 Bradley (Rear Left Gun)', 'description', '__vehicle_m3a3_png_270x270_q85.png'),
+		'M3A3#PFW RearRight' => array('M3A3 Bradley (Rear Right Gun)', 'description', '__vehicle_m3a3_png_270x270_q85.png'),
 
-		'BMD3#IFVAutoCannon' => array('BMD-3 Bakhcha (Auto Cannon)', 'description', 'image.png'),
-		'BMD3#TOW' => array('BMD-3 Bakhcha (Tow)', 'description', 'image.png'),
-		'BMD3#RemoteMG' => array('BMD-3 Bakhcha (Remote MG)', 'description', 'image.png'),
-		'BMDA#Cannon' => array('BMD-3 Bakhcha (Cannon)', 'description', 'image.png'),
-		'BMD3#PFW RearRight' => array('BMD-3 Bakhcha (Rear Right Gun)', 'description', 'image.png'),
-		'BMD3#PFW RearLeft' => array('BMD-3 Bakhcha(Rear Left Gun)', 'description', 'image.png'),
+		'BMD3#IFVAutoCannon' => array('BMD-3 Bakhcha (Auto Cannon)', 'description', '__vehicle_bmd3_png_270x270_q85.png'),
+		'BMD3#TOW' => array('BMD-3 Bakhcha (Tow)', 'description', '__vehicle_bmd3_png_270x270_q85.png'),
+		'BMD3#RemoteMG' => array('BMD-3 Bakhcha (Remote MG)', 'description', '__vehicle_bmd3_png_270x270_q85.png'),
+		'BMDA#Cannon' => array('BMD-3 Bakhcha (Cannon)', 'description', '__vehicle_bmd3_png_270x270_q85.png'),
+		'BMD3#PFW RearRight' => array('BMD-3 Bakhcha (Rear Right Gun)', 'description', '__vehicle_bmd3_png_270x270_q85.png'),
+		'BMD3#PFW RearLeft' => array('BMD-3 Bakhcha(Rear Left Gun)', 'description', '__vehicle_bmd3_png_270x270_q85.png'),
 
-		'BMDA#GMG' => array('BMD-3 Bakhcha AA', 'description', 'image.png'),
+		'BMDA#GMG' => array('BMD-3 Bakhcha AA', 'description', '__vehicle_bmd3aa_png_270x270_q85.png'),
 
 		//Water
-		'PBLB#GMG' => array('Patrol Boat', 'description', 'image.png'),
+		'PBLB#GMG' => array('Patrol Boat', 'description', '__vehicle_pblb_png_270x270_q85.png'),
 
 		//Air
-		'AH60#Minigun Left' => array('UH-60 Transport (Mini Gun Left)', 'description', 'image.png'),
-		'AH60#Minigun Right' => array('UH-60 Transport (Mini Gun Right)', 'description', 'image.png'),
+		'AH60#Minigun Left' => array('UH-60 Transport (Mini Gun Left)', 'description', '__vehicle_ah60_png_270x270_q85.png'),
+		'AH60#Minigun Right' => array('UH-60 Transport (Mini Gun Right)', 'description', '__vehicle_ah60_png_270x270_q85.png'),
 
-		'AH64#Heli AutoCannon' => array('AH-64 Apache (Auto Cannon)', 'description', 'image.png'),
-		'AH64#RocketPod Right' => array('AH-64 Apache (Rocket Pod Right)', 'description', 'image.png'),
-		'AH64#RocketPod Left' => array('AH-64 Apache (Rocket Pod Left)', 'description', 'image.png'),
-		'AH64#TOW' => array('AH-64 Apache (Tow)', 'description', 'image.png'),
+		'AH64#Heli AutoCannon' => array('AH-64 Apache (Auto Cannon)', 'description', '__vehicle_ah64_png_270x270_q85.png'),
+		'AH64#RocketPod Right' => array('AH-64 Apache (Rocket Pod Right)', 'description', '__vehicle_ah64_png_270x270_q85.png'),
+		'AH64#RocketPod Left' => array('AH-64 Apache (Rocket Pod Left)', 'description', '__vehicle_ah64_png_270x270_q85.png'),
+		'AH64#TOW' => array('AH-64 Apache (Tow)', 'description', '__vehicle_ah64_png_270x270_q85.png'),
 
-		'MI28#GunnerCannnon' => array('MI-28 Havoc (Gunner Cannon)', 'description', 'image.png'),
-		'MI28#DumbFireRocket Port' => array('MI-28 Havoc (Rocket)', 'description', 'image.png'),
-		'MI28#DumbFireRocket Starboard' => array('MI-28 Havoc (Starboard)', 'description', 'image.png'),
-		'MI28#TOW' => array('MI-28 Havoc (Tow)', 'description', 'image.png'),
+		'MI28#GunnerCannnon' => array('MI-28 Havoc (Gunner Cannon)', 'description', '__vehicle_mi28_png_270x270_q85.png'),
+		'MI28#DumbFireRocket Port' => array('MI-28 Havoc (Rocket)', 'description', '__vehicle_mi28_png_270x270_q85.png'),
+		'MI28#DumbFireRocket Starboard' => array('MI-28 Havoc (Starboard)', 'description', '__vehicle_mi28_png_270x270_q85.png'),
+		'MI28#TOW' => array('MI-28 Havoc (Tow)', 'description', '__vehicle_mi28_png_270x270_q85.png'),
 
-		'MI24#GunnerCannon' => array('MI-24 Hind', 'description', 'image.png'),
+		'MI24#GunnerCannon' => array('MI-24 Hind', 'description', '__vehicle_mi24_png_270x270_q85.png'),
 
-		'UAV1#MG' => array('UAV (MG)', 'description', 'image.png'),
-		'UAV1#Bomb' => array('UAV (Bomb)', 'description', 'image.png'),
+		'UAV1#MG' => array('UAV (MG)', 'description', '__vehicle_uav1_png_270x270_q85.png'),
+		'UAV1#Bomb' => array('UAV (Bomb)', 'description', '__vehicle_uav1_png_270x270_q85.png'),
 
 		//Stationary
-		'X312#Gun' => array('Heavy MG X312', 'description', 'image.png'),
-		'KORD#Gun' => array('Heavy MG KORD', 'description', 'image.png'),
-		'KORN#Missile Launcher' => array('Stationary AT KORN', 'description', 'image.png'),
-		'TOW2#Launcher' => array('Stationary AT TOW2', 'description', 'image.png'),
+		'X312#Gun' => array('Heavy MG X312', 'description', '__vehicle_x312_png_270x270_q85.png'),
+		'KORD#Gun' => array('Heavy MG KORD', 'description', '__vehicle_kord_png_270x270_q85.png'),
+		'KORN#Missile Launcher' => array('Stationary AT KORN', 'description', '__vehicle_korn_png_270x270_q85.png'),
+		'TOW2#Launcher' => array('Stationary AT TOW2', 'description', '__vehicle_tow2_png_270x270_q85.png'),
 		'ZU23#Cannons' => array('Anti-Air Gun', 'description', 'image.png'),
 		'VADS#AutoCannon' => array('VADS Auto Cannon', 'description', 'image.png'),
 		'CAVJ#XM-307' => array('XM307 ACSW', 'description', 'image.png'),
@@ -161,8 +165,8 @@ $config = array(
 		//*********************
 		// Other Weapon Names
 		//*********************
-		'KNV-1' => array('Knife', 'description', 'image.png'),
-		'RoadKill' => array('Road Kill', 'description', 'image.png'),
+		'KNV-1' => array('Knife', 'description', '__gadg_all_knife_png_270x270_q85.png'),
+		'RoadKill' => array('Road Kill', 'description', '__vehicle_quad_png_270x270_q85.png'),
 		'D2.0' => array('Demolition', 'description', 'image.png'),
 		'[]' => array('notidentify', 'description', 'image.png'),
 		'1' => array('notidentify', 'description', 'image.png'),
@@ -171,19 +175,19 @@ $config = array(
 		//*********************
 		// Perk Names
 		//*********************
-		'40mmgl' => array('40mm Grenade Launcher', 'description', 'image.png'),
-		'40mmsg' => array('40mm Shot Gun', 'description', 'image.png'),
-		'40mmsmk' => array('40mm Smoke Launcher', 'description', 'image.png'),
-		'RPG7' => array('RPG7', 'description', 'image.png'),
-		'PWR-700' => array('Repair Tool', 'description', 'image.png'),
-		'ATM-00' => array('Anti-Tank Mine', 'description', 'image.png'),
-		'M2CG' => array('M2 Carl Gustav AT', 'description', 'image.png'),
-		'M136' => array('M136 AT4', 'description', 'image.png'),
-		'DEFIB' => array('Automated External Defibrillator', 'description', 'image.png'),
-		'DTN-4' => array('C4 Explosive', 'description', 'image.png'),
-		'MRTR-5' => array('Mortar Strike', 'description', 'image.png'),
-		'HG-2' => array('Hand Grenade', 'description', 'image.png'),
-		'TRCR-357' => array('Tracer Dart Gun', 'description', 'image.png'),
+		'40mmgl' => array('40mm Grenade Launcher', 'description', '__gadg_assault_gl40mm_png_270x270_q85.png'),
+		'40mmsg' => array('40mm Shot Gun', 'description', '__gadg_assault_smk40mm_png_270x270_q85.png'),
+		'40mmsmk' => array('40mm Smoke Launcher', 'description', '__gadg_assault_sg40mm_png_270x270_q85.png'),
+		'RPG7' => array('RPG7', 'description', '__gadg_engineer_rpg7_png_270x270_q85.png'),
+		'PWR-700' => array('Repair Tool', 'description', '__gadg_engineer_powertool_png_270x270_q85.png'),
+		'ATM-00' => array('Anti-Tank Mine', 'description', '__gadg_engineer_atmine_png_270x270_q85.png'),
+		'M2CG' => array('M2 Carl Gustav AT', 'description', '__gadg_engineer_carlgustaf_png_270x270_q85.png'),
+		'M136' => array('M136 AT4', 'description', '__gadg_engineer_m136_png_270x270_q85.png'),
+		'DEFIB' => array('Automated External Defibrillator', 'description', '__gadg_medic_defib_png_270x270_q85.png'),
+		'DTN-4' => array('C4 Explosive', 'description', '__gadg_assault_c4_png_270x270_q85.png'),
+		'MRTR-5' => array('Mortar Strike', 'description', '__gadg_recon_mortarstrike_png_270x270_q85.png'),
+		'HG-2' => array('Hand Grenade', 'description', '__gadg_all_grenade_png_270x270_q85.png'),
+		'TRCR-357' => array('Tracer Dart Gun', 'description', '__weap_all_trcr4_png_270x270_q85.png'),
 	),
 
 /**
