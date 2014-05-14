@@ -191,7 +191,7 @@ $config = array(
  */
 	'maps' => array(
 		//Map Image Path
-		'image_path' => 'http://battlelog-cdn.battlefield.com/cdnprefix/98ed2fe-3/public/base/bf3/map_images/146x79/',
+		'image_path' => 'http://image.www.gametracker.com/images/maps/160x120/bc2/',
 		
 		//Stock
 		'Levels/MP_009' => array('Laguna Presa', 'description', 'laguna_presa.jpg'),
