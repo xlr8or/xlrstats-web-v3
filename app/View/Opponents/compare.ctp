@@ -161,12 +161,12 @@ if ($opponents['Killer']['skill'] >= $opponents['Target']['skill']) {
 $skillKiller = $this->Number->format( $opponents['Killer']['skill'], array(
 	'places' => 0,
 	'before' => null,
-	'thousands' => ','
+	'thousands' => '.'
 )) . '</strong></p>';
 $skillTarget = $this->Number->format( $opponents['Target']['skill'], array(
 	'places' => 0,
 	'before' => null,
-	'thousands' => ','
+	'thousands' => '.'
 )) . '</strong></p>';
 
 /* Ratio -------------------------------------------------------------------------------------------------*/
@@ -180,12 +180,12 @@ if ($opponents['Killer']['ratio'] >= $opponents['Target']['ratio']) {
 $ratioKiller = $this->Number->format( $opponents['Killer']['ratio'], array(
 	'places' => 2,
 	'before' => null,
-	'thousands' => ','
+	'thousands' => '.'
 )) . '</strong></p>';
 $ratioTarget = $this->Number->format( $opponents['Target']['ratio'], array(
 	'places' => 2,
 	'before' => null,
-	'thousands' => ','
+	'thousands' => '.'
 )) . '</strong></p>';
 
 /* Kills -------------------------------------------------------------------------------------------------*/
