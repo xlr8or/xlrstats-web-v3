@@ -214,7 +214,7 @@ $myPage = false;
 					<?php echo $this->Number->format($playerStats['PlayerStat']['kills'], array(
 						'places' => 0,
 						'before' => null,
-						'thousands' => '.'
+						'thousands' => ','
 					)); ?>
 				</h3>
 				<h4><?php echo __('Kills'); ?></h4>
@@ -228,7 +228,7 @@ $myPage = false;
 					<?php echo $this->Number->format($playerStats['PlayerStat']['deaths'], array(
 					'places' => 0,
 					'before' => null,
-					'thousands' => '.'
+					'thousands' => ','
 				)); ?>
 				</h3>
 				<h4><?php echo __('Deaths'); ?></h4>
@@ -240,7 +240,7 @@ $myPage = false;
 					<?php echo $this->Number->format($playerStats['PlayerStat']['skill'], array(
 					'places' => 0,
 					'before' => null,
-					'thousands' => '.'
+					'thousands' => ','
 				)); ?>
 				</div>
 			</div>
@@ -250,7 +250,7 @@ $myPage = false;
 					<?php echo $this->Number->format($playerStats['PlayerStat']['assists'], array(
 					'places' => 0,
 					'before' => null,
-					'thousands' => '.'
+					'thousands' => ','
 				)); ?>
 				</h3>
 				<h4><?php echo __('Kill Assist'); ?></h4>
@@ -261,7 +261,7 @@ $myPage = false;
 					<?php echo $this->Number->format($playerStats['PlayerStat']['assistskill'], array(
 					'places' => 0,
 					'before' => null,
-					'thousands' => '.'
+					'thousands' => ','
 				)); ?>
 				</h3>
 				<h4><?php echo __('Assist Skill'); ?></h4>
@@ -272,7 +272,7 @@ $myPage = false;
 					<?php echo $this->Number->format($playerStats['PlayerStat']['rounds'], array(
 					'places' => 0,
 					'before' => null,
-					'thousands' => '.'
+					'thousands' => ','
 				)); ?>
 				</h3>
 				<h4><?php echo __('Rounds'); ?></h4>
@@ -283,7 +283,7 @@ $myPage = false;
 					<?php echo $this->Number->format($playerStats['PlayerStat']['suicides'], array(
 					'places' => 0,
 					'before' => null,
-					'thousands' => '.'
+					'thousands' => ','
 				)); ?>
 				</h3>
 				<h4><?php echo __('Suicides'); ?></h4>
@@ -294,7 +294,7 @@ $myPage = false;
 					<?php echo $this->Number->format($playerStats['PlayerStat']['teamkills'], array(
 					'places' => 0,
 					'before' => null,
-					'thousands' => '.'
+					'thousands' => ','
 				)); ?>
 				</h3>
 				<h4><?php echo ('Team Kills'); ?></h4>
@@ -305,7 +305,7 @@ $myPage = false;
 					<?php echo $this->Number->format($playerStats['PlayerStat']['teamdeaths'], array(
 					'places' => 0,
 					'before' => null,
-					'thousands' => '.'
+					'thousands' => ','
 				)); ?>
 				</h3>
 				<h4><?php echo __('Team Deaths'); ?></h4>
@@ -316,7 +316,7 @@ $myPage = false;
 					<?php echo $this->Number->format($playerStats['PlayerStat']['winstreak'], array(
 					'places' => 0,
 					'before' => null,
-					'thousands' => '.'
+					'thousands' => ','
 				)); ?>
 				</h3>
 				<h4><?php echo __('Win Streak'); ?></h4>
@@ -327,7 +327,7 @@ $myPage = false;
 					<?php echo $this->Number->format($playerStats['PlayerStat']['losestreak'], array(
 					'places' => 0,
 					'before' => null,
-					'thousands' => '.'
+					'thousands' => ','
 				)); ?>
 				</h3>
 				<h4><?php echo __('Lose Streak'); ?></h4>
@@ -341,7 +341,7 @@ $myPage = false;
 <!-- Tabs -->
 <div class="playerstats-tabs"> <!-- Only required for left/right tabs -->
 	<ul class="nav nav-tabs" id="playerstats">
-		<li>
+        <li>
 			<?php
 			echo $this->Html->link(__('Achievements'),
 				array(
@@ -356,7 +356,7 @@ $myPage = false;
 				)
 			);
 			?>
-		</li>
+        </li>
 
 		<li>
 			<?php
@@ -377,9 +377,9 @@ $myPage = false;
 		<li class="dropdown">
 			<a class="dropdown-toggle" data-toggle="dropdown" href="#">
 				<?php echo __('History') ?>
-				<b class="caret"></b>
+                <b class="caret"></b>
 			</a>
-			<ul class="dropdown-menu">
+            <ul class="dropdown-menu">
 				<li>
 					<?php
 					echo $this->Html->link(__('Weekly'),
@@ -396,7 +396,7 @@ $myPage = false;
 					);
 					?>
 				</li>
-				<li>
+                <li>
 					<?php
 					echo $this->Html->link(__('Monthly'),
 						array(
@@ -411,7 +411,7 @@ $myPage = false;
 						)
 					);
 					?>
-				</li>
+                </li>
 			</ul>
 		</li>
 		<li>
@@ -462,7 +462,7 @@ $myPage = false;
 			);
 			?>
 		</li>
-		<li>
+        <li>
 			<?php
 			echo $this->Html->link(__('Opponents'),
 				array(
@@ -477,21 +477,21 @@ $myPage = false;
 				)
 			);
 			?>
-		</li>
+        </li>
 		<?php
 		if ($myPage || (!empty($user) && $user['Group']['level'] >= 40 )) {
 			?>
 
-		<li class="dropdown">
-			<a class="dropdown-toggle" data-toggle="dropdown" href="#">
-				<?php echo __('My Personal Tab') ?>
-				<b class="caret"></b>
-			</a>
-			<ul class="dropdown-menu">
-				<li><a href="#client_info" data-toggle="tab"><?php echo __('My B3 Info') ?></a></li>
+        <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                <?php echo __('My Personal Tab') ?>
+                <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+                <li><a href="#client_info" data-toggle="tab"><?php echo __('My B3 Info') ?></a></li>
 
-				<li>
-					<?php
+                <li>
+                    <?php
 					echo $this->Html->link(__('My Penalties'),
 						array(
 							'controller' => 'penalties',
@@ -538,18 +538,18 @@ $myPage = false;
 					);
 					?>
 				</li>
-			</ul>
-		</li>
-		<?php
+            </ul>
+        </li>
+        <?php
 		};
 		?>
 
 	</ul>
 	<div class="tab-content">
 
-		<div class="tab-pane" id="achievements">
-			Loading...
-		</div>
+        <div class="tab-pane" id="achievements">
+            Loading...
+        </div>
 		<div class="tab-pane" id="activities">
 			Loading...
 		</div>
@@ -571,18 +571,16 @@ $myPage = false;
 		<div class="tab-pane" id="opponents">
 			Loading...
 		</div>
-
-		<?php if ($myPage || (!empty($user) && $user['Group']['level'] >= 40 )): ?>
-		<div class="tab-pane" id="client_info">
-			<h3><?php echo __('My B3 Info') ?></h3>
-			<table class="table table-hover">
-				<thead>
+        <div class="tab-pane" id="client_info">
+            <h3><?php echo __('My B3 Info') ?></h3>
+            <table class="table table-hover">
+                <thead>
 				<?php echo $this->Html->tableHeaders(array(
 					__('Key'),
 					__('Value'),
 					__('Description')
 				)) ?>
-				</thead>
+                </thead>
 
 				<?php
 				echo $this->Html->tableCells(array(
@@ -642,19 +640,17 @@ $myPage = false;
 						__('This is when B3 has seen you last')
 					),
 				)); ?>
-			</table>
-		</div>
-		<?php endif; ?>
-
-		<div class="tab-pane" id="penalty-tab">
-			Loading...
-		</div>
+            </table>
+        </div>
+        <div class="tab-pane" id="penalty-tab">
+            Loading...
+        </div>
 	</div>
 </div>
 <!-- /Tabs End -->
 
 <div class="row">
-	<div class="span12"><?php echo $this->element('disqus'); ?></span></div>
+    <div class="span12"><?php echo $this->element('disqus'); ?></span></div>
 </div>
 
 <script type="text/javascript">

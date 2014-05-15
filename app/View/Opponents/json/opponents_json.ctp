@@ -114,7 +114,7 @@ foreach ($opponents as $k => $v) {
 	$skill = $this->Number->format( $v['Target']['skill'], array(
 		'places' => 0,
 		'before' => null,
-		'thousands' => '.'
+		'thousands' => ','
 	)) . '</strong></p>';
 
 	/* Kills -------------------------------------------------------------------------------------------------*/

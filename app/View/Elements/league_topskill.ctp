@@ -121,23 +121,23 @@ if ($playersArray[1] == 0) {
 			} ?>"><?php echo $this->Number->format($player['League']['skill'], array(
 				'places' => 0,
 				'before' => null,
-				'thousands' => '.'
+				'thousands' => ','
 			)); ?></td>
 			<?php if ($detailedStats): ?>
 				<td><?php echo $this->Number->format($player['League']['kills'], array(
 					'places' => 0,
 					'before' => null,
-					'thousands' => '.'
+					'thousands' => ','
 				)); ?></td>
 				<td><?php echo $this->Number->format($player['League']['deaths'], array(
 					'places' => 0,
 					'before' => null,
-					'thousands' => '.'
+					'thousands' => ','
 				)); ?></td>
 				<td><?php echo $this->Number->format($player['League']['rounds'], array(
 					'places' => 0,
 					'before' => null,
-					'thousands' => '.'
+					'thousands' => ','
 				)); ?></td>
                 <td><?php echo $player['League']['winstreak']; ?></td>
                 <td><?php echo $player['League']['losestreak']; ?></td>

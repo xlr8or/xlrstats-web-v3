@@ -112,7 +112,7 @@ for ($i = 0; $i < $count; $i++) {
 			$v = '<b>' . $this->Number->format($v, array(
 					'places' => 0,
 					'before' => null,
-					'thousands' => '.'
+					'thousands' => ','
 				)) . '</b>';
 		}
 		// Ratio

@@ -118,7 +118,7 @@ if (empty($serverPlayers)) { ?>
 				$score .= ' <small>(' . $this->Number->format($v['ServerPlayer']['skill'], array(
 						'places' => 0,
 						'before' => null,
-						'thousands' => '.'
+						'thousands' => ','
 					)) . ')</small>';
 			}
 			if (isset($v['ServerPlayer']['rank'])) {
