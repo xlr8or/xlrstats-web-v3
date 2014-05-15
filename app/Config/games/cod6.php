@@ -15,1338 +15,1354 @@
 
 $config = array(
 	'gameName' => 'Call of Duty: Modern Warfare 2',
-);
-/*
+
+
 //*********************
 // These are the standard cod:mw2 settings
 //*********************
 
 // Team names and colors
-$team1 = "OpFor / Militia"; // red team
-$team2 = "TF 141 / Rangers"; // blue team
-$spectators = "Spectators";
+	'teams' => array(
+		'1' => 'OpFor / Militia',
+		'2' => 'TF 141 / Rangers',
+		'-1' => 'Spectators'
+	),
 
-//*********************
-// Weapons names
-//*********************
+/**
+ * Weapon: name, description, image
+ */
 
-//*********************
-//Assault Rifles
-//*********************
+	'weapons' => array(
+		//*********************
+		//Assault Rifles
+		//*********************
 
-//M4A1
-$w['m4_mp'] = "M4";
-$w['m4_acog_mp'] = "M4 ACOG";
-$w['m4_eotech_mp'] = "M4 Holographic Sight";
-$w['m4_fmj_mp'] = "M4 FMJ";
-$w['m4_gl_mp'] = "M4 Grenade Launcher";
-$w['m4_heartbeat_mp'] = "M4 Heartbeat Sensor";
-$w['m4_reflex_mp'] = "M4 Reflex";
-$w['m4_shotgun_mp'] = "M4 Shotgun";
-$w['m4_silencer_mp'] = "M4 Silencer";
-$w['m4_thermal_mp'] = "M4 Thermal Scope";
-$w['m4_xmags_mp'] = "M4 Extended Mags";
-$w['m4_acog_fmj_mp'] = "M4 ACOG & FMJ";
-$w['m4_acog_gl_mp'] = "M4 ACOG & Grenade Launcher";
-$w['m4_acog_heartbeat_mp'] = "M4 ACOG & Heartbeat Sensor";
-$w['m4_acog_shotgun_mp'] = "M4 ACOG & Shotgun";
-$w['m4_acog_silencer_mp'] = "M4 ACOG & Silencer";
-$w['m4_acog_xmags_mp'] = "M4 ACOG & Extended Mags";
-$w['m4_eotech_fmj_mp'] = "M4 Holographic Sight & FMJ";
-$w['m4_eotech_gl_mp'] = "M4 Holographic Sight & Grenade Launcher";
-$w['m4_eotech_heartbeat_mp'] = "M4 Holographic Sight & Heartbeat Sensor";
-$w['m4_eotech_shotgun_mp'] = "M4 Holographic Sight & Shotgun";
-$w['m4_eotech_silencer_mp'] = "M4 Holographic Sight & Silencer";
-$w['m4_eotech_xmags_mp'] = "M4 Holographic Sight & Extended Mags";
-$w['m4_fmj_gl_mp'] = "M4 FMJ & Grenade Launcher";
-$w['m4_fmj_heartbeat_mp'] = "M4 FMJ & Heartbeat Sensor";
-$w['m4_fmj_reflex_mp'] = "M4 FMJ & Reflex";
-$w['m4_fmj_shotgun_mp'] = "M4 FMJ & Shotgun";
-$w['m4_fmj_silencer_mp'] = "M4 FMJ & Silencer";
-$w['m4_fmj_thermal_mp'] = "M4 FMJ & Thermal Scope";
-$w['m4_fmj_xmags_mp'] = "M4 FMJ & Extended Mags";
-$w['m4_gl_heartbeat_mp'] = "M4 Grenade Launcer & Heartbeat Sensor";
-$w['m4_gl_reflex_mp'] = "M4 Grenade Launcer & Reflex";
-$w['m4_gl_silencer_mp'] = "M4 Grenade Launcer & Silencer";
-$w['m4_gl_thermal_mp'] = "M4 Grenade Launcer & Thermal Scope";
-$w['m4_gl_xmags_mp'] = "M4 Grenade Launcer & Extended Mags";
-$w['m4_heartbeat_reflex_mp'] = "M4 Heartbeat Sensor & Reflex";
-$w['m4_heartbeat_shotgun_mp'] = "M4 Heartbeat Sensor & Shotgun";
-$w['m4_heartbeat_silencer_mp'] = "M4 Heartbeat Sensor & Silencer";
-$w['m4_heartbeat_thermal_mp'] = "M4 Heartbeat Sensor & Thermal Scope";
-$w['m4_heartbeat_xmags_mp'] = "M4 Heartbeat Sensor & Extended Mags";
-$w['m4_reflex_shotgun_mp'] = "M4 Reflex & Shotgun";
-$w['m4_reflex_silencer_mp'] = "M4 Reflex & Silencer";
-$w['m4_reflex_xmags_mp'] = "M4 Reflex & Extended Mags";
-$w['m4_shotgun_silencer_mp'] = "M4 Shotgun & Silencer";
-$w['m4_shotgun_thermal_mp'] = "M4 Shotgun & Thermal Scope";
-$w['m4_shotgun_xmags_mp'] = "M4 Shotgun & Extended Mags";
-$w['m4_silencer_thermal_mp'] = "M4 Silencer & Thermal Scope";
-$w['m4_silencer_xmags_mp'] = "M4 Silencer & Extended Mags";
-$w['m4_thermal_xmags_mp'] = "M4 Thermal Scope & Extended Mags";
-$w['gl_m4_mp'] = "Grenade Launcher M4";
-$w['m4_shotgun_attach_mp'] = "M4 Shotgun Attachment";
+		//M4A1
+		'm4_mp' => array('M4', 'description', 'image.png'),
+		'm4_acog_mp' => array('M4 ACOG', 'description', 'image.png'),
+		'm4_eotech_mp' => array('M4 Holographic Sight', 'description', 'image.png'),
+		'm4_fmj_mp' => array('M4 FMJ', 'description', 'image.png'),
+		'm4_gl_mp' => array('M4 Grenade Launcher', 'description', 'image.png'),
+		'm4_heartbeat_mp' => array('M4 Heartbeat Sensor', 'description', 'image.png'),
+		'm4_reflex_mp' => array('M4 Reflex', 'description', 'image.png'),
+		'm4_shotgun_mp' => array('M4 Shotgun', 'description', 'image.png'),
+		'm4_silencer_mp' => array('M4 Silencer', 'description', 'image.png'),
+		'm4_thermal_mp' => array('M4 Thermal Scope', 'description', 'image.png'),
+		'm4_xmags_mp' => array('M4 Extended Mags', 'description', 'image.png'),
+		'm4_acog_fmj_mp' => array('M4 ACOG & FMJ', 'description', 'image.png'),
+		'm4_acog_gl_mp' => array('M4 ACOG & Grenade Launcher', 'description', 'image.png'),
+		'm4_acog_heartbeat_mp' => array('M4 ACOG & Heartbeat Sensor', 'description', 'image.png'),
+		'm4_acog_shotgun_mp' => array('M4 ACOG & Shotgun', 'description', 'image.png'),
+		'm4_acog_silencer_mp' => array('M4 ACOG & Silencer', 'description', 'image.png'),
+		'm4_acog_xmags_mp' => array('M4 ACOG & Extended Mags', 'description', 'image.png'),
+		'm4_eotech_fmj_mp' => array('M4 Holographic Sight & FMJ', 'description', 'image.png'),
+		'm4_eotech_gl_mp' => array('M4 Holographic Sight & Grenade Launcher', 'description', 'image.png'),
+		'm4_eotech_heartbeat_mp' => array('M4 Holographic Sight & Heartbeat Sensor', 'description', 'image.png'),
+		'm4_eotech_shotgun_mp' => array('M4 Holographic Sight & Shotgun', 'description', 'image.png'),
+		'm4_eotech_silencer_mp' => array('M4 Holographic Sight & Silencer', 'description', 'image.png'),
+		'm4_eotech_xmags_mp' => array('M4 Holographic Sight & Extended Mags', 'description', 'image.png'),
+		'm4_fmj_gl_mp' => array('M4 FMJ & Grenade Launcher', 'description', 'image.png'),
+		'm4_fmj_heartbeat_mp' => array('M4 FMJ & Heartbeat Sensor', 'description', 'image.png'),
+		'm4_fmj_reflex_mp' => array('M4 FMJ & Reflex', 'description', 'image.png'),
+		'm4_fmj_shotgun_mp' => array('M4 FMJ & Shotgun', 'description', 'image.png'),
+		'm4_fmj_silencer_mp' => array('M4 FMJ & Silencer', 'description', 'image.png'),
+		'm4_fmj_thermal_mp' => array('M4 FMJ & Thermal Scope', 'description', 'image.png'),
+		'm4_fmj_xmags_mp' => array('M4 FMJ & Extended Mags', 'description', 'image.png'),
+		'm4_gl_heartbeat_mp' => array('M4 Grenade Launcer & Heartbeat Sensor', 'description', 'image.png'),
+		'm4_gl_reflex_mp' => array('M4 Grenade Launcer & Reflex', 'description', 'image.png'),
+		'm4_gl_silencer_mp' => array('M4 Grenade Launcer & Silencer', 'description', 'image.png'),
+		'm4_gl_thermal_mp' => array('M4 Grenade Launcer & Thermal Scope', 'description', 'image.png'),
+		'm4_gl_xmags_mp' => array('M4 Grenade Launcer & Extended Mags', 'description', 'image.png'),
+		'm4_heartbeat_reflex_mp' => array('M4 Heartbeat Sensor & Reflex', 'description', 'image.png'),
+		'm4_heartbeat_shotgun_mp' => array('M4 Heartbeat Sensor & Shotgun', 'description', 'image.png'),
+		'm4_heartbeat_silencer_mp' => array('M4 Heartbeat Sensor & Silencer', 'description', 'image.png'),
+		'm4_heartbeat_thermal_mp' => array('M4 Heartbeat Sensor & Thermal Scope', 'description', 'image.png'),
+		'm4_heartbeat_xmags_mp' => array('M4 Heartbeat Sensor & Extended Mags', 'description', 'image.png'),
+		'm4_reflex_shotgun_mp' => array('M4 Reflex & Shotgun', 'description', 'image.png'),
+		'm4_reflex_silencer_mp' => array('M4 Reflex & Silencer', 'description', 'image.png'),
+		'm4_reflex_xmags_mp' => array('M4 Reflex & Extended Mags', 'description', 'image.png'),
+		'm4_shotgun_silencer_mp' => array('M4 Shotgun & Silencer', 'description', 'image.png'),
+		'm4_shotgun_thermal_mp' => array('M4 Shotgun & Thermal Scope', 'description', 'image.png'),
+		'm4_shotgun_xmags_mp' => array('M4 Shotgun & Extended Mags', 'description', 'image.png'),
+		'm4_silencer_thermal_mp' => array('M4 Silencer & Thermal Scope', 'description', 'image.png'),
+		'm4_silencer_xmags_mp' => array('M4 Silencer & Extended Mags', 'description', 'image.png'),
+		'm4_thermal_xmags_mp' => array('M4 Thermal Scope & Extended Mags', 'description', 'image.png'),
+		'gl_m4_mp' => array('Grenade Launcher M4', 'description', 'image.png'),
+		'm4_shotgun_attach_mp' => array('M4 Shotgun Attachment', 'description', 'image.png'),
 
-//AK-47
-$w['ak47_mp'] = "AK-47";
-$w['ak47_acog_mp'] = "AK-47 ACOG";
-$w['ak47_eotech_mp'] = "AK-47 Holographic Sight";
-$w['ak47_fmj_mp'] = "AK-47 FMJ";
-$w['ak47_gl_mp'] = "AK-47 Grenade Launcher";
-$w['ak47_heartbeat_mp'] = "AK-47 Heartbeat Sensor";
-$w['ak47_reflex_mp'] = "AK-47 Reflex";
-$w['ak47_shotgun_mp'] = "AK-47 Shotgun";
-$w['ak47_silencer_mp'] = "AK-47 Silencer";
-$w['ak47_thermal_mp'] = "AK-47 Thermal Scope";
-$w['ak47_xmags_mp'] = "AK-47 Extended Mags";
-$w['ak47_acog_fmj_mp'] = "AK-47 ACOG & FMJ";
-$w['ak47_acog_gl_mp'] = "AK-47 ACOG & Grenade Launcher";
-$w['ak47_acog_heartbeat_mp'] = "AK-47 ACOG & Heartbeat Sensor";
-$w['ak47_acog_shotgun_mp'] = "AK-47 ACOG & Shotgun";
-$w['ak47_acog_silencer_mp'] = "AK-47 ACOG & Silencer";
-$w['ak47_acog_xmags_mp'] = "AK-47 ACOG & Extended Mags";
-$w['ak47_eotech_fmj_mp'] = "AK-47 Holographic Sight & FMJ";
-$w['ak47_eotech_gl_mp'] = "AK-47 Holographic Sight & Grenade Launcher";
-$w['ak47_eotech_heartbeat_mp'] = "AK-47 Holographic Sight & Heartbeat Sensor";
-$w['ak47_eotech_shotgun_mp'] = "AK-47 Holographic Sight & Shotgun";
-$w['ak47_eotech_silencer_mp'] = "AK-47 Holographic Sight & Silencer";
-$w['ak47_eotech_xmags_mp'] = "AK-47 Holographic Sight & Extended Mags";
-$w['ak47_fmj_gl_mp'] = "AK-47 FMJ & Grenade Launcher";
-$w['ak47_fmj_heartbeat_mp'] = "AK-47 FMJ & Heartbeat Sensor";
-$w['ak47_fmj_reflex_mp'] = "AK-47 FMJ & Reflex";
-$w['ak47_fmj_shotgun_mp'] = "AK-47 FMJ & Shotgun";
-$w['ak47_fmj_silencer_mp'] = "AK-47 FMJ & Silencer";
-$w['ak47_fmj_thermal_mp'] = "AK-47 FMJ & Thermal Scope";
-$w['ak47_fmj_xmags_mp'] = "AK-47 FMJ & Extended Mags";
-$w['ak47_gl_heartbeat_mp'] = "AK-47 Grenade Launcer & Heartbeat Sensor";
-$w['ak47_gl_reflex_mp'] = "AK-47 Grenade Launcer & Reflex";
-$w['ak47_gl_silencer_mp'] = "AK-47 Grenade Launcer & Silencer";
-$w['ak47_gl_thermal_mp'] = "AK-47 Grenade Launcer & Thermal Scope";
-$w['ak47_gl_xmags_mp'] = "AK-47 Grenade Launcer & Extended Mags";
-$w['ak47_heartbeat_reflex_mp'] = "AK-47 Heartbeat Sensor & Reflex";
-$w['ak47_heartbeat_shotgun_mp'] = "AK-47 Heartbeat Sensor & Shotgun";
-$w['ak47_heartbeat_silencer_mp'] = "AK-47 Heartbeat Sensor & Silencer";
-$w['ak47_heartbeat_thermal_mp'] = "AK-47 Heartbeat Sensor & Thermal Scope";
-$w['ak47_heartbeat_xmags_mp'] = "AK-47 Heartbeat Sensor & Extended Mags";
-$w['ak47_reflex_shotgun_mp'] = "AK-47 Reflex & Shotgun";
-$w['ak47_reflex_silencer_mp'] = "AK-47 Reflex & Silencer";
-$w['ak47_reflex_xmags_mp'] = "AK-47 Reflex & Extended Mags";
-$w['ak47_shotgun_silencer_mp'] = "AK-47 Shotgun & Silencer";
-$w['ak47_shotgun_thermal_mp'] = "AK-47 Shotgun & Thermal Scope";
-$w['ak47_shotgun_xmags_mp'] = "AK-47 Shotgun & Extended Mags";
-$w['ak47_silencer_thermal_mp'] = "AK-47 Silencer & Thermal Scope";
-$w['ak47_silencer_xmags_mp'] = "AK-47 Silencer & Extended Mags";
-$w['ak47_thermal_xmags_mp'] = "AK-47 Thermal Scope & Extended Mags";
-$w['gl_ak47_mp'] = "Grenade Launcher AK-47";
-$w['ak47_shotgun_attach_mp'] = "AK-47 Shotgun Attachment";
+		//AK-47
+		'ak47_mp' => array('AK-47', 'description', 'image.png'),
+		'ak47_acog_mp' => array('AK-47 ACOG', 'description', 'image.png'),
+		'ak47_eotech_mp' => array('AK-47 Holographic Sight', 'description', 'image.png'),
+		'ak47_fmj_mp' => array('AK-47 FMJ', 'description', 'image.png'),
+		'ak47_gl_mp' => array('AK-47 Grenade Launcher', 'description', 'image.png'),
+		'ak47_heartbeat_mp' => array('AK-47 Heartbeat Sensor', 'description', 'image.png'),
+		'ak47_reflex_mp' => array('AK-47 Reflex', 'description', 'image.png'),
+		'ak47_shotgun_mp' => array('AK-47 Shotgun', 'description', 'image.png'),
+		'ak47_silencer_mp' => array('AK-47 Silencer', 'description', 'image.png'),
+		'ak47_thermal_mp' => array('AK-47 Thermal Scope', 'description', 'image.png'),
+		'ak47_xmags_mp' => array('AK-47 Extended Mags', 'description', 'image.png'),
+		'ak47_acog_fmj_mp' => array('AK-47 ACOG & FMJ', 'description', 'image.png'),
+		'ak47_acog_gl_mp' => array('AK-47 ACOG & Grenade Launcher', 'description', 'image.png'),
+		'ak47_acog_heartbeat_mp' => array('AK-47 ACOG & Heartbeat Sensor', 'description', 'image.png'),
+		'ak47_acog_shotgun_mp' => array('AK-47 ACOG & Shotgun', 'description', 'image.png'),
+		'ak47_acog_silencer_mp' => array('AK-47 ACOG & Silencer', 'description', 'image.png'),
+		'ak47_acog_xmags_mp' => array('AK-47 ACOG & Extended Mags', 'description', 'image.png'),
+		'ak47_eotech_fmj_mp' => array('AK-47 Holographic Sight & FMJ', 'description', 'image.png'),
+		'ak47_eotech_gl_mp' => array('AK-47 Holographic Sight & Grenade Launcher', 'description', 'image.png'),
+		'ak47_eotech_heartbeat_mp' => array('AK-47 Holographic Sight & Heartbeat Sensor', 'description', 'image.png'),
+		'ak47_eotech_shotgun_mp' => array('AK-47 Holographic Sight & Shotgun', 'description', 'image.png'),
+		'ak47_eotech_silencer_mp' => array('AK-47 Holographic Sight & Silencer', 'description', 'image.png'),
+		'ak47_eotech_xmags_mp' => array('AK-47 Holographic Sight & Extended Mags', 'description', 'image.png'),
+		'ak47_fmj_gl_mp' => array('AK-47 FMJ & Grenade Launcher', 'description', 'image.png'),
+		'ak47_fmj_heartbeat_mp' => array('AK-47 FMJ & Heartbeat Sensor', 'description', 'image.png'),
+		'ak47_fmj_reflex_mp' => array('AK-47 FMJ & Reflex', 'description', 'image.png'),
+		'ak47_fmj_shotgun_mp' => array('AK-47 FMJ & Shotgun', 'description', 'image.png'),
+		'ak47_fmj_silencer_mp' => array('AK-47 FMJ & Silencer', 'description', 'image.png'),
+		'ak47_fmj_thermal_mp' => array('AK-47 FMJ & Thermal Scope', 'description', 'image.png'),
+		'ak47_fmj_xmags_mp' => array('AK-47 FMJ & Extended Mags', 'description', 'image.png'),
+		'ak47_gl_heartbeat_mp' => array('AK-47 Grenade Launcer & Heartbeat Sensor', 'description', 'image.png'),
+		'ak47_gl_reflex_mp' => array('AK-47 Grenade Launcer & Reflex', 'description', 'image.png'),
+		'ak47_gl_silencer_mp' => array('AK-47 Grenade Launcer & Silencer', 'description', 'image.png'),
+		'ak47_gl_thermal_mp' => array('AK-47 Grenade Launcer & Thermal Scope', 'description', 'image.png'),
+		'ak47_gl_xmags_mp' => array('AK-47 Grenade Launcer & Extended Mags', 'description', 'image.png'),
+		'ak47_heartbeat_reflex_mp' => array('AK-47 Heartbeat Sensor & Reflex', 'description', 'image.png'),
+		'ak47_heartbeat_shotgun_mp' => array('AK-47 Heartbeat Sensor & Shotgun', 'description', 'image.png'),
+		'ak47_heartbeat_silencer_mp' => array('AK-47 Heartbeat Sensor & Silencer', 'description', 'image.png'),
+		'ak47_heartbeat_thermal_mp' => array('AK-47 Heartbeat Sensor & Thermal Scope', 'description', 'image.png'),
+		'ak47_heartbeat_xmags_mp' => array('AK-47 Heartbeat Sensor & Extended Mags', 'description', 'image.png'),
+		'ak47_reflex_shotgun_mp' => array('AK-47 Reflex & Shotgun', 'description', 'image.png'),
+		'ak47_reflex_silencer_mp' => array('AK-47 Reflex & Silencer', 'description', 'image.png'),
+		'ak47_reflex_xmags_mp' => array('AK-47 Reflex & Extended Mags', 'description', 'image.png'),
+		'ak47_shotgun_silencer_mp' => array('AK-47 Shotgun & Silencer', 'description', 'image.png'),
+		'ak47_shotgun_thermal_mp' => array('AK-47 Shotgun & Thermal Scope', 'description', 'image.png'),
+		'ak47_shotgun_xmags_mp' => array('AK-47 Shotgun & Extended Mags', 'description', 'image.png'),
+		'ak47_silencer_thermal_mp' => array('AK-47 Silencer & Thermal Scope', 'description', 'image.png'),
+		'ak47_silencer_xmags_mp' => array('AK-47 Silencer & Extended Mags', 'description', 'image.png'),
+		'ak47_thermal_xmags_mp' => array('AK-47 Thermal Scope & Extended Mags', 'description', 'image.png'),
+		'gl_ak47_mp' => array('Grenade Launcher AK-47', 'description', 'image.png'),
+		'ak47_shotgun_attach_mp' => array('AK-47 Shotgun Attachment', 'description', 'image.png'),
 
-//F2000
-$w['fn2000_mp'] = "F2000";
-$w['fn2000_acog_mp'] = "F2000 ACOG";
-$w['fn2000_eotech_mp'] = "F2000 Holographic Sight";
-$w['fn2000_fmj_mp'] = "F2000 FMJ";
-$w['fn2000_gl_mp'] = "F2000 Grenade Launcher";
-$w['fn2000_heartbeat_mp'] = "F2000 Heartbeat Sensor";
-$w['fn2000_reflex_mp'] = "F2000 Reflex";
-$w['fn2000_shotgun_mp'] = "F2000 Shotgun";
-$w['fn2000_silencer_mp'] = "F2000 Silencer";
-$w['fn2000_thermal_mp'] = "F2000 Thermal Scope";
-$w['fn2000_xmags_mp'] = "F2000 Extended Mags";
-$w['fn2000_acog_fmj_mp'] = "F2000 ACOG & FMJ";
-$w['fn2000_acog_gl_mp'] = "F2000 ACOG & Grenade Launcher";
-$w['fn2000_acog_heartbeat_mp'] = "F2000 ACOG & Heartbeat Sensor";
-$w['fn2000_acog_shotgun_mp'] = "F2000 ACOG & Shotgun";
-$w['fn2000_acog_silencer_mp'] = "F2000 ACOG & Silencer";
-$w['fn2000_acog_xmags_mp'] = "F2000 ACOG & Extended Mags";
-$w['fn2000_eotech_fmj_mp'] = "F2000 Holographic Sight & FMJ";
-$w['fn2000_eotech_gl_mp'] = "F2000 Holographic Sight & Grenade Launcher";
-$w['fn2000_eotech_heartbeat_mp'] = "F2000 Holographic Sight & Heartbeat Sensor";
-$w['fn2000_eotech_shotgun_mp'] = "F2000 Holographic Sight & Shotgun";
-$w['fn2000_eotech_silencer_mp'] = "F2000 Holographic Sight & Silencer";
-$w['fn2000_eotech_xmags_mp'] = "F2000 Holographic Sight & Extended Mags";
-$w['fn2000_fmj_gl_mp'] = "F2000 FMJ & Grenade Launcher";
-$w['fn2000_fmj_heartbeat_mp'] = "F2000 FMJ & Heartbeat Sensor";
-$w['fn2000_fmj_reflex_mp'] = "F2000 FMJ & Reflex";
-$w['fn2000_fmj_shotgun_mp'] = "F2000 FMJ & Shotgun";
-$w['fn2000_fmj_silencer_mp'] = "F2000 FMJ & Silencer";
-$w['fn2000_fmj_thermal_mp'] = "F2000 FMJ & Thermal Scope";
-$w['fn2000_fmj_xmags_mp'] = "F2000 FMJ & Extended Mags";
-$w['fn2000_gl_heartbeat_mp'] = "F2000 Grenade Launcer & Heartbeat Sensor";
-$w['fn2000_gl_reflex_mp'] = "F2000 Grenade Launcer & Reflex";
-$w['fn2000_gl_silencer_mp'] = "F2000 Grenade Launcer & Silencer";
-$w['fn2000_gl_thermal_mp'] = "F2000 Grenade Launcer & Thermal Scope";
-$w['fn2000_gl_xmags_mp'] = "F2000 Grenade Launcer & Extended Mags";
-$w['fn2000_heartbeat_reflex_mp'] = "F2000 Heartbeat Sensor & Reflex";
-$w['fn2000_heartbeat_shotgun_mp'] = "F2000 Heartbeat Sensor & Shotgun";
-$w['fn2000_heartbeat_silencer_mp'] = "F2000 Heartbeat Sensor & Silencer";
-$w['fn2000_heartbeat_thermal_mp'] = "F2000 Heartbeat Sensor & Thermal Scope";
-$w['fn2000_heartbeat_xmags_mp'] = "F2000 Heartbeat Sensor & Extended Mags";
-$w['fn2000_reflex_shotgun_mp'] = "F2000 Reflex & Shotgun";
-$w['fn2000_reflex_silencer_mp'] = "F2000 Reflex & Silencer";
-$w['fn2000_reflex_xmags_mp'] = "F2000 Reflex & Extended Mags";
-$w['fn2000_shotgun_silencer_mp'] = "F2000 Shotgun & Silencer";
-$w['fn2000_shotgun_thermal_mp'] = "F2000 Shotgun & Thermal Scope";
-$w['fn2000_shotgun_xmags_mp'] = "F2000 Shotgun & Extended Mags";
-$w['fn2000_silencer_thermal_mp'] = "F2000 Silencer & Thermal Scope";
-$w['fn2000_silencer_xmags_mp'] = "F2000 Silencer & Extended Mags";
-$w['fn2000_thermal_xmags_mp'] = "F2000 Thermal Scope & Extended Mags";
-$w['gl_fn2000_mp'] = "Grenade Launcher F2000";
-$w['fn2000_shotgun_attach_mp'] = "F2000 Shotgun Attachment";
+		//F2000
+		'fn2000_mp' => array('F2000', 'description', 'image.png'),
+		'fn2000_acog_mp' => array('F2000 ACOG', 'description', 'image.png'),
+		'fn2000_eotech_mp' => array('F2000 Holographic Sight', 'description', 'image.png'),
+		'fn2000_fmj_mp' => array('F2000 FMJ', 'description', 'image.png'),
+		'fn2000_gl_mp' => array('F2000 Grenade Launcher', 'description', 'image.png'),
+		'fn2000_heartbeat_mp' => array('F2000 Heartbeat Sensor', 'description', 'image.png'),
+		'fn2000_reflex_mp' => array('F2000 Reflex', 'description', 'image.png'),
+		'fn2000_shotgun_mp' => array('F2000 Shotgun', 'description', 'image.png'),
+		'fn2000_silencer_mp' => array('F2000 Silencer', 'description', 'image.png'),
+		'fn2000_thermal_mp' => array('F2000 Thermal Scope', 'description', 'image.png'),
+		'fn2000_xmags_mp' => array('F2000 Extended Mags', 'description', 'image.png'),
+		'fn2000_acog_fmj_mp' => array('F2000 ACOG & FMJ', 'description', 'image.png'),
+		'fn2000_acog_gl_mp' => array('F2000 ACOG & Grenade Launcher', 'description', 'image.png'),
+		'fn2000_acog_heartbeat_mp' => array('F2000 ACOG & Heartbeat Sensor', 'description', 'image.png'),
+		'fn2000_acog_shotgun_mp' => array('F2000 ACOG & Shotgun', 'description', 'image.png'),
+		'fn2000_acog_silencer_mp' => array('F2000 ACOG & Silencer', 'description', 'image.png'),
+		'fn2000_acog_xmags_mp' => array('F2000 ACOG & Extended Mags', 'description', 'image.png'),
+		'fn2000_eotech_fmj_mp' => array('F2000 Holographic Sight & FMJ', 'description', 'image.png'),
+		'fn2000_eotech_gl_mp' => array('F2000 Holographic Sight & Grenade Launcher', 'description', 'image.png'),
+		'fn2000_eotech_heartbeat_mp' => array('F2000 Holographic Sight & Heartbeat Sensor', 'description', 'image.png'),
+		'fn2000_eotech_shotgun_mp' => array('F2000 Holographic Sight & Shotgun', 'description', 'image.png'),
+		'fn2000_eotech_silencer_mp' => array('F2000 Holographic Sight & Silencer', 'description', 'image.png'),
+		'fn2000_eotech_xmags_mp' => array('F2000 Holographic Sight & Extended Mags', 'description', 'image.png'),
+		'fn2000_fmj_gl_mp' => array('F2000 FMJ & Grenade Launcher', 'description', 'image.png'),
+		'fn2000_fmj_heartbeat_mp' => array('F2000 FMJ & Heartbeat Sensor', 'description', 'image.png'),
+		'fn2000_fmj_reflex_mp' => array('F2000 FMJ & Reflex', 'description', 'image.png'),
+		'fn2000_fmj_shotgun_mp' => array('F2000 FMJ & Shotgun', 'description', 'image.png'),
+		'fn2000_fmj_silencer_mp' => array('F2000 FMJ & Silencer', 'description', 'image.png'),
+		'fn2000_fmj_thermal_mp' => array('F2000 FMJ & Thermal Scope', 'description', 'image.png'),
+		'fn2000_fmj_xmags_mp' => array('F2000 FMJ & Extended Mags', 'description', 'image.png'),
+		'fn2000_gl_heartbeat_mp' => array('F2000 Grenade Launcer & Heartbeat Sensor', 'description', 'image.png'),
+		'fn2000_gl_reflex_mp' => array('F2000 Grenade Launcer & Reflex', 'description', 'image.png'),
+		'fn2000_gl_silencer_mp' => array('F2000 Grenade Launcer & Silencer', 'description', 'image.png'),
+		'fn2000_gl_thermal_mp' => array('F2000 Grenade Launcer & Thermal Scope', 'description', 'image.png'),
+		'fn2000_gl_xmags_mp' => array('F2000 Grenade Launcer & Extended Mags', 'description', 'image.png'),
+		'fn2000_heartbeat_reflex_mp' => array('F2000 Heartbeat Sensor & Reflex', 'description', 'image.png'),
+		'fn2000_heartbeat_shotgun_mp' => array('F2000 Heartbeat Sensor & Shotgun', 'description', 'image.png'),
+		'fn2000_heartbeat_silencer_mp' => array('F2000 Heartbeat Sensor & Silencer', 'description', 'image.png'),
+		'fn2000_heartbeat_thermal_mp' => array('F2000 Heartbeat Sensor & Thermal Scope', 'description', 'image.png'),
+		'fn2000_heartbeat_xmags_mp' => array('F2000 Heartbeat Sensor & Extended Mags', 'description', 'image.png'),
+		'fn2000_reflex_shotgun_mp' => array('F2000 Reflex & Shotgun', 'description', 'image.png'),
+		'fn2000_reflex_silencer_mp' => array('F2000 Reflex & Silencer', 'description', 'image.png'),
+		'fn2000_reflex_xmags_mp' => array('F2000 Reflex & Extended Mags', 'description', 'image.png'),
+		'fn2000_shotgun_silencer_mp' => array('F2000 Shotgun & Silencer', 'description', 'image.png'),
+		'fn2000_shotgun_thermal_mp' => array('F2000 Shotgun & Thermal Scope', 'description', 'image.png'),
+		'fn2000_shotgun_xmags_mp' => array('F2000 Shotgun & Extended Mags', 'description', 'image.png'),
+		'fn2000_silencer_thermal_mp' => array('F2000 Silencer & Thermal Scope', 'description', 'image.png'),
+		'fn2000_silencer_xmags_mp' => array('F2000 Silencer & Extended Mags', 'description', 'image.png'),
+		'fn2000_thermal_xmags_mp' => array('F2000 Thermal Scope & Extended Mags', 'description', 'image.png'),
+		'gl_fn2000_mp' => array('Grenade Launcher F2000', 'description', 'image.png'),
+		'fn2000_shotgun_attach_mp' => array('F2000 Shotgun Attachment', 'description', 'image.png'),
 
-//ACR
-$w['masada_mp'] = "ACR";
-$w['masada_acog_mp'] = "ACR ACOG";
-$w['masada_eotech_mp'] = "ACR Holographic Sight";
-$w['masada_fmj_mp'] = "ACR FMJ";
-$w['masada_gl_mp'] = "ACR Grenade Launcher";
-$w['masada_heartbeat_mp'] = "ACR Heartbeat Sensor";
-$w['masada_reflex_mp'] = "ACR Reflex";
-$w['masada_shotgun_mp'] = "ACR Shotgun";
-$w['masada_silencer_mp'] = "ACR Silencer";
-$w['masada_thermal_mp'] = "ACR Thermal Scope";
-$w['masada_xmags_mp'] = "ACR Extended Mags";
-$w['masada_acog_fmj_mp'] = "ACR ACOG & FMJ";
-$w['masada_acog_gl_mp'] = "ACR ACOG & Grenade Launcher";
-$w['masada_acog_heartbeat_mp'] = "ACR ACOG & Heartbeat Sensor";
-$w['masada_acog_shotgun_mp'] = "ACR ACOG & Shotgun";
-$w['masada_acog_silencer_mp'] = "ACR ACOG & Silencer";
-$w['masada_acog_xmags_mp'] = "ACR ACOG & Extended Mags";
-$w['masada_eotech_fmj_mp'] = "ACR Holographic Sight & FMJ";
-$w['masada_eotech_gl_mp'] = "ACR Holographic Sight & Grenade Launcher";
-$w['masada_eotech_heartbeat_mp'] = "ACR Holographic Sight & Heartbeat Sensor";
-$w['masada_eotech_shotgun_mp'] = "ACR Holographic Sight & Shotgun";
-$w['masada_eotech_silencer_mp'] = "ACR Holographic Sight & Silencer";
-$w['masada_eotech_xmags_mp'] = "ACR Holographic Sight & Extended Mags";
-$w['masada_fmj_gl_mp'] = "ACR FMJ & Grenade Launcher";
-$w['masada_fmj_heartbeat_mp'] = "ACR FMJ & Heartbeat Sensor";
-$w['masada_fmj_reflex_mp'] = "ACR FMJ & Reflex";
-$w['masada_fmj_shotgun_mp'] = "ACR FMJ & Shotgun";
-$w['masada_fmj_silencer_mp'] = "ACR FMJ & Silencer";
-$w['masada_fmj_thermal_mp'] = "ACR FMJ & Thermal Scope";
-$w['masada_fmj_xmags_mp'] = "ACR FMJ & Extended Mags";
-$w['masada_gl_heartbeat_mp'] = "ACR Grenade Launcer & Heartbeat Sensor";
-$w['masada_gl_reflex_mp'] = "ACR Grenade Launcer & Reflex";
-$w['masada_gl_silencer_mp'] = "ACR Grenade Launcer & Silencer";
-$w['masada_gl_thermal_mp'] = "ACR Grenade Launcer & Thermal Scope";
-$w['masada_gl_xmags_mp'] = "ACR Grenade Launcer & Extended Mags";
-$w['masada_heartbeat_reflex_mp'] = "ACR Heartbeat Sensor & Reflex";
-$w['masada_heartbeat_shotgun_mp'] = "ACR Heartbeat Sensor & Shotgun";
-$w['masada_heartbeat_silencer_mp'] = "ACR Heartbeat Sensor & Silencer";
-$w['masada_heartbeat_thermal_mp'] = "ACR Heartbeat Sensor & Thermal Scope";
-$w['masada_heartbeat_xmags_mp'] = "ACR Heartbeat Sensor & Extended Mags";
-$w['masada_reflex_shotgun_mp'] = "ACR Reflex & Shotgun";
-$w['masada_reflex_silencer_mp'] = "ACR Reflex & Silencer";
-$w['masada_reflex_xmags_mp'] = "ACR Reflex & Extended Mags";
-$w['masada_shotgun_silencer_mp'] = "ACR Shotgun & Silencer";
-$w['masada_shotgun_thermal_mp'] = "ACR Shotgun & Thermal Scope";
-$w['masada_shotgun_xmags_mp'] = "ACR Shotgun & Extended Mags";
-$w['masada_silencer_thermal_mp'] = "ACR Silencer & Thermal Scope";
-$w['masada_silencer_xmags_mp'] = "ACR Silencer & Extended Mags";
-$w['masada_thermal_xmags_mp'] = "ACR Thermal Scope & Extended Mags";
-$w['gl_masada_mp'] = "Grenade Launcher ACR";
-$w['masada_shotgun_attach_mp'] = "ACR Shotgun Attachment";
+		//ACR
+		'masada_mp' => array('ACR', 'description', 'image.png'),
+		'masada_acog_mp' => array('ACR ACOG', 'description', 'image.png'),
+		'masada_eotech_mp' => array('ACR Holographic Sight', 'description', 'image.png'),
+		'masada_fmj_mp' => array('ACR FMJ', 'description', 'image.png'),
+		'masada_gl_mp' => array('ACR Grenade Launcher', 'description', 'image.png'),
+		'masada_heartbeat_mp' => array('ACR Heartbeat Sensor', 'description', 'image.png'),
+		'masada_reflex_mp' => array('ACR Reflex', 'description', 'image.png'),
+		'masada_shotgun_mp' => array('ACR Shotgun', 'description', 'image.png'),
+		'masada_silencer_mp' => array('ACR Silencer', 'description', 'image.png'),
+		'masada_thermal_mp' => array('ACR Thermal Scope', 'description', 'image.png'),
+		'masada_xmags_mp' => array('ACR Extended Mags', 'description', 'image.png'),
+		'masada_acog_fmj_mp' => array('ACR ACOG & FMJ', 'description', 'image.png'),
+		'masada_acog_gl_mp' => array('ACR ACOG & Grenade Launcher', 'description', 'image.png'),
+		'masada_acog_heartbeat_mp' => array('ACR ACOG & Heartbeat Sensor', 'description', 'image.png'),
+		'masada_acog_shotgun_mp' => array('ACR ACOG & Shotgun', 'description', 'image.png'),
+		'masada_acog_silencer_mp' => array('ACR ACOG & Silencer', 'description', 'image.png'),
+		'masada_acog_xmags_mp' => array('ACR ACOG & Extended Mags', 'description', 'image.png'),
+		'masada_eotech_fmj_mp' => array('ACR Holographic Sight & FMJ', 'description', 'image.png'),
+		'masada_eotech_gl_mp' => array('ACR Holographic Sight & Grenade Launcher', 'description', 'image.png'),
+		'masada_eotech_heartbeat_mp' => array('ACR Holographic Sight & Heartbeat Sensor', 'description', 'image.png'),
+		'masada_eotech_shotgun_mp' => array('ACR Holographic Sight & Shotgun', 'description', 'image.png'),
+		'masada_eotech_silencer_mp' => array('ACR Holographic Sight & Silencer', 'description', 'image.png'),
+		'masada_eotech_xmags_mp' => array('ACR Holographic Sight & Extended Mags', 'description', 'image.png'),
+		'masada_fmj_gl_mp' => array('ACR FMJ & Grenade Launcher', 'description', 'image.png'),
+		'masada_fmj_heartbeat_mp' => array('ACR FMJ & Heartbeat Sensor', 'description', 'image.png'),
+		'masada_fmj_reflex_mp' => array('ACR FMJ & Reflex', 'description', 'image.png'),
+		'masada_fmj_shotgun_mp' => array('ACR FMJ & Shotgun', 'description', 'image.png'),
+		'masada_fmj_silencer_mp' => array('ACR FMJ & Silencer', 'description', 'image.png'),
+		'masada_fmj_thermal_mp' => array('ACR FMJ & Thermal Scope', 'description', 'image.png'),
+		'masada_fmj_xmags_mp' => array('ACR FMJ & Extended Mags', 'description', 'image.png'),
+		'masada_gl_heartbeat_mp' => array('ACR Grenade Launcer & Heartbeat Sensor', 'description', 'image.png'),
+		'masada_gl_reflex_mp' => array('ACR Grenade Launcer & Reflex', 'description', 'image.png'),
+		'masada_gl_silencer_mp' => array('ACR Grenade Launcer & Silencer', 'description', 'image.png'),
+		'masada_gl_thermal_mp' => array('ACR Grenade Launcer & Thermal Scope', 'description', 'image.png'),
+		'masada_gl_xmags_mp' => array('ACR Grenade Launcer & Extended Mags', 'description', 'image.png'),
+		'masada_heartbeat_reflex_mp' => array('ACR Heartbeat Sensor & Reflex', 'description', 'image.png'),
+		'masada_heartbeat_shotgun_mp' => array('ACR Heartbeat Sensor & Shotgun', 'description', 'image.png'),
+		'masada_heartbeat_silencer_mp' => array('ACR Heartbeat Sensor & Silencer', 'description', 'image.png'),
+		'masada_heartbeat_thermal_mp' => array('ACR Heartbeat Sensor & Thermal Scope', 'description', 'image.png'),
+		'masada_heartbeat_xmags_mp' => array('ACR Heartbeat Sensor & Extended Mags', 'description', 'image.png'),
+		'masada_reflex_shotgun_mp' => array('ACR Reflex & Shotgun', 'description', 'image.png'),
+		'masada_reflex_silencer_mp' => array('ACR Reflex & Silencer', 'description', 'image.png'),
+		'masada_reflex_xmags_mp' => array('ACR Reflex & Extended Mags', 'description', 'image.png'),
+		'masada_shotgun_silencer_mp' => array('ACR Shotgun & Silencer', 'description', 'image.png'),
+		'masada_shotgun_thermal_mp' => array('ACR Shotgun & Thermal Scope', 'description', 'image.png'),
+		'masada_shotgun_xmags_mp' => array('ACR Shotgun & Extended Mags', 'description', 'image.png'),
+		'masada_silencer_thermal_mp' => array('ACR Silencer & Thermal Scope', 'description', 'image.png'),
+		'masada_silencer_xmags_mp' => array('ACR Silencer & Extended Mags', 'description', 'image.png'),
+		'masada_thermal_xmags_mp' => array('ACR Thermal Scope & Extended Mags', 'description', 'image.png'),
+		'gl_masada_mp' => array('Grenade Launcher ACR', 'description', 'image.png'),
+		'masada_shotgun_attach_mp' => array('ACR Shotgun Attachment', 'description', 'image.png'),
 
-//Famas
-$w['famas_mp'] = "Famas";
-$w['famas_acog_mp'] = "Famas ACOG";
-$w['famas_eotech_mp'] = "Famas Holographic Sight";
-$w['famas_fmj_mp'] = "Famas FMJ";
-$w['famas_gl_mp'] = "Famas Grenade Launcher";
-$w['famas_heartbeat_mp'] = "Famas Heartbeat Sensor";
-$w['famas_reflex_mp'] = "Famas Reflex";
-$w['famas_shotgun_mp'] = "Famas Shotgun";
-$w['famas_silencer_mp'] = "Famas Silencer";
-$w['famas_thermal_mp'] = "Famas Thermal Scope";
-$w['famas_xmags_mp'] = "Famas Extended Mags";
-$w['famas_acog_fmj_mp'] = "Famas ACOG & FMJ";
-$w['famas_acog_gl_mp'] = "Famas ACOG & Grenade Launcher";
-$w['famas_acog_heartbeat_mp'] = "Famas ACOG & Heartbeat Sensor";
-$w['famas_acog_shotgun_mp'] = "Famas ACOG & Shotgun";
-$w['famas_acog_silencer_mp'] = "Famas ACOG & Silencer";
-$w['famas_acog_xmags_mp'] = "Famas ACOG & Extended Mags";
-$w['famas_eotech_fmj_mp'] = "Famas Holographic Sight & FMJ";
-$w['famas_eotech_gl_mp'] = "Famas Holographic Sight & Grenade Launcher";
-$w['famas_eotech_heartbeat_mp'] = "Famas Holographic Sight & Heartbeat Sensor";
-$w['famas_eotech_shotgun_mp'] = "Famas Holographic Sight & Shotgun";
-$w['famas_eotech_silencer_mp'] = "Famas Holographic Sight & Silencer";
-$w['famas_eotech_xmags_mp'] = "Famas Holographic Sight & Extended Mags";
-$w['famas_fmj_gl_mp'] = "Famas FMJ & Grenade Launcher";
-$w['famas_fmj_heartbeat_mp'] = "Famas FMJ & Heartbeat Sensor";
-$w['famas_fmj_reflex_mp'] = "Famas FMJ & Reflex";
-$w['famas_fmj_shotgun_mp'] = "Famas FMJ & Shotgun";
-$w['famas_fmj_silencer_mp'] = "Famas FMJ & Silencer";
-$w['famas_fmj_thermal_mp'] = "Famas FMJ & Thermal Scope";
-$w['famas_fmj_xmags_mp'] = "Famas FMJ & Extended Mags";
-$w['famas_gl_heartbeat_mp'] = "Famas Grenade Launcer & Heartbeat Sensor";
-$w['famas_gl_reflex_mp'] = "Famas Grenade Launcer & Reflex";
-$w['famas_gl_silencer_mp'] = "Famas Grenade Launcer & Silencer";
-$w['famas_gl_thermal_mp'] = "Famas Grenade Launcer & Thermal Scope";
-$w['famas_gl_xmags_mp'] = "Famas Grenade Launcer & Extended Mags";
-$w['famas_heartbeat_reflex_mp'] = "Famas Heartbeat Sensor & Reflex";
-$w['famas_heartbeat_shotgun_mp'] = "Famas Heartbeat Sensor & Shotgun";
-$w['famas_heartbeat_silencer_mp'] = "Famas Heartbeat Sensor & Silencer";
-$w['famas_heartbeat_thermal_mp'] = "Famas Heartbeat Sensor & Thermal Scope";
-$w['famas_heartbeat_xmags_mp'] = "Famas Heartbeat Sensor & Extended Mags";
-$w['famas_reflex_shotgun_mp'] = "Famas Reflex & Shotgun";
-$w['famas_reflex_silencer_mp'] = "Famas Reflex & Silencer";
-$w['famas_reflex_xmags_mp'] = "Famas Reflex & Extended Mags";
-$w['famas_shotgun_silencer_mp'] = "Famas Shotgun & Silencer";
-$w['famas_shotgun_thermal_mp'] = "Famas Shotgun & Thermal Scope";
-$w['famas_shotgun_xmags_mp'] = "Famas Shotgun & Extended Mags";
-$w['famas_silencer_thermal_mp'] = "Famas Silencer & Thermal Scope";
-$w['famas_silencer_xmags_mp'] = "Famas Silencer & Extended Mags";
-$w['famas_thermal_xmags_mp'] = "Famas Thermal Scope & Extended Mags";
-$w['gl_famas_mp'] = "Grenade Launcher Famas";
-$w['famas_shotgun_attach_mp'] = "Famas Shotgun Attachment";
+		//Famas
+		'famas_mp' => array('Famas', 'description', 'image.png'),
+		'famas_acog_mp' => array('Famas ACOG', 'description', 'image.png'),
+		'famas_eotech_mp' => array('Famas Holographic Sight', 'description', 'image.png'),
+		'famas_fmj_mp' => array('Famas FMJ', 'description', 'image.png'),
+		'famas_gl_mp' => array('Famas Grenade Launcher', 'description', 'image.png'),
+		'famas_heartbeat_mp' => array('Famas Heartbeat Sensor', 'description', 'image.png'),
+		'famas_reflex_mp' => array('Famas Reflex', 'description', 'image.png'),
+		'famas_shotgun_mp' => array('Famas Shotgun', 'description', 'image.png'),
+		'famas_silencer_mp' => array('Famas Silencer', 'description', 'image.png'),
+		'famas_thermal_mp' => array('Famas Thermal Scope', 'description', 'image.png'),
+		'famas_xmags_mp' => array('Famas Extended Mags', 'description', 'image.png'),
+		'famas_acog_fmj_mp' => array('Famas ACOG & FMJ', 'description', 'image.png'),
+		'famas_acog_gl_mp' => array('Famas ACOG & Grenade Launcher', 'description', 'image.png'),
+		'famas_acog_heartbeat_mp' => array('Famas ACOG & Heartbeat Sensor', 'description', 'image.png'),
+		'famas_acog_shotgun_mp' => array('Famas ACOG & Shotgun', 'description', 'image.png'),
+		'famas_acog_silencer_mp' => array('Famas ACOG & Silencer', 'description', 'image.png'),
+		'famas_acog_xmags_mp' => array('Famas ACOG & Extended Mags', 'description', 'image.png'),
+		'famas_eotech_fmj_mp' => array('Famas Holographic Sight & FMJ', 'description', 'image.png'),
+		'famas_eotech_gl_mp' => array('Famas Holographic Sight & Grenade Launcher', 'description', 'image.png'),
+		'famas_eotech_heartbeat_mp' => array('Famas Holographic Sight & Heartbeat Sensor', 'description', 'image.png'),
+		'famas_eotech_shotgun_mp' => array('Famas Holographic Sight & Shotgun', 'description', 'image.png'),
+		'famas_eotech_silencer_mp' => array('Famas Holographic Sight & Silencer', 'description', 'image.png'),
+		'famas_eotech_xmags_mp' => array('Famas Holographic Sight & Extended Mags', 'description', 'image.png'),
+		'famas_fmj_gl_mp' => array('Famas FMJ & Grenade Launcher', 'description', 'image.png'),
+		'famas_fmj_heartbeat_mp' => array('Famas FMJ & Heartbeat Sensor', 'description', 'image.png'),
+		'famas_fmj_reflex_mp' => array('Famas FMJ & Reflex', 'description', 'image.png'),
+		'famas_fmj_shotgun_mp' => array('Famas FMJ & Shotgun', 'description', 'image.png'),
+		'famas_fmj_silencer_mp' => array('Famas FMJ & Silencer', 'description', 'image.png'),
+		'famas_fmj_thermal_mp' => array('Famas FMJ & Thermal Scope', 'description', 'image.png'),
+		'famas_fmj_xmags_mp' => array('Famas FMJ & Extended Mags', 'description', 'image.png'),
+		'famas_gl_heartbeat_mp' => array('Famas Grenade Launcer & Heartbeat Sensor', 'description', 'image.png'),
+		'famas_gl_reflex_mp' => array('Famas Grenade Launcer & Reflex', 'description', 'image.png'),
+		'famas_gl_silencer_mp' => array('Famas Grenade Launcer & Silencer', 'description', 'image.png'),
+		'famas_gl_thermal_mp' => array('Famas Grenade Launcer & Thermal Scope', 'description', 'image.png'),
+		'famas_gl_xmags_mp' => array('Famas Grenade Launcer & Extended Mags', 'description', 'image.png'),
+		'famas_heartbeat_reflex_mp' => array('Famas Heartbeat Sensor & Reflex', 'description', 'image.png'),
+		'famas_heartbeat_shotgun_mp' => array('Famas Heartbeat Sensor & Shotgun', 'description', 'image.png'),
+		'famas_heartbeat_silencer_mp' => array('Famas Heartbeat Sensor & Silencer', 'description', 'image.png'),
+		'famas_heartbeat_thermal_mp' => array('Famas Heartbeat Sensor & Thermal Scope', 'description', 'image.png'),
+		'famas_heartbeat_xmags_mp' => array('Famas Heartbeat Sensor & Extended Mags', 'description', 'image.png'),
+		'famas_reflex_shotgun_mp' => array('Famas Reflex & Shotgun', 'description', 'image.png'),
+		'famas_reflex_silencer_mp' => array('Famas Reflex & Silencer', 'description', 'image.png'),
+		'famas_reflex_xmags_mp' => array('Famas Reflex & Extended Mags', 'description', 'image.png'),
+		'famas_shotgun_silencer_mp' => array('Famas Shotgun & Silencer', 'description', 'image.png'),
+		'famas_shotgun_thermal_mp' => array('Famas Shotgun & Thermal Scope', 'description', 'image.png'),
+		'famas_shotgun_xmags_mp' => array('Famas Shotgun & Extended Mags', 'description', 'image.png'),
+		'famas_silencer_thermal_mp' => array('Famas Silencer & Thermal Scope', 'description', 'image.png'),
+		'famas_silencer_xmags_mp' => array('Famas Silencer & Extended Mags', 'description', 'image.png'),
+		'famas_thermal_xmags_mp' => array('Famas Thermal Scope & Extended Mags', 'description', 'image.png'),
+		'gl_famas_mp' => array('Grenade Launcher Famas', 'description', 'image.png'),
+		'famas_shotgun_attach_mp' => array('Famas Shotgun Attachment', 'description', 'image.png'),
 
-//FAL
-$w['fal_mp'] = "FAL";
-$w['fal_acog_mp'] = "FAL ACOG";
-$w['fal_eotech_mp'] = "FAL Holographic Sight";
-$w['fal_fmj_mp'] = "FAL FMJ";
-$w['fal_gl_mp'] = "FAL Grenade Launcher";
-$w['fal_heartbeat_mp'] = "FAL Heartbeat Sensor";
-$w['fal_reflex_mp'] = "FAL Reflex";
-$w['fal_shotgun_mp'] = "FAL Shotgun";
-$w['fal_silencer_mp'] = "FAL Silencer";
-$w['fal_thermal_mp'] = "FAL Thermal Scope";
-$w['fal_xmags_mp'] = "FAL Extended Mags";
-$w['fal_acog_fmj_mp'] = "FAL ACOG & FMJ";
-$w['fal_acog_gl_mp'] = "FAL ACOG & Grenade Launcher";
-$w['fal_acog_heartbeat_mp'] = "FAL ACOG & Heartbeat Sensor";
-$w['fal_acog_shotgun_mp'] = "FAL ACOG & Shotgun";
-$w['fal_acog_silencer_mp'] = "FAL ACOG & Silencer";
-$w['fal_acog_xmags_mp'] = "FAL ACOG & Extended Mags";
-$w['fal_eotech_fmj_mp'] = "FAL Holographic Sight & FMJ";
-$w['fal_eotech_gl_mp'] = "FAL Holographic Sight & Grenade Launcher";
-$w['fal_eotech_heartbeat_mp'] = "FAL Holographic Sight & Heartbeat Sensor";
-$w['fal_eotech_shotgun_mp'] = "FAL Holographic Sight & Shotgun";
-$w['fal_eotech_silencer_mp'] = "FAL Holographic Sight & Silencer";
-$w['fal_eotech_xmags_mp'] = "FAL Holographic Sight & Extended Mags";
-$w['fal_fmj_gl_mp'] = "FAL FMJ & Grenade Launcher";
-$w['fal_fmj_heartbeat_mp'] = "FAL FMJ & Heartbeat Sensor";
-$w['fal_fmj_reflex_mp'] = "FAL FMJ & Reflex";
-$w['fal_fmj_shotgun_mp'] = "FAL FMJ & Shotgun";
-$w['fal_fmj_silencer_mp'] = "FAL FMJ & Silencer";
-$w['fal_fmj_thermal_mp'] = "FAL FMJ & Thermal Scope";
-$w['fal_fmj_xmags_mp'] = "FAL FMJ & Extended Mags";
-$w['fal_gl_heartbeat_mp'] = "FAL Grenade Launcer & Heartbeat Sensor";
-$w['fal_gl_reflex_mp'] = "FAL Grenade Launcer & Reflex";
-$w['fal_gl_silencer_mp'] = "FAL Grenade Launcer & Silencer";
-$w['fal_gl_thermal_mp'] = "FAL Grenade Launcer & Thermal Scope";
-$w['fal_gl_xmags_mp'] = "FAL Grenade Launcer & Extended Mags";
-$w['fal_heartbeat_reflex_mp'] = "FAL Heartbeat Sensor & Reflex";
-$w['fal_heartbeat_shotgun_mp'] = "FAL Heartbeat Sensor & Shotgun";
-$w['fal_heartbeat_silencer_mp'] = "FAL Heartbeat Sensor & Silencer";
-$w['fal_heartbeat_thermal_mp'] = "FAL Heartbeat Sensor & Thermal Scope";
-$w['fal_heartbeat_xmags_mp'] = "FAL Heartbeat Sensor & Extended Mags";
-$w['fal_reflex_shotgun_mp'] = "FAL Reflex & Shotgun";
-$w['fal_reflex_silencer_mp'] = "FAL Reflex & Silencer";
-$w['fal_reflex_xmags_mp'] = "FAL Reflex & Extended Mags";
-$w['fal_shotgun_silencer_mp'] = "FAL Shotgun & Silencer";
-$w['fal_shotgun_thermal_mp'] = "FAL Shotgun & Thermal Scope";
-$w['fal_shotgun_xmags_mp'] = "FAL Shotgun & Extended Mags";
-$w['fal_silencer_thermal_mp'] = "FAL Silencer & Thermal Scope";
-$w['fal_silencer_xmags_mp'] = "FAL Silencer & Extended Mags";
-$w['fal_thermal_xmags_mp'] = "FAL Thermal Scope & Extended Mags";
-$w['gl_fal_mp'] = "Grenade Launcher FAL";
-$w['fal_shotgun_attach_mp'] = "FAL Shotgun Attachment";
+		//FAL
+		'fal_mp' => array('FAL', 'description', 'image.png'),
+		'fal_acog_mp' => array('FAL ACOG', 'description', 'image.png'),
+		'fal_eotech_mp' => array('FAL Holographic Sight', 'description', 'image.png'),
+		'fal_fmj_mp' => array('FAL FMJ', 'description', 'image.png'),
+		'fal_gl_mp' => array('FAL Grenade Launcher', 'description', 'image.png'),
+		'fal_heartbeat_mp' => array('FAL Heartbeat Sensor', 'description', 'image.png'),
+		'fal_reflex_mp' => array('FAL Reflex', 'description', 'image.png'),
+		'fal_shotgun_mp' => array('FAL Shotgun', 'description', 'image.png'),
+		'fal_silencer_mp' => array('FAL Silencer', 'description', 'image.png'),
+		'fal_thermal_mp' => array('FAL Thermal Scope', 'description', 'image.png'),
+		'fal_xmags_mp' => array('FAL Extended Mags', 'description', 'image.png'),
+		'fal_acog_fmj_mp' => array('FAL ACOG & FMJ', 'description', 'image.png'),
+		'fal_acog_gl_mp' => array('FAL ACOG & Grenade Launcher', 'description', 'image.png'),
+		'fal_acog_heartbeat_mp' => array('FAL ACOG & Heartbeat Sensor', 'description', 'image.png'),
+		'fal_acog_shotgun_mp' => array('FAL ACOG & Shotgun', 'description', 'image.png'),
+		'fal_acog_silencer_mp' => array('FAL ACOG & Silencer', 'description', 'image.png'),
+		'fal_acog_xmags_mp' => array('FAL ACOG & Extended Mags', 'description', 'image.png'),
+		'fal_eotech_fmj_mp' => array('FAL Holographic Sight & FMJ', 'description', 'image.png'),
+		'fal_eotech_gl_mp' => array('FAL Holographic Sight & Grenade Launcher', 'description', 'image.png'),
+		'fal_eotech_heartbeat_mp' => array('FAL Holographic Sight & Heartbeat Sensor', 'description', 'image.png'),
+		'fal_eotech_shotgun_mp' => array('FAL Holographic Sight & Shotgun', 'description', 'image.png'),
+		'fal_eotech_silencer_mp' => array('FAL Holographic Sight & Silencer', 'description', 'image.png'),
+		'fal_eotech_xmags_mp' => array('FAL Holographic Sight & Extended Mags', 'description', 'image.png'),
+		'fal_fmj_gl_mp' => array('FAL FMJ & Grenade Launcher', 'description', 'image.png'),
+		'fal_fmj_heartbeat_mp' => array('FAL FMJ & Heartbeat Sensor', 'description', 'image.png'),
+		'fal_fmj_reflex_mp' => array('FAL FMJ & Reflex', 'description', 'image.png'),
+		'fal_fmj_shotgun_mp' => array('FAL FMJ & Shotgun', 'description', 'image.png'),
+		'fal_fmj_silencer_mp' => array('FAL FMJ & Silencer', 'description', 'image.png'),
+		'fal_fmj_thermal_mp' => array('FAL FMJ & Thermal Scope', 'description', 'image.png'),
+		'fal_fmj_xmags_mp' => array('FAL FMJ & Extended Mags', 'description', 'image.png'),
+		'fal_gl_heartbeat_mp' => array('FAL Grenade Launcer & Heartbeat Sensor', 'description', 'image.png'),
+		'fal_gl_reflex_mp' => array('FAL Grenade Launcer & Reflex', 'description', 'image.png'),
+		'fal_gl_silencer_mp' => array('FAL Grenade Launcer & Silencer', 'description', 'image.png'),
+		'fal_gl_thermal_mp' => array('FAL Grenade Launcer & Thermal Scope', 'description', 'image.png'),
+		'fal_gl_xmags_mp' => array('FAL Grenade Launcer & Extended Mags', 'description', 'image.png'),
+		'fal_heartbeat_reflex_mp' => array('FAL Heartbeat Sensor & Reflex', 'description', 'image.png'),
+		'fal_heartbeat_shotgun_mp' => array('FAL Heartbeat Sensor & Shotgun', 'description', 'image.png'),
+		'fal_heartbeat_silencer_mp' => array('FAL Heartbeat Sensor & Silencer', 'description', 'image.png'),
+		'fal_heartbeat_thermal_mp' => array('FAL Heartbeat Sensor & Thermal Scope', 'description', 'image.png'),
+		'fal_heartbeat_xmags_mp' => array('FAL Heartbeat Sensor & Extended Mags', 'description', 'image.png'),
+		'fal_reflex_shotgun_mp' => array('FAL Reflex & Shotgun', 'description', 'image.png'),
+		'fal_reflex_silencer_mp' => array('FAL Reflex & Silencer', 'description', 'image.png'),
+		'fal_reflex_xmags_mp' => array('FAL Reflex & Extended Mags', 'description', 'image.png'),
+		'fal_shotgun_silencer_mp' => array('FAL Shotgun & Silencer', 'description', 'image.png'),
+		'fal_shotgun_thermal_mp' => array('FAL Shotgun & Thermal Scope', 'description', 'image.png'),
+		'fal_shotgun_xmags_mp' => array('FAL Shotgun & Extended Mags', 'description', 'image.png'),
+		'fal_silencer_thermal_mp' => array('FAL Silencer & Thermal Scope', 'description', 'image.png'),
+		'fal_silencer_xmags_mp' => array('FAL Silencer & Extended Mags', 'description', 'image.png'),
+		'fal_thermal_xmags_mp' => array('FAL Thermal Scope & Extended Mags', 'description', 'image.png'),
+		'gl_fal_mp' => array('Grenade Launcher FAL', 'description', 'image.png'),
+		'fal_shotgun_attach_mp' => array('FAL Shotgun Attachment', 'description', 'image.png'),
 
-//Scar-H
-$w['scar_mp'] = "Scar-H";
-$w['scar_acog_mp'] = "Scar-H ACOG";
-$w['scar_eotech_mp'] = "Scar-H Holographic Sight";
-$w['scar_fmj_mp'] = "Scar-H FMJ";
-$w['scar_gl_mp'] = "Scar-H Grenade Launcher";
-$w['scar_heartbeat_mp'] = "Scar-H Heartbeat Sensor";
-$w['scar_reflex_mp'] = "Scar-H Reflex";
-$w['scar_shotgun_mp'] = "Scar-H Shotgun";
-$w['scar_silencer_mp'] = "Scar-H Silencer";
-$w['scar_thermal_mp'] = "Scar-H Thermal Scope";
-$w['scar_xmags_mp'] = "Scar-H Extended Mags";
-$w['scar_acog_fmj_mp'] = "Scar-H ACOG & FMJ";
-$w['scar_acog_gl_mp'] = "Scar-H ACOG & Grenade Launcher";
-$w['scar_acog_heartbeat_mp'] = "Scar-H ACOG & Heartbeat Sensor";
-$w['scar_acog_shotgun_mp'] = "Scar-H ACOG & Shotgun";
-$w['scar_acog_silencer_mp'] = "Scar-H ACOG & Silencer";
-$w['scar_acog_xmags_mp'] = "Scar-H ACOG & Extended Mags";
-$w['scar_eotech_fmj_mp'] = "Scar-H Holographic Sight & FMJ";
-$w['scar_eotech_gl_mp'] = "Scar-H Holographic Sight & Grenade Launcher";
-$w['scar_eotech_heartbeat_mp'] = "Scar-H Holographic Sight & Heartbeat Sensor";
-$w['scar_eotech_shotgun_mp'] = "Scar-H Holographic Sight & Shotgun";
-$w['scar_eotech_silencer_mp'] = "Scar-H Holographic Sight & Silencer";
-$w['scar_eotech_xmags_mp'] = "Scar-H Holographic Sight & Extended Mags";
-$w['scar_fmj_gl_mp'] = "Scar-H FMJ & Grenade Launcher";
-$w['scar_fmj_heartbeat_mp'] = "Scar-H FMJ & Heartbeat Sensor";
-$w['scar_fmj_reflex_mp'] = "Scar-H FMJ & Reflex";
-$w['scar_fmj_shotgun_mp'] = "Scar-H FMJ & Shotgun";
-$w['scar_fmj_silencer_mp'] = "Scar-H FMJ & Silencer";
-$w['scar_fmj_thermal_mp'] = "Scar-H FMJ & Thermal Scope";
-$w['scar_fmj_xmags_mp'] = "Scar-H FMJ & Extended Mags";
-$w['scar_gl_heartbeat_mp'] = "Scar-H Grenade Launcer & Heartbeat Sensor";
-$w['scar_gl_reflex_mp'] = "Scar-H Grenade Launcer & Reflex";
-$w['scar_gl_silencer_mp'] = "Scar-H Grenade Launcer & Silencer";
-$w['scar_gl_thermal_mp'] = "Scar-H Grenade Launcer & Thermal Scope";
-$w['scar_gl_xmags_mp'] = "Scar-H Grenade Launcer & Extended Mags";
-$w['scar_heartbeat_reflex_mp'] = "Scar-H Heartbeat Sensor & Reflex";
-$w['scar_heartbeat_shotgun_mp'] = "Scar-H Heartbeat Sensor & Shotgun";
-$w['scar_heartbeat_silencer_mp'] = "Scar-H Heartbeat Sensor & Silencer";
-$w['scar_heartbeat_thermal_mp'] = "Scar-H Heartbeat Sensor & Thermal Scope";
-$w['scar_heartbeat_xmags_mp'] = "Scar-H Heartbeat Sensor & Extended Mags";
-$w['scar_reflex_shotgun_mp'] = "Scar-H Reflex & Shotgun";
-$w['scar_reflex_silencer_mp'] = "Scar-H Reflex & Silencer";
-$w['scar_reflex_xmags_mp'] = "Scar-H Reflex & Extended Mags";
-$w['scar_shotgun_silencer_mp'] = "Scar-H Shotgun & Silencer";
-$w['scar_shotgun_thermal_mp'] = "Scar-H Shotgun & Thermal Scope";
-$w['scar_shotgun_xmags_mp'] = "Scar-H Shotgun & Extended Mags";
-$w['scar_silencer_thermal_mp'] = "Scar-H Silencer & Thermal Scope";
-$w['scar_silencer_xmags_mp'] = "Scar-H Silencer & Extended Mags";
-$w['scar_thermal_xmags_mp'] = "Scar-H Thermal Scope & Extended Mags";
-$w['gl_scar_mp'] = "Grenade Launcher Scar-H";
-$w['scar_shotgun_attach_mp'] = "Scar-H Shotgun Attachment";
+		//Scar-H
+		'scar_mp' => array('Scar-H', 'description', 'image.png'),
+		'scar_acog_mp' => array('Scar-H ACOG', 'description', 'image.png'),
+		'scar_eotech_mp' => array('Scar-H Holographic Sight', 'description', 'image.png'),
+		'scar_fmj_mp' => array('Scar-H FMJ', 'description', 'image.png'),
+		'scar_gl_mp' => array('Scar-H Grenade Launcher', 'description', 'image.png'),
+		'scar_heartbeat_mp' => array('Scar-H Heartbeat Sensor', 'description', 'image.png'),
+		'scar_reflex_mp' => array('Scar-H Reflex', 'description', 'image.png'),
+		'scar_shotgun_mp' => array('Scar-H Shotgun', 'description', 'image.png'),
+		'scar_silencer_mp' => array('Scar-H Silencer', 'description', 'image.png'),
+		'scar_thermal_mp' => array('Scar-H Thermal Scope', 'description', 'image.png'),
+		'scar_xmags_mp' => array('Scar-H Extended Mags', 'description', 'image.png'),
+		'scar_acog_fmj_mp' => array('Scar-H ACOG & FMJ', 'description', 'image.png'),
+		'scar_acog_gl_mp' => array('Scar-H ACOG & Grenade Launcher', 'description', 'image.png'),
+		'scar_acog_heartbeat_mp' => array('Scar-H ACOG & Heartbeat Sensor', 'description', 'image.png'),
+		'scar_acog_shotgun_mp' => array('Scar-H ACOG & Shotgun', 'description', 'image.png'),
+		'scar_acog_silencer_mp' => array('Scar-H ACOG & Silencer', 'description', 'image.png'),
+		'scar_acog_xmags_mp' => array('Scar-H ACOG & Extended Mags', 'description', 'image.png'),
+		'scar_eotech_fmj_mp' => array('Scar-H Holographic Sight & FMJ', 'description', 'image.png'),
+		'scar_eotech_gl_mp' => array('Scar-H Holographic Sight & Grenade Launcher', 'description', 'image.png'),
+		'scar_eotech_heartbeat_mp' => array('Scar-H Holographic Sight & Heartbeat Sensor', 'description', 'image.png'),
+		'scar_eotech_shotgun_mp' => array('Scar-H Holographic Sight & Shotgun', 'description', 'image.png'),
+		'scar_eotech_silencer_mp' => array('Scar-H Holographic Sight & Silencer', 'description', 'image.png'),
+		'scar_eotech_xmags_mp' => array('Scar-H Holographic Sight & Extended Mags', 'description', 'image.png'),
+		'scar_fmj_gl_mp' => array('Scar-H FMJ & Grenade Launcher', 'description', 'image.png'),
+		'scar_fmj_heartbeat_mp' => array('Scar-H FMJ & Heartbeat Sensor', 'description', 'image.png'),
+		'scar_fmj_reflex_mp' => array('Scar-H FMJ & Reflex', 'description', 'image.png'),
+		'scar_fmj_shotgun_mp' => array('Scar-H FMJ & Shotgun', 'description', 'image.png'),
+		'scar_fmj_silencer_mp' => array('Scar-H FMJ & Silencer', 'description', 'image.png'),
+		'scar_fmj_thermal_mp' => array('Scar-H FMJ & Thermal Scope', 'description', 'image.png'),
+		'scar_fmj_xmags_mp' => array('Scar-H FMJ & Extended Mags', 'description', 'image.png'),
+		'scar_gl_heartbeat_mp' => array('Scar-H Grenade Launcer & Heartbeat Sensor', 'description', 'image.png'),
+		'scar_gl_reflex_mp' => array('Scar-H Grenade Launcer & Reflex', 'description', 'image.png'),
+		'scar_gl_silencer_mp' => array('Scar-H Grenade Launcer & Silencer', 'description', 'image.png'),
+		'scar_gl_thermal_mp' => array('Scar-H Grenade Launcer & Thermal Scope', 'description', 'image.png'),
+		'scar_gl_xmags_mp' => array('Scar-H Grenade Launcer & Extended Mags', 'description', 'image.png'),
+		'scar_heartbeat_reflex_mp' => array('Scar-H Heartbeat Sensor & Reflex', 'description', 'image.png'),
+		'scar_heartbeat_shotgun_mp' => array('Scar-H Heartbeat Sensor & Shotgun', 'description', 'image.png'),
+		'scar_heartbeat_silencer_mp' => array('Scar-H Heartbeat Sensor & Silencer', 'description', 'image.png'),
+		'scar_heartbeat_thermal_mp' => array('Scar-H Heartbeat Sensor & Thermal Scope', 'description', 'image.png'),
+		'scar_heartbeat_xmags_mp' => array('Scar-H Heartbeat Sensor & Extended Mags', 'description', 'image.png'),
+		'scar_reflex_shotgun_mp' => array('Scar-H Reflex & Shotgun', 'description', 'image.png'),
+		'scar_reflex_silencer_mp' => array('Scar-H Reflex & Silencer', 'description', 'image.png'),
+		'scar_reflex_xmags_mp' => array('Scar-H Reflex & Extended Mags', 'description', 'image.png'),
+		'scar_shotgun_silencer_mp' => array('Scar-H Shotgun & Silencer', 'description', 'image.png'),
+		'scar_shotgun_thermal_mp' => array('Scar-H Shotgun & Thermal Scope', 'description', 'image.png'),
+		'scar_shotgun_xmags_mp' => array('Scar-H Shotgun & Extended Mags', 'description', 'image.png'),
+		'scar_silencer_thermal_mp' => array('Scar-H Silencer & Thermal Scope', 'description', 'image.png'),
+		'scar_silencer_xmags_mp' => array('Scar-H Silencer & Extended Mags', 'description', 'image.png'),
+		'scar_thermal_xmags_mp' => array('Scar-H Thermal Scope & Extended Mags', 'description', 'image.png'),
+		'gl_scar_mp' => array('Grenade Launcher Scar-H', 'description', 'image.png'),
+		'scar_shotgun_attach_mp' => array('Scar-H Shotgun Attachment', 'description', 'image.png'),
 
-//TAR-21
-$w['tavor_mp'] = "TAR-21";
-$w['tavor_acog_mp'] = "TAR-21 ACOG";
-$w['tavor_eotech_mp'] = "TAR-21 Holographic Sight";
-$w['tavor_fmj_mp'] = "TAR-21 FMJ";
-$w['tavor_gl_mp'] = "TAR-21 Grenade Launcher";
-$w['tavor_heartbeat_mp'] = "TAR-21 Heartbeat Sensor";
-$w['tavor_reflex_mp'] = "TAR-21 Reflex";
-$w['tavor_shotgun_mp'] = "TAR-21 Shotgun";
-$w['tavor_silencer_mp'] = "TAR-21 Silencer";
-$w['tavor_thermal_mp'] = "TAR-21 Thermal Scope";
-$w['tavor_xmags_mp'] = "TAR-21 Extended Mags";
-$w['tavor_acog_fmj_mp'] = "TAR-21 ACOG & FMJ";
-$w['tavor_acog_gl_mp'] = "TAR-21 ACOG & Grenade Launcher";
-$w['tavor_acog_heartbeat_mp'] = "TAR-21 ACOG & Heartbeat Sensor";
-$w['tavor_acog_shotgun_mp'] = "TAR-21 ACOG & Shotgun";
-$w['tavor_acog_silencer_mp'] = "TAR-21 ACOG & Silencer";
-$w['tavor_acog_xmags_mp'] = "TAR-21 ACOG & Extended Mags";
-$w['tavor_eotech_fmj_mp'] = "TAR-21 Holographic Sight & FMJ";
-$w['tavor_eotech_gl_mp'] = "TAR-21 Holographic Sight & Grenade Launcher";
-$w['tavor_eotech_heartbeat_mp'] = "TAR-21 Holographic Sight & Heartbeat Sensor";
-$w['tavor_eotech_shotgun_mp'] = "TAR-21 Holographic Sight & Shotgun";
-$w['tavor_eotech_silencer_mp'] = "TAR-21 Holographic Sight & Silencer";
-$w['tavor_eotech_xmags_mp'] = "TAR-21 Holographic Sight & Extended Mags";
-$w['tavor_fmj_gl_mp'] = "TAR-21 FMJ & Grenade Launcher";
-$w['tavor_fmj_heartbeat_mp'] = "TAR-21 FMJ & Heartbeat Sensor";
-$w['tavor_fmj_reflex_mp'] = "TAR-21 FMJ & Reflex";
-$w['tavor_fmj_shotgun_mp'] = "TAR-21 FMJ & Shotgun";
-$w['tavor_fmj_silencer_mp'] = "TAR-21 FMJ & Silencer";
-$w['tavor_fmj_thermal_mp'] = "TAR-21 FMJ & Thermal Scope";
-$w['tavor_fmj_xmags_mp'] = "TAR-21 FMJ & Extended Mags";
-$w['tavor_gl_heartbeat_mp'] = "TAR-21 Grenade Launcer & Heartbeat Sensor";
-$w['tavor_gl_reflex_mp'] = "TAR-21 Grenade Launcer & Reflex";
-$w['tavor_gl_silencer_mp'] = "TAR-21 Grenade Launcer & Silencer";
-$w['tavor_gl_thermal_mp'] = "TAR-21 Grenade Launcer & Thermal Scope";
-$w['tavor_gl_xmags_mp'] = "TAR-21 Grenade Launcer & Extended Mags";
-$w['tavor_heartbeat_reflex_mp'] = "TAR-21 Heartbeat Sensor & Reflex";
-$w['tavor_heartbeat_shotgun_mp'] = "TAR-21 Heartbeat Sensor & Shotgun";
-$w['tavor_heartbeat_silencer_mp'] = "TAR-21 Heartbeat Sensor & Silencer";
-$w['tavor_heartbeat_thermal_mp'] = "TAR-21 Heartbeat Sensor & Thermal Scope";
-$w['tavor_heartbeat_xmags_mp'] = "TAR-21 Heartbeat Sensor & Extended Mags";
-$w['tavor_reflex_shotgun_mp'] = "TAR-21 Reflex & Shotgun";
-$w['tavor_reflex_silencer_mp'] = "TAR-21 Reflex & Silencer";
-$w['tavor_reflex_xmags_mp'] = "TAR-21 Reflex & Extended Mags";
-$w['tavor_shotgun_silencer_mp'] = "TAR-21 Shotgun & Silencer";
-$w['tavor_shotgun_thermal_mp'] = "TAR-21 Shotgun & Thermal Scope";
-$w['tavor_shotgun_xmags_mp'] = "TAR-21 Shotgun & Extended Mags";
-$w['tavor_silencer_thermal_mp'] = "TAR-21 Silencer & Thermal Scope";
-$w['tavor_silencer_xmags_mp'] = "TAR-21 Silencer & Extended Mags";
-$w['tavor_thermal_xmags_mp'] = "TAR-21 Thermal Scope & Extended Mags";
-$w['gl_tavor_mp'] = "Grenade Launcher TAR-21";
-$w['tavor_shotgun_attach_mp'] = "TAR-21 Shotgun Attachment";
+		//TAR-21
+		'tavor_mp' => array('TAR-21', 'description', 'image.png'),
+		'tavor_acog_mp' => array('TAR-21 ACOG', 'description', 'image.png'),
+		'tavor_eotech_mp' => array('TAR-21 Holographic Sight', 'description', 'image.png'),
+		'tavor_fmj_mp' => array('TAR-21 FMJ', 'description', 'image.png'),
+		'tavor_gl_mp' => array('TAR-21 Grenade Launcher', 'description', 'image.png'),
+		'tavor_heartbeat_mp' => array('TAR-21 Heartbeat Sensor', 'description', 'image.png'),
+		'tavor_reflex_mp' => array('TAR-21 Reflex', 'description', 'image.png'),
+		'tavor_shotgun_mp' => array('TAR-21 Shotgun', 'description', 'image.png'),
+		'tavor_silencer_mp' => array('TAR-21 Silencer', 'description', 'image.png'),
+		'tavor_thermal_mp' => array('TAR-21 Thermal Scope', 'description', 'image.png'),
+		'tavor_xmags_mp' => array('TAR-21 Extended Mags', 'description', 'image.png'),
+		'tavor_acog_fmj_mp' => array('TAR-21 ACOG & FMJ', 'description', 'image.png'),
+		'tavor_acog_gl_mp' => array('TAR-21 ACOG & Grenade Launcher', 'description', 'image.png'),
+		'tavor_acog_heartbeat_mp' => array('TAR-21 ACOG & Heartbeat Sensor', 'description', 'image.png'),
+		'tavor_acog_shotgun_mp' => array('TAR-21 ACOG & Shotgun', 'description', 'image.png'),
+		'tavor_acog_silencer_mp' => array('TAR-21 ACOG & Silencer', 'description', 'image.png'),
+		'tavor_acog_xmags_mp' => array('TAR-21 ACOG & Extended Mags', 'description', 'image.png'),
+		'tavor_eotech_fmj_mp' => array('TAR-21 Holographic Sight & FMJ', 'description', 'image.png'),
+		'tavor_eotech_gl_mp' => array('TAR-21 Holographic Sight & Grenade Launcher', 'description', 'image.png'),
+		'tavor_eotech_heartbeat_mp' => array('TAR-21 Holographic Sight & Heartbeat Sensor', 'description', 'image.png'),
+		'tavor_eotech_shotgun_mp' => array('TAR-21 Holographic Sight & Shotgun', 'description', 'image.png'),
+		'tavor_eotech_silencer_mp' => array('TAR-21 Holographic Sight & Silencer', 'description', 'image.png'),
+		'tavor_eotech_xmags_mp' => array('TAR-21 Holographic Sight & Extended Mags', 'description', 'image.png'),
+		'tavor_fmj_gl_mp' => array('TAR-21 FMJ & Grenade Launcher', 'description', 'image.png'),
+		'tavor_fmj_heartbeat_mp' => array('TAR-21 FMJ & Heartbeat Sensor', 'description', 'image.png'),
+		'tavor_fmj_reflex_mp' => array('TAR-21 FMJ & Reflex', 'description', 'image.png'),
+		'tavor_fmj_shotgun_mp' => array('TAR-21 FMJ & Shotgun', 'description', 'image.png'),
+		'tavor_fmj_silencer_mp' => array('TAR-21 FMJ & Silencer', 'description', 'image.png'),
+		'tavor_fmj_thermal_mp' => array('TAR-21 FMJ & Thermal Scope', 'description', 'image.png'),
+		'tavor_fmj_xmags_mp' => array('TAR-21 FMJ & Extended Mags', 'description', 'image.png'),
+		'tavor_gl_heartbeat_mp' => array('TAR-21 Grenade Launcer & Heartbeat Sensor', 'description', 'image.png'),
+		'tavor_gl_reflex_mp' => array('TAR-21 Grenade Launcer & Reflex', 'description', 'image.png'),
+		'tavor_gl_silencer_mp' => array('TAR-21 Grenade Launcer & Silencer', 'description', 'image.png'),
+		'tavor_gl_thermal_mp' => array('TAR-21 Grenade Launcer & Thermal Scope', 'description', 'image.png'),
+		'tavor_gl_xmags_mp' => array('TAR-21 Grenade Launcer & Extended Mags', 'description', 'image.png'),
+		'tavor_heartbeat_reflex_mp' => array('TAR-21 Heartbeat Sensor & Reflex', 'description', 'image.png'),
+		'tavor_heartbeat_shotgun_mp' => array('TAR-21 Heartbeat Sensor & Shotgun', 'description', 'image.png'),
+		'tavor_heartbeat_silencer_mp' => array('TAR-21 Heartbeat Sensor & Silencer', 'description', 'image.png'),
+		'tavor_heartbeat_thermal_mp' => array('TAR-21 Heartbeat Sensor & Thermal Scope', 'description', 'image.png'),
+		'tavor_heartbeat_xmags_mp' => array('TAR-21 Heartbeat Sensor & Extended Mags', 'description', 'image.png'),
+		'tavor_reflex_shotgun_mp' => array('TAR-21 Reflex & Shotgun', 'description', 'image.png'),
+		'tavor_reflex_silencer_mp' => array('TAR-21 Reflex & Silencer', 'description', 'image.png'),
+		'tavor_reflex_xmags_mp' => array('TAR-21 Reflex & Extended Mags', 'description', 'image.png'),
+		'tavor_shotgun_silencer_mp' => array('TAR-21 Shotgun & Silencer', 'description', 'image.png'),
+		'tavor_shotgun_thermal_mp' => array('TAR-21 Shotgun & Thermal Scope', 'description', 'image.png'),
+		'tavor_shotgun_xmags_mp' => array('TAR-21 Shotgun & Extended Mags', 'description', 'image.png'),
+		'tavor_silencer_thermal_mp' => array('TAR-21 Silencer & Thermal Scope', 'description', 'image.png'),
+		'tavor_silencer_xmags_mp' => array('TAR-21 Silencer & Extended Mags', 'description', 'image.png'),
+		'tavor_thermal_xmags_mp' => array('TAR-21 Thermal Scope & Extended Mags', 'description', 'image.png'),
+		'gl_tavor_mp' => array('Grenade Launcher TAR-21', 'description', 'image.png'),
+		'tavor_shotgun_attach_mp' => array('TAR-21 Shotgun Attachment', 'description', 'image.png'),
 
-//M16A4
-$w['m16_mp'] = "M16A4";
-$w['m16_acog_mp'] = "M16A4 ACOG";
-$w['m16_eotech_mp'] = "M16A4 Hologhraphic Sight";
-$w['m16_fmj_mp'] = "M16A4 FMJ";
-$w['m16_gl_mp'] = "M16A4 Grenade Launcher";
-$w['m16_heartbeat_mp'] = "M16A4 Heartbeat Sensor";
-$w['m16_reflex_mp'] = "M16A4 Reflex";
-$w['m16_shotgun_mp'] = "M16A4 Shotgun";
-$w['m16_silencer_mp'] = "M16A4 Silencer";
-$w['m16_thermal_mp'] = "M16A4 Thermal Scope";
-$w['m16_xmags_mp'] = "M16A4 Extended Mags";
-$w['m16_acog_fmj_mp'] = "M16A4 ACOG & FMJ";
-$w['m16_acog_gl_mp'] = "M16A4 ACOG & Grenade Launcher";
-$w['m16_acog_heartbeat_mp'] = "M16A4 ACOG & Heartbeat Sensor";
-$w['m16_acog_shotgun_mp'] = "M16A4 ACOG & Shotgun";
-$w['m16_acog_silencer_mp'] = "M16A4 ACOG & Silencer";
-$w['m16_acog_xmags_mp'] = "M16A4 ACOG & Extended Mags";
-$w['m16_eotech_fmj_mp'] = "M16A4 Hologhraphic Sight & FMJ";
-$w['m16_eotech_gl_mp'] = "M16A4 Hologhraphic Sight & Grenade Launcher";
-$w['m16_eotech_heartbeat_mp'] = "M16A4 Hologhraphic Sight & heartbeat Sensor";
-$w['m16_eotech_shotgun_mp'] = "M16A4 Hologhraphic Sight & Shotgun";
-$w['m16_eotech_silencer_mp'] = "M16A4 Hologhraphic Sight & Silencer";
-$w['m16_eotech_xmags_mp'] = "M16A4 Hologhraphic Sight & Extended Mags";
-$w['m16_fmj_gl_mp'] = "M16A4 FMJ & Grenade Launcher";
-$w['m16_fmj_heartbeat_mp'] = "M16A4 FMJ & Heartbeat Sensor";
-$w['m16_fmj_reflex_mp'] = "M16A4 FMJ & Reflex";
-$w['m16_fmj_shotgun_mp'] = "M16A4 FMJ & Shotgun";
-$w['m16_fmj_silencer_mp'] = "M16A4 FMJ & Silencer";
-$w['m16_reflex_silencer_mp'] = "M16A4 Reflex & Silencer";
-$w['gl_m16_mp'] = "Grenade Launcher M16A4";
-$w['m16_shotgun_attach_mp'] = "M16A4 Shotgun Attachment";
+		//M16A4
+		'm16_mp' => array('M16A4', 'description', 'image.png'),
+		'm16_acog_mp' => array('M16A4 ACOG', 'description', 'image.png'),
+		'm16_eotech_mp' => array('M16A4 Hologhraphic Sight', 'description', 'image.png'),
+		'm16_fmj_mp' => array('M16A4 FMJ', 'description', 'image.png'),
+		'm16_gl_mp' => array('M16A4 Grenade Launcher', 'description', 'image.png'),
+		'm16_heartbeat_mp' => array('M16A4 Heartbeat Sensor', 'description', 'image.png'),
+		'm16_reflex_mp' => array('M16A4 Reflex', 'description', 'image.png'),
+		'm16_shotgun_mp' => array('M16A4 Shotgun', 'description', 'image.png'),
+		'm16_silencer_mp' => array('M16A4 Silencer', 'description', 'image.png'),
+		'm16_thermal_mp' => array('M16A4 Thermal Scope', 'description', 'image.png'),
+		'm16_xmags_mp' => array('M16A4 Extended Mags', 'description', 'image.png'),
+		'm16_acog_fmj_mp' => array('M16A4 ACOG & FMJ', 'description', 'image.png'),
+		'm16_acog_gl_mp' => array('M16A4 ACOG & Grenade Launcher', 'description', 'image.png'),
+		'm16_acog_heartbeat_mp' => array('M16A4 ACOG & Heartbeat Sensor', 'description', 'image.png'),
+		'm16_acog_shotgun_mp' => array('M16A4 ACOG & Shotgun', 'description', 'image.png'),
+		'm16_acog_silencer_mp' => array('M16A4 ACOG & Silencer', 'description', 'image.png'),
+		'm16_acog_xmags_mp' => array('M16A4 ACOG & Extended Mags', 'description', 'image.png'),
+		'm16_eotech_fmj_mp' => array('M16A4 Hologhraphic Sight & FMJ', 'description', 'image.png'),
+		'm16_eotech_gl_mp' => array('M16A4 Hologhraphic Sight & Grenade Launcher', 'description', 'image.png'),
+		'm16_eotech_heartbeat_mp' => array('M16A4 Hologhraphic Sight & heartbeat Sensor', 'description', 'image.png'),
+		'm16_eotech_shotgun_mp' => array('M16A4 Hologhraphic Sight & Shotgun', 'description', 'image.png'),
+		'm16_eotech_silencer_mp' => array('M16A4 Hologhraphic Sight & Silencer', 'description', 'image.png'),
+		'm16_eotech_xmags_mp' => array('M16A4 Hologhraphic Sight & Extended Mags', 'description', 'image.png'),
+		'm16_fmj_gl_mp' => array('M16A4 FMJ & Grenade Launcher', 'description', 'image.png'),
+		'm16_fmj_heartbeat_mp' => array('M16A4 FMJ & Heartbeat Sensor', 'description', 'image.png'),
+		'm16_fmj_reflex_mp' => array('M16A4 FMJ & Reflex', 'description', 'image.png'),
+		'm16_fmj_shotgun_mp' => array('M16A4 FMJ & Shotgun', 'description', 'image.png'),
+		'm16_fmj_silencer_mp' => array('M16A4 FMJ & Silencer', 'description', 'image.png'),
+		'm16_reflex_silencer_mp' => array('M16A4 Reflex & Silencer', 'description', 'image.png'),
+		'gl_m16_mp' => array('Grenade Launcher M16A4', 'description', 'image.png'),
+		'm16_shotgun_attach_mp' => array('M16A4 Shotgun Attachment', 'description', 'image.png'),
 
-//*********************
-//Sub Machine Guns
-//*********************
+		//*********************
+		//Sub Machine Guns
+		//*********************
 
-//MP5K
-$w['mp5k_mp'] = "MP5K";
-$w['mp5k_acog_mp'] = "MP5K ACOG";
-$w['mp5k_akimbo_mp'] = "MP5K Akimbo";
-$w['mp5k_eotech_mp'] = "MP5K Holographic Sight";
-$w['mp5k_fmj_mp'] = "MP5K FMJ";
-$w['mp5k_reflex_mp'] = "MP5K Reflex";
-$w['mp5k_rof_mp'] = "MP5K Rapid Fire";
-$w['mp5k_silencer_mp'] = "MP5K Silencer";
-$w['mp5k_thermal_mp'] = "MP5K Thermal Scope";
-$w['mp5k_xmags_mp'] = "MP5K Extended Mags";
-$w['mp5k_acog_fmj_mp'] = "MP5K ACOG & FMJ";
-$w['mp5k_acog_rof_mp'] = "MP5K ACOG & Rapid Fire";
-$w['mp5k_acog_silencer_mp'] = "MP5K ACOG & Silencer";
-$w['mp5k_acog_xmags_mp'] = "MP5K ACOG & Extended Mags";
-$w['mp5k_akimbo_fmj_mp'] = "MP5K Akimbo FMJ";
-$w['mp5k_akimbo_rof_mp'] = "MP5K Akimbo Rapid Fire";
-$w['mp5k_akimbo_silencer_mp'] = "MP5K Akimbo Silencer";
-$w['mp5k_akimbo_xmags_mp'] = "MP5K Akimbo Extended Mags";
-$w['mp5k_eotech_fmj_mp'] = "MP5K Holographic Sight & FMJ";
-$w['mp5k_eotech_rof_mp'] = "MP5K Holographic Sight & Rapid Fire";
-$w['mp5k_eotech_silencer_mp'] = "MP5K Holographic Sight & Silencer";
-$w['mp5k_eotech_xmags_mp'] = "MP5K Holographic Sight & Extended Mags";
-$w['mp5k_fmj_reflex_mp'] = "MP5K FMJ & Reflex";
-$w['mp5k_fmj_rof_mp'] = "MP5K FMJ & Rapid Fire";
-$w['mp5k_fmj_silencer_mp'] = "MP5K FMJ & Silencer";
-$w['mp5k_fmj_thermal_mp'] = "MP5K FMJ & Thermal Scope";
-$w['mp5k_fmj_xmags_mp'] = "MP5K FMJ & Extended Mags";
-$w['mp5k_reflex_rof_mp'] = "MP5K Reflex & Rapid Fire";
-$w['mp5k_reflex_silencer_mp'] = "MP5K Reflex & Silencer";
-$w['mp5k_reflex_xmags_mp'] = "MP5K Reflex & Extended Mags";
-$w['mp5k_rof_silencer_mp'] = "MP5K Rapid Fire & Silencer";
-$w['mp5k_rof_thermal_mp'] = "MP5K Rapid Fire & Thermal Scope";
-$w['mp5k_rof_xmags_mp'] = "MP5K Rapid Fire & Extended Mags";
-$w['mp5k_silencer_thermal_mp'] = "MP5K Silencer & Thermal Scope";
-$w['mp5k_silencer_xmags_mp'] = "MP5K Silencer & Extended Mags";
-$w['mp5k_thermal_xmags_mp'] = "MP5K Thermal Scope & Extended Mags";
+		//MP5K
+		'mp5k_mp' => array('MP5K', 'description', 'image.png'),
+		'mp5k_acog_mp' => array('MP5K ACOG', 'description', 'image.png'),
+		'mp5k_akimbo_mp' => array('MP5K Akimbo', 'description', 'image.png'),
+		'mp5k_eotech_mp' => array('MP5K Holographic Sight', 'description', 'image.png'),
+		'mp5k_fmj_mp' => array('MP5K FMJ', 'description', 'image.png'),
+		'mp5k_reflex_mp' => array('MP5K Reflex', 'description', 'image.png'),
+		'mp5k_rof_mp' => array('MP5K Rapid Fire', 'description', 'image.png'),
+		'mp5k_silencer_mp' => array('MP5K Silencer', 'description', 'image.png'),
+		'mp5k_thermal_mp' => array('MP5K Thermal Scope', 'description', 'image.png'),
+		'mp5k_xmags_mp' => array('MP5K Extended Mags', 'description', 'image.png'),
+		'mp5k_acog_fmj_mp' => array('MP5K ACOG & FMJ', 'description', 'image.png'),
+		'mp5k_acog_rof_mp' => array('MP5K ACOG & Rapid Fire', 'description', 'image.png'),
+		'mp5k_acog_silencer_mp' => array('MP5K ACOG & Silencer', 'description', 'image.png'),
+		'mp5k_acog_xmags_mp' => array('MP5K ACOG & Extended Mags', 'description', 'image.png'),
+		'mp5k_akimbo_fmj_mp' => array('MP5K Akimbo FMJ', 'description', 'image.png'),
+		'mp5k_akimbo_rof_mp' => array('MP5K Akimbo Rapid Fire', 'description', 'image.png'),
+		'mp5k_akimbo_silencer_mp' => array('MP5K Akimbo Silencer', 'description', 'image.png'),
+		'mp5k_akimbo_xmags_mp' => array('MP5K Akimbo Extended Mags', 'description', 'image.png'),
+		'mp5k_eotech_fmj_mp' => array('MP5K Holographic Sight & FMJ', 'description', 'image.png'),
+		'mp5k_eotech_rof_mp' => array('MP5K Holographic Sight & Rapid Fire', 'description', 'image.png'),
+		'mp5k_eotech_silencer_mp' => array('MP5K Holographic Sight & Silencer', 'description', 'image.png'),
+		'mp5k_eotech_xmags_mp' => array('MP5K Holographic Sight & Extended Mags', 'description', 'image.png'),
+		'mp5k_fmj_reflex_mp' => array('MP5K FMJ & Reflex', 'description', 'image.png'),
+		'mp5k_fmj_rof_mp' => array('MP5K FMJ & Rapid Fire', 'description', 'image.png'),
+		'mp5k_fmj_silencer_mp' => array('MP5K FMJ & Silencer', 'description', 'image.png'),
+		'mp5k_fmj_thermal_mp' => array('MP5K FMJ & Thermal Scope', 'description', 'image.png'),
+		'mp5k_fmj_xmags_mp' => array('MP5K FMJ & Extended Mags', 'description', 'image.png'),
+		'mp5k_reflex_rof_mp' => array('MP5K Reflex & Rapid Fire', 'description', 'image.png'),
+		'mp5k_reflex_silencer_mp' => array('MP5K Reflex & Silencer', 'description', 'image.png'),
+		'mp5k_reflex_xmags_mp' => array('MP5K Reflex & Extended Mags', 'description', 'image.png'),
+		'mp5k_rof_silencer_mp' => array('MP5K Rapid Fire & Silencer', 'description', 'image.png'),
+		'mp5k_rof_thermal_mp' => array('MP5K Rapid Fire & Thermal Scope', 'description', 'image.png'),
+		'mp5k_rof_xmags_mp' => array('MP5K Rapid Fire & Extended Mags', 'description', 'image.png'),
+		'mp5k_silencer_thermal_mp' => array('MP5K Silencer & Thermal Scope', 'description', 'image.png'),
+		'mp5k_silencer_xmags_mp' => array('MP5K Silencer & Extended Mags', 'description', 'image.png'),
+		'mp5k_thermal_xmags_mp' => array('MP5K Thermal Scope & Extended Mags', 'description', 'image.png'),
 
-//UMP45
-$w['ump45_mp'] = "UMP45";
-$w['ump45_acog_mp'] = "UMP45 ACOG";
-$w['ump45_akimbo_mp'] = "UMP45 Akimbo";
-$w['ump45_eotech_mp'] = "UMP45 Holographic Sight";
-$w['ump45_fmj_mp'] = "UMP45 FMJ";
-$w['ump45_reflex_mp'] = "UMP45 Reflex";
-$w['ump45_rof_mp'] = "UMP45 Rapid Fire";
-$w['ump45_silencer_mp'] = "UMP45 Silencer";
-$w['ump45_thermal_mp'] = "UMP45 Thermal Scope";
-$w['ump45_xmags_mp'] = "UMP45 Extended Mags";
-$w['ump45_acog_fmj_mp'] = "UMP45 ACOG & FMJ";
-$w['ump45_acog_rof_mp'] = "UMP45 ACOG & Rapid Fire";
-$w['ump45_acog_silencer_mp'] = "UMP45 ACOG & Silencer";
-$w['ump45_acog_xmags_mp'] = "UMP45 ACOG & Extended Mags";
-$w['ump45_akimbo_fmj_mp'] = "UMP45 Akimbo FMJ";
-$w['ump45_akimbo_rof_mp'] = "UMP45 Akimbo Rapid Fire";
-$w['ump45_akimbo_silencer_mp'] = "UMP45 Akimbo Silencer";
-$w['ump45_akimbo_xmags_mp'] = "UMP45 Akimbo Extended Mags";
-$w['ump45_eotech_fmj_mp'] = "UMP45 Holographic Sight & FMJ";
-$w['ump45_eotech_rof_mp'] = "UMP45 Holographic Sight & Rapid Fire";
-$w['ump45_eotech_silencer_mp'] = "UMP45 Holographic Sight & Silencer";
-$w['ump45_eotech_xmags_mp'] = "UMP45 Holographic Sight & Extended Mags";
-$w['ump45_fmj_reflex_mp'] = "UMP45 FMJ & Reflex";
-$w['ump45_fmj_rof_mp'] = "UMP45 FMJ & Rapid Fire";
-$w['ump45_fmj_silencer_mp'] = "UMP45 FMJ & Silencer";
-$w['ump45_fmj_thermal_mp'] = "UMP45 FMJ & Thermal Scope";
-$w['ump45_fmj_xmags_mp'] = "UMP45 FMJ & Extended Mags";
-$w['ump45_reflex_rof_mp'] = "UMP45 Reflex & Rapid Fire";
-$w['ump45_reflex_silencer_mp'] = "UMP45 Reflex & Silencer";
-$w['ump45_reflex_xmags_mp'] = "UMP45 Reflex & Extended Mags";
-$w['ump45_rof_silencer_mp'] = "UMP45 Rapid Fire & Silencer";
-$w['ump45_rof_thermal_mp'] = "UMP45 Rapid Fire & Thermal Scope";
-$w['ump45_rof_xmags_mp'] = "UMP45 Rapid Fire & Extended Mags";
-$w['ump45_silencer_thermal_mp'] = "UMP45 Silencer & Thermal Scope";
-$w['ump45_silencer_xmags_mp'] = "UMP45 Silencer & Extended Mags";
-$w['ump45_thermal_xmags_mp'] = "UMP45 Thermal Scope & Extended Mags";
+		//UMP45
+		'ump45_mp' => array('UMP45', 'description', 'image.png'),
+		'ump45_acog_mp' => array('UMP45 ACOG', 'description', 'image.png'),
+		'ump45_akimbo_mp' => array('UMP45 Akimbo', 'description', 'image.png'),
+		'ump45_eotech_mp' => array('UMP45 Holographic Sight', 'description', 'image.png'),
+		'ump45_fmj_mp' => array('UMP45 FMJ', 'description', 'image.png'),
+		'ump45_reflex_mp' => array('UMP45 Reflex', 'description', 'image.png'),
+		'ump45_rof_mp' => array('UMP45 Rapid Fire', 'description', 'image.png'),
+		'ump45_silencer_mp' => array('UMP45 Silencer', 'description', 'image.png'),
+		'ump45_thermal_mp' => array('UMP45 Thermal Scope', 'description', 'image.png'),
+		'ump45_xmags_mp' => array('UMP45 Extended Mags', 'description', 'image.png'),
+		'ump45_acog_fmj_mp' => array('UMP45 ACOG & FMJ', 'description', 'image.png'),
+		'ump45_acog_rof_mp' => array('UMP45 ACOG & Rapid Fire', 'description', 'image.png'),
+		'ump45_acog_silencer_mp' => array('UMP45 ACOG & Silencer', 'description', 'image.png'),
+		'ump45_acog_xmags_mp' => array('UMP45 ACOG & Extended Mags', 'description', 'image.png'),
+		'ump45_akimbo_fmj_mp' => array('UMP45 Akimbo FMJ', 'description', 'image.png'),
+		'ump45_akimbo_rof_mp' => array('UMP45 Akimbo Rapid Fire', 'description', 'image.png'),
+		'ump45_akimbo_silencer_mp' => array('UMP45 Akimbo Silencer', 'description', 'image.png'),
+		'ump45_akimbo_xmags_mp' => array('UMP45 Akimbo Extended Mags', 'description', 'image.png'),
+		'ump45_eotech_fmj_mp' => array('UMP45 Holographic Sight & FMJ', 'description', 'image.png'),
+		'ump45_eotech_rof_mp' => array('UMP45 Holographic Sight & Rapid Fire', 'description', 'image.png'),
+		'ump45_eotech_silencer_mp' => array('UMP45 Holographic Sight & Silencer', 'description', 'image.png'),
+		'ump45_eotech_xmags_mp' => array('UMP45 Holographic Sight & Extended Mags', 'description', 'image.png'),
+		'ump45_fmj_reflex_mp' => array('UMP45 FMJ & Reflex', 'description', 'image.png'),
+		'ump45_fmj_rof_mp' => array('UMP45 FMJ & Rapid Fire', 'description', 'image.png'),
+		'ump45_fmj_silencer_mp' => array('UMP45 FMJ & Silencer', 'description', 'image.png'),
+		'ump45_fmj_thermal_mp' => array('UMP45 FMJ & Thermal Scope', 'description', 'image.png'),
+		'ump45_fmj_xmags_mp' => array('UMP45 FMJ & Extended Mags', 'description', 'image.png'),
+		'ump45_reflex_rof_mp' => array('UMP45 Reflex & Rapid Fire', 'description', 'image.png'),
+		'ump45_reflex_silencer_mp' => array('UMP45 Reflex & Silencer', 'description', 'image.png'),
+		'ump45_reflex_xmags_mp' => array('UMP45 Reflex & Extended Mags', 'description', 'image.png'),
+		'ump45_rof_silencer_mp' => array('UMP45 Rapid Fire & Silencer', 'description', 'image.png'),
+		'ump45_rof_thermal_mp' => array('UMP45 Rapid Fire & Thermal Scope', 'description', 'image.png'),
+		'ump45_rof_xmags_mp' => array('UMP45 Rapid Fire & Extended Mags', 'description', 'image.png'),
+		'ump45_silencer_thermal_mp' => array('UMP45 Silencer & Thermal Scope', 'description', 'image.png'),
+		'ump45_silencer_xmags_mp' => array('UMP45 Silencer & Extended Mags', 'description', 'image.png'),
+		'ump45_thermal_xmags_mp' => array('UMP45 Thermal Scope & Extended Mags', 'description', 'image.png'),
 
-//VECTOR
-$w['kriss_mp'] = "Vector";
-$w['kriss_acog_mp'] = "Vector ACOG";
-$w['kriss_akimbo_mp'] = "Vector Akimbo";
-$w['kriss_eotech_mp'] = "Vector Holographic Sight";
-$w['kriss_fmj_mp'] = "Vector FMJ";
-$w['kriss_reflex_mp'] = "Vector Reflex";
-$w['kriss_rof_mp'] = "Vector Rapid Fire";
-$w['kriss_silencer_mp'] = "Vector Silencer";
-$w['kriss_thermal_mp'] = "Vector Thermal Scope";
-$w['kriss_xmags_mp'] = "Vector Extended Mags";
-$w['kriss_acog_fmj_mp'] = "Vector ACOG & FMJ";
-$w['kriss_acog_rof_mp'] = "Vector ACOG & Rapid Fire";
-$w['kriss_acog_silencer_mp'] = "Vector ACOG & Silencer";
-$w['kriss_acog_xmags_mp'] = "Vector ACOG & Extended Mags";
-$w['kriss_akimbo_fmj_mp'] = "Vector Akimbo FMJ";
-$w['kriss_akimbo_rof_mp'] = "Vector Akimbo Rapid Fire";
-$w['kriss_akimbo_silencer_mp'] = "Vector Akimbo Silencer";
-$w['kriss_akimbo_xmags_mp'] = "Vector Akimbo Extended Mags";
-$w['kriss_eotech_fmj_mp'] = "Vector Holographic Sight & FMJ";
-$w['kriss_eotech_rof_mp'] = "Vector Holographic Sight & Rapid Fire";
-$w['kriss_eotech_silencer_mp'] = "Vector Holographic Sight & Silencer";
-$w['kriss_eotech_xmags_mp'] = "Vector Holographic Sight & Extended Mags";
-$w['kriss_fmj_reflex_mp'] = "Vector FMJ & Reflex";
-$w['kriss_fmj_rof_mp'] = "Vector FMJ & Rapid Fire";
-$w['kriss_fmj_silencer_mp'] = "Vector FMJ & Silencer";
-$w['kriss_fmj_thermal_mp'] = "Vector FMJ & Thermal Scope";
-$w['kriss_fmj_xmags_mp'] = "Vector FMJ & Extended Mags";
-$w['kriss_reflex_rof_mp'] = "Vector Reflex & Rapid Fire";
-$w['kriss_reflex_silencer_mp'] = "Vector Reflex & Silencer";
-$w['kriss_reflex_xmags_mp'] = "Vector Reflex & Extended Mags";
-$w['kriss_rof_silencer_mp'] = "Vector Rapid Fire & Silencer";
-$w['kriss_rof_thermal_mp'] = "Vector Rapid Fire & Thermal Scope";
-$w['kriss_rof_xmags_mp'] = "Vector Rapid Fire & Extended Mags";
-$w['kriss_silencer_thermal_mp'] = "Vector Silencer & Thermal Scope";
-$w['kriss_silencer_xmags_mp'] = "Vector Silencer & Extended Mags";
-$w['kriss_thermal_xmags_mp'] = "Vector Thermal Scope & Extended Mags";
+		//VECTOR
+		'kriss_mp' => array('Vector', 'description', 'image.png'),
+		'kriss_acog_mp' => array('Vector ACOG', 'description', 'image.png'),
+		'kriss_akimbo_mp' => array('Vector Akimbo', 'description', 'image.png'),
+		'kriss_eotech_mp' => array('Vector Holographic Sight', 'description', 'image.png'),
+		'kriss_fmj_mp' => array('Vector FMJ', 'description', 'image.png'),
+		'kriss_reflex_mp' => array('Vector Reflex', 'description', 'image.png'),
+		'kriss_rof_mp' => array('Vector Rapid Fire', 'description', 'image.png'),
+		'kriss_silencer_mp' => array('Vector Silencer', 'description', 'image.png'),
+		'kriss_thermal_mp' => array('Vector Thermal Scope', 'description', 'image.png'),
+		'kriss_xmags_mp' => array('Vector Extended Mags', 'description', 'image.png'),
+		'kriss_acog_fmj_mp' => array('Vector ACOG & FMJ', 'description', 'image.png'),
+		'kriss_acog_rof_mp' => array('Vector ACOG & Rapid Fire', 'description', 'image.png'),
+		'kriss_acog_silencer_mp' => array('Vector ACOG & Silencer', 'description', 'image.png'),
+		'kriss_acog_xmags_mp' => array('Vector ACOG & Extended Mags', 'description', 'image.png'),
+		'kriss_akimbo_fmj_mp' => array('Vector Akimbo FMJ', 'description', 'image.png'),
+		'kriss_akimbo_rof_mp' => array('Vector Akimbo Rapid Fire', 'description', 'image.png'),
+		'kriss_akimbo_silencer_mp' => array('Vector Akimbo Silencer', 'description', 'image.png'),
+		'kriss_akimbo_xmags_mp' => array('Vector Akimbo Extended Mags', 'description', 'image.png'),
+		'kriss_eotech_fmj_mp' => array('Vector Holographic Sight & FMJ', 'description', 'image.png'),
+		'kriss_eotech_rof_mp' => array('Vector Holographic Sight & Rapid Fire', 'description', 'image.png'),
+		'kriss_eotech_silencer_mp' => array('Vector Holographic Sight & Silencer', 'description', 'image.png'),
+		'kriss_eotech_xmags_mp' => array('Vector Holographic Sight & Extended Mags', 'description', 'image.png'),
+		'kriss_fmj_reflex_mp' => array('Vector FMJ & Reflex', 'description', 'image.png'),
+		'kriss_fmj_rof_mp' => array('Vector FMJ & Rapid Fire', 'description', 'image.png'),
+		'kriss_fmj_silencer_mp' => array('Vector FMJ & Silencer', 'description', 'image.png'),
+		'kriss_fmj_thermal_mp' => array('Vector FMJ & Thermal Scope', 'description', 'image.png'),
+		'kriss_fmj_xmags_mp' => array('Vector FMJ & Extended Mags', 'description', 'image.png'),
+		'kriss_reflex_rof_mp' => array('Vector Reflex & Rapid Fire', 'description', 'image.png'),
+		'kriss_reflex_silencer_mp' => array('Vector Reflex & Silencer', 'description', 'image.png'),
+		'kriss_reflex_xmags_mp' => array('Vector Reflex & Extended Mags', 'description', 'image.png'),
+		'kriss_rof_silencer_mp' => array('Vector Rapid Fire & Silencer', 'description', 'image.png'),
+		'kriss_rof_thermal_mp' => array('Vector Rapid Fire & Thermal Scope', 'description', 'image.png'),
+		'kriss_rof_xmags_mp' => array('Vector Rapid Fire & Extended Mags', 'description', 'image.png'),
+		'kriss_silencer_thermal_mp' => array('Vector Silencer & Thermal Scope', 'description', 'image.png'),
+		'kriss_silencer_xmags_mp' => array('Vector Silencer & Extended Mags', 'description', 'image.png'),
+		'kriss_thermal_xmags_mp' => array('Vector Thermal Scope & Extended Mags', 'description', 'image.png'),
 
-//P90
-$w['p90_mp'] = "P90";
-$w['p90_acog_mp'] = "P90 ACOG";
-$w['p90_akimbo_mp'] = "P90 Akimbo";
-$w['p90_eotech_mp'] = "P90 Holographic Sight";
-$w['p90_fmj_mp'] = "P90 FMJ";
-$w['p90_reflex_mp'] = "P90 Reflex";
-$w['p90_rof_mp'] = "P90 Rapid Fire";
-$w['p90_silencer_mp'] = "P90 Silencer";
-$w['p90_thermal_mp'] = "P90 Thermal Scope";
-$w['p90_xmags_mp'] = "P90 Extended Mags";
-$w['p90_acog_fmj_mp'] = "P90 ACOG & FMJ";
-$w['p90_acog_rof_mp'] = "P90 ACOG & Rapid Fire";
-$w['p90_acog_silencer_mp'] = "P90 ACOG & Silencer";
-$w['p90_acog_xmags_mp'] = "P90 ACOG & Extended Mags";
-$w['p90_akimbo_fmj_mp'] = "P90 Akimbo FMJ";
-$w['p90_akimbo_rof_mp'] = "P90 Akimbo Rapid Fire";
-$w['p90_akimbo_silencer_mp'] = "P90 Akimbo Silencer";
-$w['p90_akimbo_xmags_mp'] = "P90 Akimbo Extended Mags";
-$w['p90_eotech_fmj_mp'] = "P90 Holographic Sight & FMJ";
-$w['p90_eotech_rof_mp'] = "P90 Holographic Sight & Rapid Fire";
-$w['p90_eotech_silencer_mp'] = "P90 Holographic Sight & Silencer";
-$w['p90_eotech_xmags_mp'] = "P90 Holographic Sight & Extended Mags";
-$w['p90_fmj_reflex_mp'] = "P90 FMJ & Reflex";
-$w['p90_fmj_rof_mp'] = "P90 FMJ & Rapid Fire";
-$w['p90_fmj_silencer_mp'] = "P90 FMJ & Silencer";
-$w['p90_fmj_thermal_mp'] = "P90 FMJ & Thermal Scope";
-$w['p90_fmj_xmags_mp'] = "P90 FMJ & Extended Mags";
-$w['p90_reflex_rof_mp'] = "P90 Reflex & Rapid Fire";
-$w['p90_reflex_silencer_mp'] = "P90 Reflex & Silencer";
-$w['p90_reflex_xmags_mp'] = "P90 Reflex & Extended Mags";
-$w['p90_rof_silencer_mp'] = "P90 Rapid Fire & Silencer";
-$w['p90_rof_thermal_mp'] = "P90 Rapid Fire & Thermal Scope";
-$w['p90_rof_xmags_mp'] = "P90 Rapid Fire & Extended Mags";
-$w['p90_silencer_thermal_mp'] = "P90 Silencer & Thermal Scope";
-$w['p90_silencer_xmags_mp'] = "P90 Silencer & Extended Mags";
-$w['p90_thermal_xmags_mp'] = "P90 Thermal Scope & Extended Mags";
+		//P90
+		'p90_mp' => array('P90', 'description', 'image.png'),
+		'p90_acog_mp' => array('P90 ACOG', 'description', 'image.png'),
+		'p90_akimbo_mp' => array('P90 Akimbo', 'description', 'image.png'),
+		'p90_eotech_mp' => array('P90 Holographic Sight', 'description', 'image.png'),
+		'p90_fmj_mp' => array('P90 FMJ', 'description', 'image.png'),
+		'p90_reflex_mp' => array('P90 Reflex', 'description', 'image.png'),
+		'p90_rof_mp' => array('P90 Rapid Fire', 'description', 'image.png'),
+		'p90_silencer_mp' => array('P90 Silencer', 'description', 'image.png'),
+		'p90_thermal_mp' => array('P90 Thermal Scope', 'description', 'image.png'),
+		'p90_xmags_mp' => array('P90 Extended Mags', 'description', 'image.png'),
+		'p90_acog_fmj_mp' => array('P90 ACOG & FMJ', 'description', 'image.png'),
+		'p90_acog_rof_mp' => array('P90 ACOG & Rapid Fire', 'description', 'image.png'),
+		'p90_acog_silencer_mp' => array('P90 ACOG & Silencer', 'description', 'image.png'),
+		'p90_acog_xmags_mp' => array('P90 ACOG & Extended Mags', 'description', 'image.png'),
+		'p90_akimbo_fmj_mp' => array('P90 Akimbo FMJ', 'description', 'image.png'),
+		'p90_akimbo_rof_mp' => array('P90 Akimbo Rapid Fire', 'description', 'image.png'),
+		'p90_akimbo_silencer_mp' => array('P90 Akimbo Silencer', 'description', 'image.png'),
+		'p90_akimbo_xmags_mp' => array('P90 Akimbo Extended Mags', 'description', 'image.png'),
+		'p90_eotech_fmj_mp' => array('P90 Holographic Sight & FMJ', 'description', 'image.png'),
+		'p90_eotech_rof_mp' => array('P90 Holographic Sight & Rapid Fire', 'description', 'image.png'),
+		'p90_eotech_silencer_mp' => array('P90 Holographic Sight & Silencer', 'description', 'image.png'),
+		'p90_eotech_xmags_mp' => array('P90 Holographic Sight & Extended Mags', 'description', 'image.png'),
+		'p90_fmj_reflex_mp' => array('P90 FMJ & Reflex', 'description', 'image.png'),
+		'p90_fmj_rof_mp' => array('P90 FMJ & Rapid Fire', 'description', 'image.png'),
+		'p90_fmj_silencer_mp' => array('P90 FMJ & Silencer', 'description', 'image.png'),
+		'p90_fmj_thermal_mp' => array('P90 FMJ & Thermal Scope', 'description', 'image.png'),
+		'p90_fmj_xmags_mp' => array('P90 FMJ & Extended Mags', 'description', 'image.png'),
+		'p90_reflex_rof_mp' => array('P90 Reflex & Rapid Fire', 'description', 'image.png'),
+		'p90_reflex_silencer_mp' => array('P90 Reflex & Silencer', 'description', 'image.png'),
+		'p90_reflex_xmags_mp' => array('P90 Reflex & Extended Mags', 'description', 'image.png'),
+		'p90_rof_silencer_mp' => array('P90 Rapid Fire & Silencer', 'description', 'image.png'),
+		'p90_rof_thermal_mp' => array('P90 Rapid Fire & Thermal Scope', 'description', 'image.png'),
+		'p90_rof_xmags_mp' => array('P90 Rapid Fire & Extended Mags', 'description', 'image.png'),
+		'p90_silencer_thermal_mp' => array('P90 Silencer & Thermal Scope', 'description', 'image.png'),
+		'p90_silencer_xmags_mp' => array('P90 Silencer & Extended Mags', 'description', 'image.png'),
+		'p90_thermal_xmags_mp' => array('P90 Thermal Scope & Extended Mags', 'description', 'image.png'),
 
-//Mini Uzi
-$w['uzi_mp'] = "Uzi";
-$w['uzi_acog_mp'] = "Uzi ACOG";
-$w['uzi_akimbo_mp'] = "Uzi Akimbo";
-$w['uzi_eotech_mp'] = "Uzi Holographic Sight";
-$w['uzi_fmj_mp'] = "Uzi FMJ";
-$w['uzi_reflex_mp'] = "Uzi Reflex";
-$w['uzi_rof_mp'] = "Uzi Rapid Fire";
-$w['uzi_silencer_mp'] = "Uzi Silencer";
-$w['uzi_thermal_mp'] = "Uzi Thermal Scope";
-$w['uzi_xmags_mp'] = "Uzi Extended Mags";
-$w['uzi_acog_fmj_mp'] = "Uzi ACOG & FMJ";
-$w['uzi_acog_rof_mp'] = "Uzi ACOG & Rapid Fire";
-$w['uzi_acog_silencer_mp'] = "Uzi ACOG & Silencer";
-$w['uzi_acog_xmags_mp'] = "Uzi ACOG & Extended Mags";
-$w['uzi_akimbo_fmj_mp'] = "Uzi Akimbo FMJ";
-$w['uzi_akimbo_rof_mp'] = "Uzi Akimbo Rapid Fire";
-$w['uzi_akimbo_silencer_mp'] = "Uzi Akimbo Silencer";
-$w['uzi_akimbo_xmags_mp'] = "Uzi Akimbo Extended Mags";
-$w['uzi_eotech_fmj_mp'] = "Uzi Holographic Sight & FMJ";
-$w['uzi_eotech_rof_mp'] = "Uzi Holographic Sight & Rapid Fire";
-$w['uzi_eotech_silencer_mp'] = "Uzi Holographic Sight & Silencer";
-$w['uzi_eotech_xmags_mp'] = "Uzi Holographic Sight & Extended Mags";
-$w['uzi_fmj_reflex_mp'] = "Uzi FMJ & Reflex";
-$w['uzi_fmj_rof_mp'] = "Uzi FMJ & Rapid Fire";
-$w['uzi_fmj_silencer_mp'] = "Uzi FMJ & Silencer";
-$w['uzi_fmj_thermal_mp'] = "Uzi FMJ & Thermal Scope";
-$w['uzi_fmj_xmags_mp'] = "Uzi FMJ & Extended Mags";
-$w['uzi_reflex_rof_mp'] = "Uzi Reflex & Rapid Fire";
-$w['uzi_reflex_silencer_mp'] = "Uzi Reflex & Silencer";
-$w['uzi_reflex_xmags_mp'] = "Uzi Reflex & Extended Mags";
-$w['uzi_rof_silencer_mp'] = "Uzi Rapid Fire & Silencer";
-$w['uzi_rof_thermal_mp'] = "Uzi Rapid Fire & Thermal Scope";
-$w['uzi_rof_xmags_mp'] = "Uzi Rapid Fire & Extended Mags";
-$w['uzi_silencer_thermal_mp'] = "Uzi Silencer & Thermal Scope";
-$w['uzi_silencer_xmags_mp'] = "Uzi Silencer & Extended Mags";
-$w['uzi_thermal_xmags_mp'] = "Uzi Thermal Scope & Extended Mags";
+		//Mini Uzi
+		'uzi_mp' => array('Uzi', 'description', 'image.png'),
+		'uzi_acog_mp' => array('Uzi ACOG', 'description', 'image.png'),
+		'uzi_akimbo_mp' => array('Uzi Akimbo', 'description', 'image.png'),
+		'uzi_eotech_mp' => array('Uzi Holographic Sight', 'description', 'image.png'),
+		'uzi_fmj_mp' => array('Uzi FMJ', 'description', 'image.png'),
+		'uzi_reflex_mp' => array('Uzi Reflex', 'description', 'image.png'),
+		'uzi_rof_mp' => array('Uzi Rapid Fire', 'description', 'image.png'),
+		'uzi_silencer_mp' => array('Uzi Silencer', 'description', 'image.png'),
+		'uzi_thermal_mp' => array('Uzi Thermal Scope', 'description', 'image.png'),
+		'uzi_xmags_mp' => array('Uzi Extended Mags', 'description', 'image.png'),
+		'uzi_acog_fmj_mp' => array('Uzi ACOG & FMJ', 'description', 'image.png'),
+		'uzi_acog_rof_mp' => array('Uzi ACOG & Rapid Fire', 'description', 'image.png'),
+		'uzi_acog_silencer_mp' => array('Uzi ACOG & Silencer', 'description', 'image.png'),
+		'uzi_acog_xmags_mp' => array('Uzi ACOG & Extended Mags', 'description', 'image.png'),
+		'uzi_akimbo_fmj_mp' => array('Uzi Akimbo FMJ', 'description', 'image.png'),
+		'uzi_akimbo_rof_mp' => array('Uzi Akimbo Rapid Fire', 'description', 'image.png'),
+		'uzi_akimbo_silencer_mp' => array('Uzi Akimbo Silencer', 'description', 'image.png'),
+		'uzi_akimbo_xmags_mp' => array('Uzi Akimbo Extended Mags', 'description', 'image.png'),
+		'uzi_eotech_fmj_mp' => array('Uzi Holographic Sight & FMJ', 'description', 'image.png'),
+		'uzi_eotech_rof_mp' => array('Uzi Holographic Sight & Rapid Fire', 'description', 'image.png'),
+		'uzi_eotech_silencer_mp' => array('Uzi Holographic Sight & Silencer', 'description', 'image.png'),
+		'uzi_eotech_xmags_mp' => array('Uzi Holographic Sight & Extended Mags', 'description', 'image.png'),
+		'uzi_fmj_reflex_mp' => array('Uzi FMJ & Reflex', 'description', 'image.png'),
+		'uzi_fmj_rof_mp' => array('Uzi FMJ & Rapid Fire', 'description', 'image.png'),
+		'uzi_fmj_silencer_mp' => array('Uzi FMJ & Silencer', 'description', 'image.png'),
+		'uzi_fmj_thermal_mp' => array('Uzi FMJ & Thermal Scope', 'description', 'image.png'),
+		'uzi_fmj_xmags_mp' => array('Uzi FMJ & Extended Mags', 'description', 'image.png'),
+		'uzi_reflex_rof_mp' => array('Uzi Reflex & Rapid Fire', 'description', 'image.png'),
+		'uzi_reflex_silencer_mp' => array('Uzi Reflex & Silencer', 'description', 'image.png'),
+		'uzi_reflex_xmags_mp' => array('Uzi Reflex & Extended Mags', 'description', 'image.png'),
+		'uzi_rof_silencer_mp' => array('Uzi Rapid Fire & Silencer', 'description', 'image.png'),
+		'uzi_rof_thermal_mp' => array('Uzi Rapid Fire & Thermal Scope', 'description', 'image.png'),
+		'uzi_rof_xmags_mp' => array('Uzi Rapid Fire & Extended Mags', 'description', 'image.png'),
+		'uzi_silencer_thermal_mp' => array('Uzi Silencer & Thermal Scope', 'description', 'image.png'),
+		'uzi_silencer_xmags_mp' => array('Uzi Silencer & Extended Mags', 'description', 'image.png'),
+		'uzi_thermal_xmags_mp' => array('Uzi Thermal Scope & Extended Mags', 'description', 'image.png'),
 
-//*********************
-//Light Machine Guns
-//*********************
+		//*********************
+		//Light Machine Guns
+		//*********************
 
-//RPD
-$w['rpd_mp'] = "RPD";
-$w['rpd_acog_mp'] = "RPD ACOG";
-$w['rpd_eotech_mp'] = "RPD Holographic Sight";
-$w['rpd_fmj_mp'] = "RPD FMJ";
-$w['rpd_grip_mp'] = "RPD Grip";
-$w['rpd_heartbeat_mp'] = "RPD Heartbeat Sensor";
-$w['rpd_reflex_mp'] = "RPD Reflex";
-$w['rpd_silencer_mp'] = "RPD Silencer";
-$w['rpd_thermal_mp'] = "RPD Thermal Scope";
-$w['rpd_xmags_mp'] = "RPD Extended Mags";
-$w['rpd_acog_fmj_mp'] = "RPD ACOG & FMJ";
-$w['rpd_acog_grip_mp'] = "RPD ACOG & Grip";
-$w['rpd_acog_heartbeat_mp'] = "RPD ACOG & Heartbeat Sensor";
-$w['rpd_acog_silencer_mp'] = "RPD ACOG & Silencer";
-$w['rpd_acog_xmags_mp'] = "RPD ACOG & Extended Mags";
-$w['rpd_eotech_fmj_mp'] = "RPD Holographic Sight & FMJ";
-$w['rpd_eotech_grip_mp'] = "RPD Holographic Sight & Grip";
-$w['rpd_eotech_heartbeat_mp'] = "RPD Holographic Sight & Heartbeat Sensor";
-$w['rpd_eotech_silencer_mp'] = "RPD Holographic Sight & Silencer";
-$w['rpd_eotech_xmags_mp'] = "RPD Holographic Sight & Extended Mags";
-$w['rpd_fmj_grip_mp'] = "RPD FMJ & Grip";
-$w['rpd_fmj_heartbeat_mp'] = "RPD FMJ & Heartbeat Sensor";
-$w['rpd_fmj_reflex_mp'] = "RPD FMJ & Reflex";
-$w['rpd_fmj_silencer_mp'] = "RPD FMJ & Silencer";
-$w['rpd_fmj_thermal_mp'] = "RPD FMJ & Thermal Scope";
-$w['rpd_fmj_xmags_mp'] = "RPD FMJ & Extended Mags";
-$w['rpd_grip_heartbeat_mp'] = "RPD Grip & Heartbeat Sensor";
-$w['rpd_grip_reflex_mp'] = "RPD Grip & Reflex";
-$w['rpd_grip_silencer_mp'] = "RPD Grip & Silencer";
-$w['rpd_grip_thermal_mp'] = "RPD Grip & Thermal Scope";
-$w['rpd_grip_xmags_mp'] = "RPD Grip & Extended Mags";
-$w['rpd_heartbeat_reflex_mp'] = "RPD Heartbeat Sensor & Reflex";
-$w['rpd_heartbeat_silencer_mp'] = "RPD Heartbeat Sensor & Silencer";
-$w['rpd_heartbeat_thermal_mp'] = "RPD Heartbeat Sensor & Thermal";
-$w['rpd_heartbeat_xmags_mp'] = "RPD Heartbeat Sensor & Extended Mags";
-$w['rpd_reflex_silencer_mp'] = "RPD Reflex & Silencer";
-$w['rpd_reflex_xmags_mp'] = "RPD Reflex & Extended Mags";
-$w['rpd_silencer_thermal_mp'] = "RPD Silencer & Thermal Scope";
-$w['rpd_silencer_xmags_mp'] = "RPD Silencer & Extended Mags";
-$w['rpd_thermal_xmags_mp'] = "RPD Thermal Scope & Extended Mags";
+		//RPD
+		'rpd_mp' => array('RPD', 'description', 'image.png'),
+		'rpd_acog_mp' => array('RPD ACOG', 'description', 'image.png'),
+		'rpd_eotech_mp' => array('RPD Holographic Sight', 'description', 'image.png'),
+		'rpd_fmj_mp' => array('RPD FMJ', 'description', 'image.png'),
+		'rpd_grip_mp' => array('RPD Grip', 'description', 'image.png'),
+		'rpd_heartbeat_mp' => array('RPD Heartbeat Sensor', 'description', 'image.png'),
+		'rpd_reflex_mp' => array('RPD Reflex', 'description', 'image.png'),
+		'rpd_silencer_mp' => array('RPD Silencer', 'description', 'image.png'),
+		'rpd_thermal_mp' => array('RPD Thermal Scope', 'description', 'image.png'),
+		'rpd_xmags_mp' => array('RPD Extended Mags', 'description', 'image.png'),
+		'rpd_acog_fmj_mp' => array('RPD ACOG & FMJ', 'description', 'image.png'),
+		'rpd_acog_grip_mp' => array('RPD ACOG & Grip', 'description', 'image.png'),
+		'rpd_acog_heartbeat_mp' => array('RPD ACOG & Heartbeat Sensor', 'description', 'image.png'),
+		'rpd_acog_silencer_mp' => array('RPD ACOG & Silencer', 'description', 'image.png'),
+		'rpd_acog_xmags_mp' => array('RPD ACOG & Extended Mags', 'description', 'image.png'),
+		'rpd_eotech_fmj_mp' => array('RPD Holographic Sight & FMJ', 'description', 'image.png'),
+		'rpd_eotech_grip_mp' => array('RPD Holographic Sight & Grip', 'description', 'image.png'),
+		'rpd_eotech_heartbeat_mp' => array('RPD Holographic Sight & Heartbeat Sensor', 'description', 'image.png'),
+		'rpd_eotech_silencer_mp' => array('RPD Holographic Sight & Silencer', 'description', 'image.png'),
+		'rpd_eotech_xmags_mp' => array('RPD Holographic Sight & Extended Mags', 'description', 'image.png'),
+		'rpd_fmj_grip_mp' => array('RPD FMJ & Grip', 'description', 'image.png'),
+		'rpd_fmj_heartbeat_mp' => array('RPD FMJ & Heartbeat Sensor', 'description', 'image.png'),
+		'rpd_fmj_reflex_mp' => array('RPD FMJ & Reflex', 'description', 'image.png'),
+		'rpd_fmj_silencer_mp' => array('RPD FMJ & Silencer', 'description', 'image.png'),
+		'rpd_fmj_thermal_mp' => array('RPD FMJ & Thermal Scope', 'description', 'image.png'),
+		'rpd_fmj_xmags_mp' => array('RPD FMJ & Extended Mags', 'description', 'image.png'),
+		'rpd_grip_heartbeat_mp' => array('RPD Grip & Heartbeat Sensor', 'description', 'image.png'),
+		'rpd_grip_reflex_mp' => array('RPD Grip & Reflex', 'description', 'image.png'),
+		'rpd_grip_silencer_mp' => array('RPD Grip & Silencer', 'description', 'image.png'),
+		'rpd_grip_thermal_mp' => array('RPD Grip & Thermal Scope', 'description', 'image.png'),
+		'rpd_grip_xmags_mp' => array('RPD Grip & Extended Mags', 'description', 'image.png'),
+		'rpd_heartbeat_reflex_mp' => array('RPD Heartbeat Sensor & Reflex', 'description', 'image.png'),
+		'rpd_heartbeat_silencer_mp' => array('RPD Heartbeat Sensor & Silencer', 'description', 'image.png'),
+		'rpd_heartbeat_thermal_mp' => array('RPD Heartbeat Sensor & Thermal', 'description', 'image.png'),
+		'rpd_heartbeat_xmags_mp' => array('RPD Heartbeat Sensor & Extended Mags', 'description', 'image.png'),
+		'rpd_reflex_silencer_mp' => array('RPD Reflex & Silencer', 'description', 'image.png'),
+		'rpd_reflex_xmags_mp' => array('RPD Reflex & Extended Mags', 'description', 'image.png'),
+		'rpd_silencer_thermal_mp' => array('RPD Silencer & Thermal Scope', 'description', 'image.png'),
+		'rpd_silencer_xmags_mp' => array('RPD Silencer & Extended Mags', 'description', 'image.png'),
+		'rpd_thermal_xmags_mp' => array('RPD Thermal Scope & Extended Mags', 'description', 'image.png'),
 
-//L86 LSW
-$w['sa80_mp'] = "L86 LSW";
-$w['sa80_acog_mp'] = "L86 LSW ACOG";
-$w['sa80_eotech_mp'] = "L86 LSW Holographic Sight";
-$w['sa80_fmj_mp'] = "L86 LSW FMJ";
-$w['sa80_grip_mp'] = "L86 LSW Grip";
-$w['sa80_heartbeat_mp'] = "L86 LSW Heartbeat Sensor";
-$w['sa80_reflex_mp'] = "L86 LSW Reflex";
-$w['sa80_silencer_mp'] = "L86 LSW Silencer";
-$w['sa80_thermal_mp'] = "L86 LSW Thermal Scope";
-$w['sa80_xmags_mp'] = "L86 LSW Extended Mags";
-$w['sa80_acog_fmj_mp'] = "L86 LSW ACOG & FMJ";
-$w['sa80_acog_grip_mp'] = "L86 LSW ACOG & Grip";
-$w['sa80_acog_heartbeat_mp'] = "L86 LSW ACOG & Heartbeat Sensor";
-$w['sa80_acog_silencer_mp'] = "L86 LSW ACOG & Silencer";
-$w['sa80_acog_xmags_mp'] = "L86 LSW ACOG & Extended Mags";
-$w['sa80_eotech_fmj_mp'] = "L86 LSW Holographic Sight & FMJ";
-$w['sa80_eotech_grip_mp'] = "L86 LSW Holographic Sight & Grip";
-$w['sa80_eotech_heartbeat_mp'] = "L86 LSW Holographic Sight & Heartbeat Sensor";
-$w['sa80_eotech_silencer_mp'] = "L86 LSW Holographic Sight & Silencer";
-$w['sa80_eotech_xmags_mp'] = "L86 LSW Holographic Sight & Extended Mags";
-$w['sa80_fmj_grip_mp'] = "L86 LSW FMJ & Grip";
-$w['sa80_fmj_heartbeat_mp'] = "L86 LSW FMJ & Heartbeat Sensor";
-$w['sa80_fmj_reflex_mp'] = "L86 LSW FMJ & Reflex";
-$w['sa80_fmj_silencer_mp'] = "L86 LSW FMJ & Silencer";
-$w['sa80_fmj_thermal_mp'] = "L86 LSW FMJ & Thermal Scope";
-$w['sa80_fmj_xmags_mp'] = "L86 LSW FMJ & Extended Mags";
-$w['sa80_grip_heartbeat_mp'] = "L86 LSW Grip & Heartbeat Sensor";
-$w['sa80_grip_reflex_mp'] = "L86 LSW Grip & Reflex";
-$w['sa80_grip_silencer_mp'] = "L86 LSW Grip & Silencer";
-$w['sa80_grip_thermal_mp'] = "L86 LSW Grip & Thermal Scope";
-$w['sa80_grip_xmags_mp'] = "L86 LSW Grip & Extended Mags";
-$w['sa80_heartbeat_reflex_mp'] = "L86 LSW Heartbeat Sensor & Reflex";
-$w['sa80_heartbeat_silencer_mp'] = "L86 LSW Heartbeat Sensor & Silencer";
-$w['sa80_heartbeat_thermal_mp'] = "L86 LSW Heartbeat Sensor & Thermal";
-$w['sa80_heartbeat_xmags_mp'] = "L86 LSW Heartbeat Sensor & Extended Mags";
-$w['sa80_reflex_silencer_mp'] = "L86 LSW Reflex & Silencer";
-$w['sa80_reflex_xmags_mp'] = "L86 LSW Reflex & Extended Mags";
-$w['sa80_silencer_thermal_mp'] = "L86 LSW Silencer & Thermal Scope";
-$w['sa80_silencer_xmags_mp'] = "L86 LSW Silencer & Extended Mags";
-$w['sa80_thermal_xmags_mp'] = "L86 LSW Thermal Scope & Extended Mags";
+		//L86 LSW
+		'sa80_mp' => array('L86 LSW', 'description', 'image.png'),
+		'sa80_acog_mp' => array('L86 LSW ACOG', 'description', 'image.png'),
+		'sa80_eotech_mp' => array('L86 LSW Holographic Sight', 'description', 'image.png'),
+		'sa80_fmj_mp' => array('L86 LSW FMJ', 'description', 'image.png'),
+		'sa80_grip_mp' => array('L86 LSW Grip', 'description', 'image.png'),
+		'sa80_heartbeat_mp' => array('L86 LSW Heartbeat Sensor', 'description', 'image.png'),
+		'sa80_reflex_mp' => array('L86 LSW Reflex', 'description', 'image.png'),
+		'sa80_silencer_mp' => array('L86 LSW Silencer', 'description', 'image.png'),
+		'sa80_thermal_mp' => array('L86 LSW Thermal Scope', 'description', 'image.png'),
+		'sa80_xmags_mp' => array('L86 LSW Extended Mags', 'description', 'image.png'),
+		'sa80_acog_fmj_mp' => array('L86 LSW ACOG & FMJ', 'description', 'image.png'),
+		'sa80_acog_grip_mp' => array('L86 LSW ACOG & Grip', 'description', 'image.png'),
+		'sa80_acog_heartbeat_mp' => array('L86 LSW ACOG & Heartbeat Sensor', 'description', 'image.png'),
+		'sa80_acog_silencer_mp' => array('L86 LSW ACOG & Silencer', 'description', 'image.png'),
+		'sa80_acog_xmags_mp' => array('L86 LSW ACOG & Extended Mags', 'description', 'image.png'),
+		'sa80_eotech_fmj_mp' => array('L86 LSW Holographic Sight & FMJ', 'description', 'image.png'),
+		'sa80_eotech_grip_mp' => array('L86 LSW Holographic Sight & Grip', 'description', 'image.png'),
+		'sa80_eotech_heartbeat_mp' => array('L86 LSW Holographic Sight & Heartbeat Sensor', 'description', 'image.png'),
+		'sa80_eotech_silencer_mp' => array('L86 LSW Holographic Sight & Silencer', 'description', 'image.png'),
+		'sa80_eotech_xmags_mp' => array('L86 LSW Holographic Sight & Extended Mags', 'description', 'image.png'),
+		'sa80_fmj_grip_mp' => array('L86 LSW FMJ & Grip', 'description', 'image.png'),
+		'sa80_fmj_heartbeat_mp' => array('L86 LSW FMJ & Heartbeat Sensor', 'description', 'image.png'),
+		'sa80_fmj_reflex_mp' => array('L86 LSW FMJ & Reflex', 'description', 'image.png'),
+		'sa80_fmj_silencer_mp' => array('L86 LSW FMJ & Silencer', 'description', 'image.png'),
+		'sa80_fmj_thermal_mp' => array('L86 LSW FMJ & Thermal Scope', 'description', 'image.png'),
+		'sa80_fmj_xmags_mp' => array('L86 LSW FMJ & Extended Mags', 'description', 'image.png'),
+		'sa80_grip_heartbeat_mp' => array('L86 LSW Grip & Heartbeat Sensor', 'description', 'image.png'),
+		'sa80_grip_reflex_mp' => array('L86 LSW Grip & Reflex', 'description', 'image.png'),
+		'sa80_grip_silencer_mp' => array('L86 LSW Grip & Silencer', 'description', 'image.png'),
+		'sa80_grip_thermal_mp' => array('L86 LSW Grip & Thermal Scope', 'description', 'image.png'),
+		'sa80_grip_xmags_mp' => array('L86 LSW Grip & Extended Mags', 'description', 'image.png'),
+		'sa80_heartbeat_reflex_mp' => array('L86 LSW Heartbeat Sensor & Reflex', 'description', 'image.png'),
+		'sa80_heartbeat_silencer_mp' => array('L86 LSW Heartbeat Sensor & Silencer', 'description', 'image.png'),
+		'sa80_heartbeat_thermal_mp' => array('L86 LSW Heartbeat Sensor & Thermal', 'description', 'image.png'),
+		'sa80_heartbeat_xmags_mp' => array('L86 LSW Heartbeat Sensor & Extended Mags', 'description', 'image.png'),
+		'sa80_reflex_silencer_mp' => array('L86 LSW Reflex & Silencer', 'description', 'image.png'),
+		'sa80_reflex_xmags_mp' => array('L86 LSW Reflex & Extended Mags', 'description', 'image.png'),
+		'sa80_silencer_thermal_mp' => array('L86 LSW Silencer & Thermal Scope', 'description', 'image.png'),
+		'sa80_silencer_xmags_mp' => array('L86 LSW Silencer & Extended Mags', 'description', 'image.png'),
+		'sa80_thermal_xmags_mp' => array('L86 LSW Thermal Scope & Extended Mags', 'description', 'image.png'),
 
-//MG4
-$w['mg4_mp'] = "MG4";
-$w['mg4_acog_mp'] = "MG4 ACOG";
-$w['mg4_eotech_mp'] = "MG4 Holographic Sight";
-$w['mg4_fmj_mp'] = "MG4 FMJ";
-$w['mg4_grip_mp'] = "MG4 Grip";
-$w['mg4_heartbeat_mp'] = "MG4 Heartbeat Sensor";
-$w['mg4_reflex_mp'] = "MG4 Reflex";
-$w['mg4_silencer_mp'] = "MG4 Silencer";
-$w['mg4_thermal_mp'] = "MG4 Thermal Scope";
-$w['mg4_xmags_mp'] = "MG4 Extended Mags";
-$w['mg4_acog_fmj_mp'] = "MG4 ACOG & FMJ";
-$w['mg4_acog_grip_mp'] = "MG4 ACOG & Grip";
-$w['mg4_acog_heartbeat_mp'] = "MG4 ACOG & Heartbeat Sensor";
-$w['mg4_acog_silencer_mp'] = "MG4 ACOG & Silencer";
-$w['mg4_acog_xmags_mp'] = "MG4 ACOG & Extended Mags";
-$w['mg4_eotech_fmj_mp'] = "MG4 Holographic Sight & FMJ";
-$w['mg4_eotech_grip_mp'] = "MG4 Holographic Sight & Grip";
-$w['mg4_eotech_heartbeat_mp'] = "MG4 Holographic Sight & Heartbeat Sensor";
-$w['mg4_eotech_silencer_mp'] = "MG4 Holographic Sight & Silencer";
-$w['mg4_eotech_xmags_mp'] = "MG4 Holographic Sight & Extended Mags";
-$w['mg4_fmj_grip_mp'] = "MG4 FMJ & Grip";
-$w['mg4_fmj_heartbeat_mp'] = "MG4 FMJ & Heartbeat Sensor";
-$w['mg4_fmj_reflex_mp'] = "MG4 FMJ & Reflex";
-$w['mg4_fmj_silencer_mp'] = "MG4 FMJ & Silencer";
-$w['mg4_fmj_thermal_mp'] = "MG4 FMJ & Thermal Scope";
-$w['mg4_fmj_xmags_mp'] = "MG4 FMJ & Extended Mags";
-$w['mg4_grip_heartbeat_mp'] = "MG4 Grip & Heartbeat Sensor";
-$w['mg4_grip_reflex_mp'] = "MG4 Grip & Reflex";
-$w['mg4_grip_silencer_mp'] = "MG4 Grip & Silencer";
-$w['mg4_grip_thermal_mp'] = "MG4 Grip & Thermal Scope";
-$w['mg4_grip_xmags_mp'] = "MG4 Grip & Extended Mags";
-$w['mg4_heartbeat_reflex_mp'] = "MG4 Heartbeat Sensor & Reflex";
-$w['mg4_heartbeat_silencer_mp'] = "MG4 Heartbeat Sensor & Silencer";
-$w['mg4_heartbeat_thermal_mp'] = "MG4 Heartbeat Sensor & Thermal";
-$w['mg4_heartbeat_xmags_mp'] = "MG4 Heartbeat Sensor & Extended Mags";
-$w['mg4_reflex_silencer_mp'] = "MG4 Reflex & Silencer";
-$w['mg4_reflex_xmags_mp'] = "MG4 Reflex & Extended Mags";
-$w['mg4_silencer_thermal_mp'] = "MG4 Silencer & Thermal Scope";
-$w['mg4_silencer_xmags_mp'] = "MG4 Silencer & Extended Mags";
-$w['mg4_thermal_xmags_mp'] = "MG4 Thermal Scope & Extended Mags";
+		//MG4
+		'mg4_mp' => array('MG4', 'description', 'image.png'),
+		'mg4_acog_mp' => array('MG4 ACOG', 'description', 'image.png'),
+		'mg4_eotech_mp' => array('MG4 Holographic Sight', 'description', 'image.png'),
+		'mg4_fmj_mp' => array('MG4 FMJ', 'description', 'image.png'),
+		'mg4_grip_mp' => array('MG4 Grip', 'description', 'image.png'),
+		'mg4_heartbeat_mp' => array('MG4 Heartbeat Sensor', 'description', 'image.png'),
+		'mg4_reflex_mp' => array('MG4 Reflex', 'description', 'image.png'),
+		'mg4_silencer_mp' => array('MG4 Silencer', 'description', 'image.png'),
+		'mg4_thermal_mp' => array('MG4 Thermal Scope', 'description', 'image.png'),
+		'mg4_xmags_mp' => array('MG4 Extended Mags', 'description', 'image.png'),
+		'mg4_acog_fmj_mp' => array('MG4 ACOG & FMJ', 'description', 'image.png'),
+		'mg4_acog_grip_mp' => array('MG4 ACOG & Grip', 'description', 'image.png'),
+		'mg4_acog_heartbeat_mp' => array('MG4 ACOG & Heartbeat Sensor', 'description', 'image.png'),
+		'mg4_acog_silencer_mp' => array('MG4 ACOG & Silencer', 'description', 'image.png'),
+		'mg4_acog_xmags_mp' => array('MG4 ACOG & Extended Mags', 'description', 'image.png'),
+		'mg4_eotech_fmj_mp' => array('MG4 Holographic Sight & FMJ', 'description', 'image.png'),
+		'mg4_eotech_grip_mp' => array('MG4 Holographic Sight & Grip', 'description', 'image.png'),
+		'mg4_eotech_heartbeat_mp' => array('MG4 Holographic Sight & Heartbeat Sensor', 'description', 'image.png'),
+		'mg4_eotech_silencer_mp' => array('MG4 Holographic Sight & Silencer', 'description', 'image.png'),
+		'mg4_eotech_xmags_mp' => array('MG4 Holographic Sight & Extended Mags', 'description', 'image.png'),
+		'mg4_fmj_grip_mp' => array('MG4 FMJ & Grip', 'description', 'image.png'),
+		'mg4_fmj_heartbeat_mp' => array('MG4 FMJ & Heartbeat Sensor', 'description', 'image.png'),
+		'mg4_fmj_reflex_mp' => array('MG4 FMJ & Reflex', 'description', 'image.png'),
+		'mg4_fmj_silencer_mp' => array('MG4 FMJ & Silencer', 'description', 'image.png'),
+		'mg4_fmj_thermal_mp' => array('MG4 FMJ & Thermal Scope', 'description', 'image.png'),
+		'mg4_fmj_xmags_mp' => array('MG4 FMJ & Extended Mags', 'description', 'image.png'),
+		'mg4_grip_heartbeat_mp' => array('MG4 Grip & Heartbeat Sensor', 'description', 'image.png'),
+		'mg4_grip_reflex_mp' => array('MG4 Grip & Reflex', 'description', 'image.png'),
+		'mg4_grip_silencer_mp' => array('MG4 Grip & Silencer', 'description', 'image.png'),
+		'mg4_grip_thermal_mp' => array('MG4 Grip & Thermal Scope', 'description', 'image.png'),
+		'mg4_grip_xmags_mp' => array('MG4 Grip & Extended Mags', 'description', 'image.png'),
+		'mg4_heartbeat_reflex_mp' => array('MG4 Heartbeat Sensor & Reflex', 'description', 'image.png'),
+		'mg4_heartbeat_silencer_mp' => array('MG4 Heartbeat Sensor & Silencer', 'description', 'image.png'),
+		'mg4_heartbeat_thermal_mp' => array('MG4 Heartbeat Sensor & Thermal', 'description', 'image.png'),
+		'mg4_heartbeat_xmags_mp' => array('MG4 Heartbeat Sensor & Extended Mags', 'description', 'image.png'),
+		'mg4_reflex_silencer_mp' => array('MG4 Reflex & Silencer', 'description', 'image.png'),
+		'mg4_reflex_xmags_mp' => array('MG4 Reflex & Extended Mags', 'description', 'image.png'),
+		'mg4_silencer_thermal_mp' => array('MG4 Silencer & Thermal Scope', 'description', 'image.png'),
+		'mg4_silencer_xmags_mp' => array('MG4 Silencer & Extended Mags', 'description', 'image.png'),
+		'mg4_thermal_xmags_mp' => array('MG4 Thermal Scope & Extended Mags', 'description', 'image.png'),
 
-//M240
-$w['m240_mp'] = "M240";
-$w['m240_acog_mp'] = "M240 ACOG";
-$w['m240_eotech_mp'] = "M240 Holographic Sight";
-$w['m240_fmj_mp'] = "M240 FMJ";
-$w['m240_grip_mp'] = "M240 Grip";
-$w['m240_heartbeat_mp'] = "M240 Heartbeat Sensor";
-$w['m240_reflex_mp'] = "M240 Reflex";
-$w['m240_silencer_mp'] = "M240 Silencer";
-$w['m240_thermal_mp'] = "M240 Thermal Scope";
-$w['m240_xmags_mp'] = "M240 Extended Mags";
-$w['m240_acog_fmj_mp'] = "M240 ACOG & FMJ";
-$w['m240_acog_grip_mp'] = "M240 ACOG & Grip";
-$w['m240_acog_heartbeat_mp'] = "M240 ACOG & Heartbeat Sensor";
-$w['m240_acog_silencer_mp'] = "M240 ACOG & Silencer";
-$w['m240_acog_xmags_mp'] = "M240 ACOG & Extended Mags";
-$w['m240_eotech_fmj_mp'] = "M240 Holographic Sight & FMJ";
-$w['m240_eotech_grip_mp'] = "M240 Holographic Sight & Grip";
-$w['m240_eotech_heartbeat_mp'] = "M240 Holographic Sight & Heartbeat Sensor";
-$w['m240_eotech_silencer_mp'] = "M240 Holographic Sight & Silencer";
-$w['m240_eotech_xmags_mp'] = "M240 Holographic Sight & Extended Mags";
-$w['m240_fmj_grip_mp'] = "M240 FMJ & Grip";
-$w['m240_fmj_heartbeat_mp'] = "M240 FMJ & Heartbeat Sensor";
-$w['m240_fmj_reflex_mp'] = "M240 FMJ & Reflex";
-$w['m240_fmj_silencer_mp'] = "M240 FMJ & Silencer";
-$w['m240_fmj_thermal_mp'] = "M240 FMJ & Thermal Scope";
-$w['m240_fmj_xmags_mp'] = "M240 FMJ & Extended Mags";
-$w['m240_grip_heartbeat_mp'] = "M240 Grip & Heartbeat Sensor";
-$w['m240_grip_reflex_mp'] = "M240 Grip & Reflex";
-$w['m240_grip_silencer_mp'] = "M240 Grip & Silencer";
-$w['m240_grip_thermal_mp'] = "M240 Grip & Thermal Scope";
-$w['m240_grip_xmags_mp'] = "M240 Grip & Extended Mags";
-$w['m240_heartbeat_reflex_mp'] = "M240 Heartbeat Sensor & Reflex";
-$w['m240_heartbeat_silencer_mp'] = "M240 Heartbeat Sensor & Silencer";
-$w['m240_heartbeat_thermal_mp'] = "M240 Heartbeat Sensor & Thermal";
-$w['m240_heartbeat_xmags_mp'] = "M240 Heartbeat Sensor & Extended Mags";
-$w['m240_reflex_silencer_mp'] = "M240 Reflex & Silencer";
-$w['m240_reflex_xmags_mp'] = "M240 Reflex & Extended Mags";
-$w['m240_silencer_thermal_mp'] = "M240 Silencer & Thermal Scope";
-$w['m240_silencer_xmags_mp'] = "M240 Silencer & Extended Mags";
-$w['m240_thermal_xmags_mp'] = "M240 Thermal Scope & Extended Mags";
+		//M240
+		'm240_mp' => array('M240', 'description', 'image.png'),
+		'm240_acog_mp' => array('M240 ACOG', 'description', 'image.png'),
+		'm240_eotech_mp' => array('M240 Holographic Sight', 'description', 'image.png'),
+		'm240_fmj_mp' => array('M240 FMJ', 'description', 'image.png'),
+		'm240_grip_mp' => array('M240 Grip', 'description', 'image.png'),
+		'm240_heartbeat_mp' => array('M240 Heartbeat Sensor', 'description', 'image.png'),
+		'm240_reflex_mp' => array('M240 Reflex', 'description', 'image.png'),
+		'm240_silencer_mp' => array('M240 Silencer', 'description', 'image.png'),
+		'm240_thermal_mp' => array('M240 Thermal Scope', 'description', 'image.png'),
+		'm240_xmags_mp' => array('M240 Extended Mags', 'description', 'image.png'),
+		'm240_acog_fmj_mp' => array('M240 ACOG & FMJ', 'description', 'image.png'),
+		'm240_acog_grip_mp' => array('M240 ACOG & Grip', 'description', 'image.png'),
+		'm240_acog_heartbeat_mp' => array('M240 ACOG & Heartbeat Sensor', 'description', 'image.png'),
+		'm240_acog_silencer_mp' => array('M240 ACOG & Silencer', 'description', 'image.png'),
+		'm240_acog_xmags_mp' => array('M240 ACOG & Extended Mags', 'description', 'image.png'),
+		'm240_eotech_fmj_mp' => array('M240 Holographic Sight & FMJ', 'description', 'image.png'),
+		'm240_eotech_grip_mp' => array('M240 Holographic Sight & Grip', 'description', 'image.png'),
+		'm240_eotech_heartbeat_mp' => array('M240 Holographic Sight & Heartbeat Sensor', 'description', 'image.png'),
+		'm240_eotech_silencer_mp' => array('M240 Holographic Sight & Silencer', 'description', 'image.png'),
+		'm240_eotech_xmags_mp' => array('M240 Holographic Sight & Extended Mags', 'description', 'image.png'),
+		'm240_fmj_grip_mp' => array('M240 FMJ & Grip', 'description', 'image.png'),
+		'm240_fmj_heartbeat_mp' => array('M240 FMJ & Heartbeat Sensor', 'description', 'image.png'),
+		'm240_fmj_reflex_mp' => array('M240 FMJ & Reflex', 'description', 'image.png'),
+		'm240_fmj_silencer_mp' => array('M240 FMJ & Silencer', 'description', 'image.png'),
+		'm240_fmj_thermal_mp' => array('M240 FMJ & Thermal Scope', 'description', 'image.png'),
+		'm240_fmj_xmags_mp' => array('M240 FMJ & Extended Mags', 'description', 'image.png'),
+		'm240_grip_heartbeat_mp' => array('M240 Grip & Heartbeat Sensor', 'description', 'image.png'),
+		'm240_grip_reflex_mp' => array('M240 Grip & Reflex', 'description', 'image.png'),
+		'm240_grip_silencer_mp' => array('M240 Grip & Silencer', 'description', 'image.png'),
+		'm240_grip_thermal_mp' => array('M240 Grip & Thermal Scope', 'description', 'image.png'),
+		'm240_grip_xmags_mp' => array('M240 Grip & Extended Mags', 'description', 'image.png'),
+		'm240_heartbeat_reflex_mp' => array('M240 Heartbeat Sensor & Reflex', 'description', 'image.png'),
+		'm240_heartbeat_silencer_mp' => array('M240 Heartbeat Sensor & Silencer', 'description', 'image.png'),
+		'm240_heartbeat_thermal_mp' => array('M240 Heartbeat Sensor & Thermal', 'description', 'image.png'),
+		'm240_heartbeat_xmags_mp' => array('M240 Heartbeat Sensor & Extended Mags', 'description', 'image.png'),
+		'm240_reflex_silencer_mp' => array('M240 Reflex & Silencer', 'description', 'image.png'),
+		'm240_reflex_xmags_mp' => array('M240 Reflex & Extended Mags', 'description', 'image.png'),
+		'm240_silencer_thermal_mp' => array('M240 Silencer & Thermal Scope', 'description', 'image.png'),
+		'm240_silencer_xmags_mp' => array('M240 Silencer & Extended Mags', 'description', 'image.png'),
+		'm240_thermal_xmags_mp' => array('M240 Thermal Scope & Extended Mags', 'description', 'image.png'),
 
-//AUG HBAR
-$w['aug_mp'] = "AUG";
-$w['aug_acog_mp'] = "AUG ACOG";
-$w['aug_eotech_mp'] = "AUG Holographic Sight";
-$w['aug_fmj_mp'] = "AUG FMJ";
-$w['aug_grip_mp'] = "AUG Grip";
-$w['aug_heartbeat_mp'] = "AUG Heartbeat Sensor";
-$w['aug_reflex_mp'] = "AUG Reflex";
-$w['aug_silencer_mp'] = "AUG Silencer";
-$w['aug_thermal_mp'] = "AUG Thermal Scope";
-$w['aug_xmags_mp'] = "AUG Extended Mags";
-$w['aug_acog_fmj_mp'] = "AUG ACOG & FMJ";
-$w['aug_acog_grip_mp'] = "AUG ACOG & Grip";
-$w['aug_acog_heartbeat_mp'] = "AUG ACOG & Heartbeat Sensor";
-$w['aug_acog_silencer_mp'] = "AUG ACOG & Silencer";
-$w['aug_acog_xmags_mp'] = "AUG ACOG & Extended Mags";
-$w['aug_eotech_fmj_mp'] = "AUG Holographic Sight & FMJ";
-$w['aug_eotech_grip_mp'] = "AUG Holographic Sight & Grip";
-$w['aug_eotech_heartbeat_mp'] = "AUG Holographic Sight & Heartbeat Sensor";
-$w['aug_eotech_silencer_mp'] = "AUG Holographic Sight & Silencer";
-$w['aug_eotech_xmags_mp'] = "AUG Holographic Sight & Extended Mags";
-$w['aug_fmj_grip_mp'] = "AUG FMJ & Grip";
-$w['aug_fmj_heartbeat_mp'] = "AUG FMJ & Heartbeat Sensor";
-$w['aug_fmj_reflex_mp'] = "AUG FMJ & Reflex";
-$w['aug_fmj_silencer_mp'] = "AUG FMJ & Silencer";
-$w['aug_fmj_thermal_mp'] = "AUG FMJ & Thermal Scope";
-$w['aug_fmj_xmags_mp'] = "AUG FMJ & Extended Mags";
-$w['aug_grip_heartbeat_mp'] = "AUG Grip & Heartbeat Sensor";
-$w['aug_grip_reflex_mp'] = "AUG Grip & Reflex";
-$w['aug_grip_silencer_mp'] = "AUG Grip & Silencer";
-$w['aug_grip_thermal_mp'] = "AUG Grip & Thermal Scope";
-$w['aug_grip_xmags_mp'] = "AUG Grip & Extended Mags";
-$w['aug_heartbeat_reflex_mp'] = "AUG Heartbeat Sensor & Reflex";
-$w['aug_heartbeat_silencer_mp'] = "AUG Heartbeat Sensor & Silencer";
-$w['aug_heartbeat_thermal_mp'] = "AUG Heartbeat Sensor & Thermal";
-$w['aug_heartbeat_xmags_mp'] = "AUG Heartbeat Sensor & Extended Mags";
-$w['aug_reflex_silencer_mp'] = "AUG Reflex & Silencer";
-$w['aug_reflex_xmags_mp'] = "AUG Reflex & Extended Mags";
-$w['aug_silencer_thermal_mp'] = "AUG Silencer & Thermal Scope";
-$w['aug_silencer_xmags_mp'] = "AUG Silencer & Extended Mags";
-$w['aug_thermal_xmags_mp'] = "AUG Thermal Scope & Extended Mags";
+		//AUG HBAR
+		'aug_mp' => array('AUG', 'description', 'image.png'),
+		'aug_acog_mp' => array('AUG ACOG', 'description', 'image.png'),
+		'aug_eotech_mp' => array('AUG Holographic Sight', 'description', 'image.png'),
+		'aug_fmj_mp' => array('AUG FMJ', 'description', 'image.png'),
+		'aug_grip_mp' => array('AUG Grip', 'description', 'image.png'),
+		'aug_heartbeat_mp' => array('AUG Heartbeat Sensor', 'description', 'image.png'),
+		'aug_reflex_mp' => array('AUG Reflex', 'description', 'image.png'),
+		'aug_silencer_mp' => array('AUG Silencer', 'description', 'image.png'),
+		'aug_thermal_mp' => array('AUG Thermal Scope', 'description', 'image.png'),
+		'aug_xmags_mp' => array('AUG Extended Mags', 'description', 'image.png'),
+		'aug_acog_fmj_mp' => array('AUG ACOG & FMJ', 'description', 'image.png'),
+		'aug_acog_grip_mp' => array('AUG ACOG & Grip', 'description', 'image.png'),
+		'aug_acog_heartbeat_mp' => array('AUG ACOG & Heartbeat Sensor', 'description', 'image.png'),
+		'aug_acog_silencer_mp' => array('AUG ACOG & Silencer', 'description', 'image.png'),
+		'aug_acog_xmags_mp' => array('AUG ACOG & Extended Mags', 'description', 'image.png'),
+		'aug_eotech_fmj_mp' => array('AUG Holographic Sight & FMJ', 'description', 'image.png'),
+		'aug_eotech_grip_mp' => array('AUG Holographic Sight & Grip', 'description', 'image.png'),
+		'aug_eotech_heartbeat_mp' => array('AUG Holographic Sight & Heartbeat Sensor', 'description', 'image.png'),
+		'aug_eotech_silencer_mp' => array('AUG Holographic Sight & Silencer', 'description', 'image.png'),
+		'aug_eotech_xmags_mp' => array('AUG Holographic Sight & Extended Mags', 'description', 'image.png'),
+		'aug_fmj_grip_mp' => array('AUG FMJ & Grip', 'description', 'image.png'),
+		'aug_fmj_heartbeat_mp' => array('AUG FMJ & Heartbeat Sensor', 'description', 'image.png'),
+		'aug_fmj_reflex_mp' => array('AUG FMJ & Reflex', 'description', 'image.png'),
+		'aug_fmj_silencer_mp' => array('AUG FMJ & Silencer', 'description', 'image.png'),
+		'aug_fmj_thermal_mp' => array('AUG FMJ & Thermal Scope', 'description', 'image.png'),
+		'aug_fmj_xmags_mp' => array('AUG FMJ & Extended Mags', 'description', 'image.png'),
+		'aug_grip_heartbeat_mp' => array('AUG Grip & Heartbeat Sensor', 'description', 'image.png'),
+		'aug_grip_reflex_mp' => array('AUG Grip & Reflex', 'description', 'image.png'),
+		'aug_grip_silencer_mp' => array('AUG Grip & Silencer', 'description', 'image.png'),
+		'aug_grip_thermal_mp' => array('AUG Grip & Thermal Scope', 'description', 'image.png'),
+		'aug_grip_xmags_mp' => array('AUG Grip & Extended Mags', 'description', 'image.png'),
+		'aug_heartbeat_reflex_mp' => array('AUG Heartbeat Sensor & Reflex', 'description', 'image.png'),
+		'aug_heartbeat_silencer_mp' => array('AUG Heartbeat Sensor & Silencer', 'description', 'image.png'),
+		'aug_heartbeat_thermal_mp' => array('AUG Heartbeat Sensor & Thermal', 'description', 'image.png'),
+		'aug_heartbeat_xmags_mp' => array('AUG Heartbeat Sensor & Extended Mags', 'description', 'image.png'),
+		'aug_reflex_silencer_mp' => array('AUG Reflex & Silencer', 'description', 'image.png'),
+		'aug_reflex_xmags_mp' => array('AUG Reflex & Extended Mags', 'description', 'image.png'),
+		'aug_silencer_thermal_mp' => array('AUG Silencer & Thermal Scope', 'description', 'image.png'),
+		'aug_silencer_xmags_mp' => array('AUG Silencer & Extended Mags', 'description', 'image.png'),
+		'aug_thermal_xmags_mp' => array('AUG Thermal Scope & Extended Mags', 'description', 'image.png'),
 
 
-//*********************
-//Sniper Rifles
-//*********************
+		//*********************
+		//Sniper Rifles
+		//*********************
 
-//CheyTac Intervention
-$w['cheytac_mp'] = "CheyTac Intervention";
-$w['cheytac_acog_mp'] = "CheyTac Intervention ACOG";
-$w['cheytac_fmj_mp'] = "CheyTac Intervention FMJ";
-$w['cheytac_heartbeat_mp'] = "CheyTac Intervention Heartbeat Sensor";
-$w['cheytac_silencer_mp'] = "CheyTac Intervention Silencer";
-$w['cheytac_thermal_mp'] = "CheyTac Intervention Thermal Scope";
-$w['cheytac_xmags_mp'] = "CheyTac Intervention Extended Mags";
-$w['cheytac_acog_fmj_mp'] = "CheyTac Intervention ACOG & FMJ";
-$w['cheytac_acog_heartbeat_mp'] = "CheyTac Intervention ACOG & Heartbeat Sensor";
-$w['cheytac_acog_silencer_mp'] = "CheyTac Intervention ACOG & Silencer";
-$w['cheytac_acog_xmags_mp'] = "CheyTac Intervention ACOG & Extended Mags";
-$w['cheytac_fmj_heartbeat_mp'] = "CheyTac Intervention FMJ & Heartbeat Sensor";
-$w['cheytac_fmj_silencer_mp'] = "CheyTac Intervention FMJ & Silencer";
-$w['cheytac_fmj_thermal_mp'] = "CheyTac Intervention FMJ & Thermal Scope";
-$w['cheytac_fmj_xmags_mp'] = "CheyTac Intervention FMJ & Extended Mags";
-$w['cheytac_heartbeat_silencer_mp'] = "CheyTac Intervention Heartbeat Sensor & Silencer";
-$w['cheytac_heartbeat_thermal_mp'] = "CheyTac Intervention Heartbeat Sensor & Thermal Scope";
-$w['cheytac_heartbeat_xmags_mp'] = "CheyTac Intervention Heartbeat Sensor & Extended Mags";
-$w['cheytac_silencer_thermal_mp'] = "CheyTac Intervention Silencer & Thermal Scope";
-$w['cheytac_silencer_xmags_mp'] = "CheyTac Intervention Silencer & Extended Mags";
-$w['cheytac_thermal_xmags_mp'] = "CheyTac Intervention Thermal Scope & Extended Mags";
+		//CheyTac Intervention
+		'cheytac_mp' => array('CheyTac Intervention', 'description', 'image.png'),
+		'cheytac_acog_mp' => array('CheyTac Intervention ACOG', 'description', 'image.png'),
+		'cheytac_fmj_mp' => array('CheyTac Intervention FMJ', 'description', 'image.png'),
+		'cheytac_heartbeat_mp' => array('CheyTac Intervention Heartbeat Sensor', 'description', 'image.png'),
+		'cheytac_silencer_mp' => array('CheyTac Intervention Silencer', 'description', 'image.png'),
+		'cheytac_thermal_mp' => array('CheyTac Intervention Thermal Scope', 'description', 'image.png'),
+		'cheytac_xmags_mp' => array('CheyTac Intervention Extended Mags', 'description', 'image.png'),
+		'cheytac_acog_fmj_mp' => array('CheyTac Intervention ACOG & FMJ', 'description', 'image.png'),
+		'cheytac_acog_heartbeat_mp' => array('CheyTac Intervention ACOG & Heartbeat Sensor', 'description', 'image.png'),
+		'cheytac_acog_silencer_mp' => array('CheyTac Intervention ACOG & Silencer', 'description', 'image.png'),
+		'cheytac_acog_xmags_mp' => array('CheyTac Intervention ACOG & Extended Mags', 'description', 'image.png'),
+		'cheytac_fmj_heartbeat_mp' => array('CheyTac Intervention FMJ & Heartbeat Sensor', 'description', 'image.png'),
+		'cheytac_fmj_silencer_mp' => array('CheyTac Intervention FMJ & Silencer', 'description', 'image.png'),
+		'cheytac_fmj_thermal_mp' => array('CheyTac Intervention FMJ & Thermal Scope', 'description', 'image.png'),
+		'cheytac_fmj_xmags_mp' => array('CheyTac Intervention FMJ & Extended Mags', 'description', 'image.png'),
+		'cheytac_heartbeat_silencer_mp' => array('CheyTac Intervention Heartbeat Sensor & Silencer', 'description', 'image.png'),
+		'cheytac_heartbeat_thermal_mp' => array('CheyTac Intervention Heartbeat Sensor & Thermal Scope', 'description', 'image.png'),
+		'cheytac_heartbeat_xmags_mp' => array('CheyTac Intervention Heartbeat Sensor & Extended Mags', 'description', 'image.png'),
+		'cheytac_silencer_thermal_mp' => array('CheyTac Intervention Silencer & Thermal Scope', 'description', 'image.png'),
+		'cheytac_silencer_xmags_mp' => array('CheyTac Intervention Silencer & Extended Mags', 'description', 'image.png'),
+		'cheytac_thermal_xmags_mp' => array('CheyTac Intervention Thermal Scope & Extended Mags', 'description', 'image.png'),
 
-//Barrett .50Cal
-$w['barrett_mp'] = "Barrett .50Cal";
-$w['barrett_acog_mp'] = "Barrett ACOG";
-$w['barrett_fmj_mp'] = "Barrett FMJ";
-$w['barrett_heartbeat_mp'] = "Barrett Heartbeat Sensor";
-$w['barrett_silencer_mp'] = "Barrett Silencer";
-$w['barrett_thermal_mp'] = "Barrett Thermal Scope";
-$w['barrett_xmags_mp'] = "Barrett Extended Mags";
-$w['barrett_acog_fmj_mp'] = "Barrett ACOG & FMJ";
-$w['barrett_acog_heartbeat_mp'] = "Barrett ACOG & Heartbeat Sensor";
-$w['barrett_acog_silencer_mp'] = "Barrett ACOG & Silencer";
-$w['barrett_acog_xmags_mp'] = "Barrett ACOG & Extended Mags";
-$w['barrett_fmj_heartbeat_mp'] = "Barrett FMJ & Heartbeat Sensor";
-$w['barrett_fmj_silencer_mp'] = "Barrett FMJ & Silencer";
-$w['barrett_fmj_thermal_mp'] = "Barrett FMJ & Thermal Scope";
-$w['barrett_fmj_xmags_mp'] = "Barrett FMJ & Extended Mags";
-$w['barrett_heartbeat_silencer_mp'] = "Barrett Heartbeat Sensor & Silencer";
-$w['barrett_heartbeat_thermal_mp'] = "Barrett Heartbeat Sensor & Thermal Scope";
-$w['barrett_heartbeat_xmags_mp'] = "Barrett Heartbeat Sensor & Extended Mags";
-$w['barrett_silencer_thermal_mp'] = "Barrett Silencer & Thermal Scope";
-$w['barrett_silencer_xmags_mp'] = "Barrett Silencer & Extended Mags";
-$w['barrett_thermal_xmags_mp'] = "Barrett Thermal Scope & Extended Mags";
+		//Barrett .50Cal
+		'barrett_mp' => array('Barrett .50Cal', 'description', 'image.png'),
+		'barrett_acog_mp' => array('Barrett ACOG', 'description', 'image.png'),
+		'barrett_fmj_mp' => array('Barrett FMJ', 'description', 'image.png'),
+		'barrett_heartbeat_mp' => array('Barrett Heartbeat Sensor', 'description', 'image.png'),
+		'barrett_silencer_mp' => array('Barrett Silencer', 'description', 'image.png'),
+		'barrett_thermal_mp' => array('Barrett Thermal Scope', 'description', 'image.png'),
+		'barrett_xmags_mp' => array('Barrett Extended Mags', 'description', 'image.png'),
+		'barrett_acog_fmj_mp' => array('Barrett ACOG & FMJ', 'description', 'image.png'),
+		'barrett_acog_heartbeat_mp' => array('Barrett ACOG & Heartbeat Sensor', 'description', 'image.png'),
+		'barrett_acog_silencer_mp' => array('Barrett ACOG & Silencer', 'description', 'image.png'),
+		'barrett_acog_xmags_mp' => array('Barrett ACOG & Extended Mags', 'description', 'image.png'),
+		'barrett_fmj_heartbeat_mp' => array('Barrett FMJ & Heartbeat Sensor', 'description', 'image.png'),
+		'barrett_fmj_silencer_mp' => array('Barrett FMJ & Silencer', 'description', 'image.png'),
+		'barrett_fmj_thermal_mp' => array('Barrett FMJ & Thermal Scope', 'description', 'image.png'),
+		'barrett_fmj_xmags_mp' => array('Barrett FMJ & Extended Mags', 'description', 'image.png'),
+		'barrett_heartbeat_silencer_mp' => array('Barrett Heartbeat Sensor & Silencer', 'description', 'image.png'),
+		'barrett_heartbeat_thermal_mp' => array('Barrett Heartbeat Sensor & Thermal Scope', 'description', 'image.png'),
+		'barrett_heartbeat_xmags_mp' => array('Barrett Heartbeat Sensor & Extended Mags', 'description', 'image.png'),
+		'barrett_silencer_thermal_mp' => array('Barrett Silencer & Thermal Scope', 'description', 'image.png'),
+		'barrett_silencer_xmags_mp' => array('Barrett Silencer & Extended Mags', 'description', 'image.png'),
+		'barrett_thermal_xmags_mp' => array('Barrett Thermal Scope & Extended Mags', 'description', 'image.png'),
 
-//WA2000
-$w['wa2000_mp'] = "WA2000";
-$w['wa2000_acog_mp'] = "WA2000 ACOG";
-$w['wa2000_fmj_mp'] = "WA2000 FMJ";
-$w['wa2000_heartbeat_mp'] = "WA2000 Heartbeat Sensor";
-$w['wa2000_silencer_mp'] = "WA2000 Silencer";
-$w['wa2000_thermal_mp'] = "WA2000 Thermal Scope";
-$w['wa2000_xmags_mp'] = "WA2000 Extended Mags";
-$w['wa2000_acog_fmj_mp'] = "WA2000 ACOG & FMJ";
-$w['wa2000_acog_heartbeat_mp'] = "WA2000 ACOG & Heartbeat Sensor";
-$w['wa2000_acog_silencer_mp'] = "WA2000 ACOG & Silencer";
-$w['wa2000_acog_xmags_mp'] = "WA2000 ACOG & Extended Mags";
-$w['wa2000_fmj_heartbeat_mp'] = "WA2000 FMJ & Heartbeat Sensor";
-$w['wa2000_fmj_silencer_mp'] = "WA2000 FMJ & Silencer";
-$w['wa2000_fmj_thermal_mp'] = "WA2000 FMJ & Thermal Scope";
-$w['wa2000_fmj_xmags_mp'] = "WA2000 FMJ & Extended Mags";
-$w['wa2000_heartbeat_silencer_mp'] = "WA2000 Heartbeat Sensor & Silencer";
-$w['wa2000_heartbeat_thermal_mp'] = "WA2000 Heartbeat Sensor & Thermal Scope";
-$w['wa2000_heartbeat_xmags_mp'] = "WA2000 Heartbeat Sensor & Extended Mags";
-$w['wa2000_silencer_thermal_mp'] = "WA2000 Silencer & Thermal Scope";
-$w['wa2000_silencer_xmags_mp'] = "WA2000 Silencer & Extended Mags";
-$w['wa2000_thermal_xmags_mp'] = "WA2000 Thermal Scope & Extended Mags";
+		//WA2000
+		'wa2000_mp' => array('WA2000', 'description', 'image.png'),
+		'wa2000_acog_mp' => array('WA2000 ACOG', 'description', 'image.png'),
+		'wa2000_fmj_mp' => array('WA2000 FMJ', 'description', 'image.png'),
+		'wa2000_heartbeat_mp' => array('WA2000 Heartbeat Sensor', 'description', 'image.png'),
+		'wa2000_silencer_mp' => array('WA2000 Silencer', 'description', 'image.png'),
+		'wa2000_thermal_mp' => array('WA2000 Thermal Scope', 'description', 'image.png'),
+		'wa2000_xmags_mp' => array('WA2000 Extended Mags', 'description', 'image.png'),
+		'wa2000_acog_fmj_mp' => array('WA2000 ACOG & FMJ', 'description', 'image.png'),
+		'wa2000_acog_heartbeat_mp' => array('WA2000 ACOG & Heartbeat Sensor', 'description', 'image.png'),
+		'wa2000_acog_silencer_mp' => array('WA2000 ACOG & Silencer', 'description', 'image.png'),
+		'wa2000_acog_xmags_mp' => array('WA2000 ACOG & Extended Mags', 'description', 'image.png'),
+		'wa2000_fmj_heartbeat_mp' => array('WA2000 FMJ & Heartbeat Sensor', 'description', 'image.png'),
+		'wa2000_fmj_silencer_mp' => array('WA2000 FMJ & Silencer', 'description', 'image.png'),
+		'wa2000_fmj_thermal_mp' => array('WA2000 FMJ & Thermal Scope', 'description', 'image.png'),
+		'wa2000_fmj_xmags_mp' => array('WA2000 FMJ & Extended Mags', 'description', 'image.png'),
+		'wa2000_heartbeat_silencer_mp' => array('WA2000 Heartbeat Sensor & Silencer', 'description', 'image.png'),
+		'wa2000_heartbeat_thermal_mp' => array('WA2000 Heartbeat Sensor & Thermal Scope', 'description', 'image.png'),
+		'wa2000_heartbeat_xmags_mp' => array('WA2000 Heartbeat Sensor & Extended Mags', 'description', 'image.png'),
+		'wa2000_silencer_thermal_mp' => array('WA2000 Silencer & Thermal Scope', 'description', 'image.png'),
+		'wa2000_silencer_xmags_mp' => array('WA2000 Silencer & Extended Mags', 'description', 'image.png'),
+		'wa2000_thermal_xmags_mp' => array('WA2000 Thermal Scope & Extended Mags', 'description', 'image.png'),
 
-//M21 EBR
-$w['m21_mp'] = "M21";
-$w['m21_acog_mp'] = "M21 ACOG";
-$w['m21_fmj_mp'] = "M21 FMJ";
-$w['m21_heartbeat_mp'] = "M21 Heartbeat Sensor";
-$w['m21_silencer_mp'] = "M21 Silencer";
-$w['m21_thermal_mp'] = "M21 Thermal Scope";
-$w['m21_xmags_mp'] = "M21 Extended Mags";
-$w['m21_acog_fmj_mp'] = "M21 ACOG & FMJ";
-$w['m21_acog_heartbeat_mp'] = "M21 ACOG & Heartbeat Sensor";
-$w['m21_acog_silencer_mp'] = "M21 ACOG & Silencer";
-$w['m21_acog_xmags_mp'] = "M21 ACOG & Extended Mags";
-$w['m21_fmj_heartbeat_mp'] = "M21 FMJ & Heartbeat Sensor";
-$w['m21_fmj_silencer_mp'] = "M21 FMJ & Silencer";
-$w['m21_fmj_thermal_mp'] = "M21 FMJ & Thermal Scope";
-$w['m21_fmj_xmags_mp'] = "M21 FMJ & Extended Mags";
-$w['m21_heartbeat_silencer_mp'] = "M21 Heartbeat Sensor & Silencer";
-$w['m21_heartbeat_thermal_mp'] = "M21 Heartbeat Sensor & Thermal Scope";
-$w['m21_heartbeat_xmags_mp'] = "M21 Heartbeat Sensor & Extended Mags";
-$w['m21_silencer_thermal_mp'] = "M21 Silencer & Thermal Scope";
-$w['m21_silencer_xmags_mp'] = "M21 Silencer & Extended Mags";
-$w['m21_thermal_xmags_mp'] = "M21 Thermal Scope & Extended Mags";
+		//M21 EBR
+		'm21_mp' => array('M21', 'description', 'image.png'),
+		'm21_acog_mp' => array('M21 ACOG', 'description', 'image.png'),
+		'm21_fmj_mp' => array('M21 FMJ', 'description', 'image.png'),
+		'm21_heartbeat_mp' => array('M21 Heartbeat Sensor', 'description', 'image.png'),
+		'm21_silencer_mp' => array('M21 Silencer', 'description', 'image.png'),
+		'm21_thermal_mp' => array('M21 Thermal Scope', 'description', 'image.png'),
+		'm21_xmags_mp' => array('M21 Extended Mags', 'description', 'image.png'),
+		'm21_acog_fmj_mp' => array('M21 ACOG & FMJ', 'description', 'image.png'),
+		'm21_acog_heartbeat_mp' => array('M21 ACOG & Heartbeat Sensor', 'description', 'image.png'),
+		'm21_acog_silencer_mp' => array('M21 ACOG & Silencer', 'description', 'image.png'),
+		'm21_acog_xmags_mp' => array('M21 ACOG & Extended Mags', 'description', 'image.png'),
+		'm21_fmj_heartbeat_mp' => array('M21 FMJ & Heartbeat Sensor', 'description', 'image.png'),
+		'm21_fmj_silencer_mp' => array('M21 FMJ & Silencer', 'description', 'image.png'),
+		'm21_fmj_thermal_mp' => array('M21 FMJ & Thermal Scope', 'description', 'image.png'),
+		'm21_fmj_xmags_mp' => array('M21 FMJ & Extended Mags', 'description', 'image.png'),
+		'm21_heartbeat_silencer_mp' => array('M21 Heartbeat Sensor & Silencer', 'description', 'image.png'),
+		'm21_heartbeat_thermal_mp' => array('M21 Heartbeat Sensor & Thermal Scope', 'description', 'image.png'),
+		'm21_heartbeat_xmags_mp' => array('M21 Heartbeat Sensor & Extended Mags', 'description', 'image.png'),
+		'm21_silencer_thermal_mp' => array('M21 Silencer & Thermal Scope', 'description', 'image.png'),
+		'm21_silencer_xmags_mp' => array('M21 Silencer & Extended Mags', 'description', 'image.png'),
+		'm21_thermal_xmags_mp' => array('M21 Thermal Scope & Extended Mags', 'description', 'image.png'),
 
-//*********************
-//Machine Pistols
-//*********************
+		//*********************
+		//Machine Pistols
+		//*********************
 
-//PP2000
-$w['pp2000_mp'] = "PP2000";
-$w['pp2000_akimbo_mp'] = "PP2000 Akimbo";
-$w['pp2000_eotech_mp'] = "PP2000 Holographic Sight";
-$w['pp2000_fmj_mp'] = "PP2000 FMJ";
-$w['pp2000_reflex_mp'] = "PP2000 Reflex";
-$w['pp2000_silencer_mp'] = "PP2000 Silencer";
-$w['pp2000_xmags_mp'] = "PP2000 Extended Mags";
-$w['pp2000_akimbo_fmj_mp'] = "PP2000 Akimbo FMJ";
-$w['pp2000_akimbo_silencer_mp'] = "PP2000 Akimbo Silencer";
-$w['pp2000_akimbo_xmags_mp'] = "PP2000 Akimbo Extended Mags";
-$w['pp2000_eotech_fmj_mp'] = "PP2000 Holographic Sight & FMJ";
-$w['pp2000_eotech_silencer_mp'] = "PP2000 Holographic Sight & Silencer";
-$w['pp2000_eotech_xmags_mp'] = "PP2000Holographic Sight & Extended Mags";
-$w['pp2000_fmj_reflex_mp'] = "PP2000 FMJ & Reflex";
-$w['pp2000_fmj_silencer_mp'] = "PP2000 FMJ & Silencer";
-$w['pp2000_fmj_xmags_mp'] = "PP2000 FMJ & Extended Mags";
-$w['pp2000_reflex_silencer_mp'] = "PP2000 Reflex & Silencer";
-$w['pp2000_reflex_xmags_mp'] = "PP2000 Reflex & Extended Mags";
-$w['pp2000_silencer_xmags_mp'] = "PP2000 Silencer & Extended Mags";
+		//PP2000
+		'pp2000_mp' => array('PP2000', 'description', 'image.png'),
+		'pp2000_akimbo_mp' => array('PP2000 Akimbo', 'description', 'image.png'),
+		'pp2000_eotech_mp' => array('PP2000 Holographic Sight', 'description', 'image.png'),
+		'pp2000_fmj_mp' => array('PP2000 FMJ', 'description', 'image.png'),
+		'pp2000_reflex_mp' => array('PP2000 Reflex', 'description', 'image.png'),
+		'pp2000_silencer_mp' => array('PP2000 Silencer', 'description', 'image.png'),
+		'pp2000_xmags_mp' => array('PP2000 Extended Mags', 'description', 'image.png'),
+		'pp2000_akimbo_fmj_mp' => array('PP2000 Akimbo FMJ', 'description', 'image.png'),
+		'pp2000_akimbo_silencer_mp' => array('PP2000 Akimbo Silencer', 'description', 'image.png'),
+		'pp2000_akimbo_xmags_mp' => array('PP2000 Akimbo Extended Mags', 'description', 'image.png'),
+		'pp2000_eotech_fmj_mp' => array('PP2000 Holographic Sight & FMJ', 'description', 'image.png'),
+		'pp2000_eotech_silencer_mp' => array('PP2000 Holographic Sight & Silencer', 'description', 'image.png'),
+		'pp2000_eotech_xmags_mp' => array('PP2000Holographic Sight & Extended Mags', 'description', 'image.png'),
+		'pp2000_fmj_reflex_mp' => array('PP2000 FMJ & Reflex', 'description', 'image.png'),
+		'pp2000_fmj_silencer_mp' => array('PP2000 FMJ & Silencer', 'description', 'image.png'),
+		'pp2000_fmj_xmags_mp' => array('PP2000 FMJ & Extended Mags', 'description', 'image.png'),
+		'pp2000_reflex_silencer_mp' => array('PP2000 Reflex & Silencer', 'description', 'image.png'),
+		'pp2000_reflex_xmags_mp' => array('PP2000 Reflex & Extended Mags', 'description', 'image.png'),
+		'pp2000_silencer_xmags_mp' => array('PP2000 Silencer & Extended Mags', 'description', 'image.png'),
 
-//G18 Glock
-$w['glock_mp'] = "G18 Glock";
-$w['glock_akimbo_mp'] = "G18 Glock Akimbo";
-$w['glock_eotech_mp'] = "G18 Glock Holographic Sight";
-$w['glock_fmj_mp'] = "G18 Glock FMJ";
-$w['glock_reflex_mp'] = "G18 Glock Reflex";
-$w['glock_silencer_mp'] = "G18 Glock Silencer";
-$w['glock_xmags_mp'] = "G18 Glock Extended Mags";
-$w['glock_akimbo_fmj_mp'] = "G18 Glock Akimbo FMJ";
-$w['glock_akimbo_silencer_mp'] = "G18 Glock Akimbo Silencer";
-$w['glock_akimbo_xmags_mp'] = "G18 Glock Akimbo Extended Mags";
-$w['glock_eotech_fmj_mp'] = "G18 Glock Holographic Sight & FMJ";
-$w['glock_eotech_silencer_mp'] = "G18 Glock Holographic Sight & Silencer";
-$w['glock_eotech_xmags_mp'] = "G18 Glock Holographic Sight & Extended Mags";
-$w['glock_fmj_reflex_mp'] = "G18 Glock FMJ & Reflex";
-$w['glock_fmj_silencer_mp'] = "G18 Glock FMJ & Silencer";
-$w['glock_fmj_xmags_mp'] = "G18 Glock FMJ & Extended Mags";
-$w['glock_reflex_silencer_mp'] = "G18 Glock Reflex & Silencer";
-$w['glock_reflex_xmags_mp'] = "G18 Glock Reflex & Extended Mags";
-$w['glock_silencer_xmags_mp'] = "G18 Glock Silencer & Extended Mags";
+		//G18 Glock
+		'glock_mp' => array('G18 Glock', 'description', 'image.png'),
+		'glock_akimbo_mp' => array('G18 Glock Akimbo', 'description', 'image.png'),
+		'glock_eotech_mp' => array('G18 Glock Holographic Sight', 'description', 'image.png'),
+		'glock_fmj_mp' => array('G18 Glock FMJ', 'description', 'image.png'),
+		'glock_reflex_mp' => array('G18 Glock Reflex', 'description', 'image.png'),
+		'glock_silencer_mp' => array('G18 Glock Silencer', 'description', 'image.png'),
+		'glock_xmags_mp' => array('G18 Glock Extended Mags', 'description', 'image.png'),
+		'glock_akimbo_fmj_mp' => array('G18 Glock Akimbo FMJ', 'description', 'image.png'),
+		'glock_akimbo_silencer_mp' => array('G18 Glock Akimbo Silencer', 'description', 'image.png'),
+		'glock_akimbo_xmags_mp' => array('G18 Glock Akimbo Extended Mags', 'description', 'image.png'),
+		'glock_eotech_fmj_mp' => array('G18 Glock Holographic Sight & FMJ', 'description', 'image.png'),
+		'glock_eotech_silencer_mp' => array('G18 Glock Holographic Sight & Silencer', 'description', 'image.png'),
+		'glock_eotech_xmags_mp' => array('G18 Glock Holographic Sight & Extended Mags', 'description', 'image.png'),
+		'glock_fmj_reflex_mp' => array('G18 Glock FMJ & Reflex', 'description', 'image.png'),
+		'glock_fmj_silencer_mp' => array('G18 Glock FMJ & Silencer', 'description', 'image.png'),
+		'glock_fmj_xmags_mp' => array('G18 Glock FMJ & Extended Mags', 'description', 'image.png'),
+		'glock_reflex_silencer_mp' => array('G18 Glock Reflex & Silencer', 'description', 'image.png'),
+		'glock_reflex_xmags_mp' => array('G18 Glock Reflex & Extended Mags', 'description', 'image.png'),
+		'glock_silencer_xmags_mp' => array('G18 Glock Silencer & Extended Mags', 'description', 'image.png'),
 
-//M93 RAFFICA
-$w['beretta_mp'] = "Beretta";
-$w['beretta_akimbo_mp'] = "Beretta Akimbo";
-$w['beretta_eotech_mp'] = "Beretta Holographic Sight";
-$w['beretta_fmj_mp'] = "Beretta FMJ";
-$w['beretta_reflex_mp'] = "Beretta Reflex";
-$w['beretta_silencer_mp'] = "Beretta Silencer";
-$w['beretta_xmags_mp'] = "Beretta Extended Mags";
-$w['beretta_akimbo_fmj_mp'] = "Beretta Akimbo FMJ";
-$w['beretta_akimbo_silencer_mp'] = "Beretta Akimbo Silencer";
-$w['beretta_akimbo_xmags_mp'] = "Beretta Akimbo Extended Mags";
-$w['beretta_eotech_fmj_mp'] = "Beretta Holographic Sight & FMJ";
-$w['beretta_eotech_silencer_mp'] = "Beretta Holographic Sight & Silencer";
-$w['beretta_eotech_xmags_mp'] = "Beretta Holographic Sight & Extended Mags";
-$w['beretta_fmj_reflex_mp'] = "Beretta FMJ & Reflex";
-$w['beretta_fmj_silencer_mp'] = "Beretta FMJ & Silencer";
-$w['beretta_fmj_xmags_mp'] = "Beretta FMJ & Extended Mags";
-$w['beretta_reflex_silencer_mp'] = "Beretta Reflex & Silencer";
-$w['beretta_reflex_xmags_mp'] = "Beretta Reflex & Extended Mags";
-$w['beretta_silencer_xmags_mp'] = "Beretta Silencer & Extended Mags";
+		//M93 RAFFICA
+		'beretta_mp' => array('Beretta', 'description', 'image.png'),
+		'beretta_akimbo_mp' => array('Beretta Akimbo', 'description', 'image.png'),
+		'beretta_eotech_mp' => array('Beretta Holographic Sight', 'description', 'image.png'),
+		'beretta_fmj_mp' => array('Beretta FMJ', 'description', 'image.png'),
+		'beretta_reflex_mp' => array('Beretta Reflex', 'description', 'image.png'),
+		'beretta_silencer_mp' => array('Beretta Silencer', 'description', 'image.png'),
+		'beretta_xmags_mp' => array('Beretta Extended Mags', 'description', 'image.png'),
+		'beretta_akimbo_fmj_mp' => array('Beretta Akimbo FMJ', 'description', 'image.png'),
+		'beretta_akimbo_silencer_mp' => array('Beretta Akimbo Silencer', 'description', 'image.png'),
+		'beretta_akimbo_xmags_mp' => array('Beretta Akimbo Extended Mags', 'description', 'image.png'),
+		'beretta_eotech_fmj_mp' => array('Beretta Holographic Sight & FMJ', 'description', 'image.png'),
+		'beretta_eotech_silencer_mp' => array('Beretta Holographic Sight & Silencer', 'description', 'image.png'),
+		'beretta_eotech_xmags_mp' => array('Beretta Holographic Sight & Extended Mags', 'description', 'image.png'),
+		'beretta_fmj_reflex_mp' => array('Beretta FMJ & Reflex', 'description', 'image.png'),
+		'beretta_fmj_silencer_mp' => array('Beretta FMJ & Silencer', 'description', 'image.png'),
+		'beretta_fmj_xmags_mp' => array('Beretta FMJ & Extended Mags', 'description', 'image.png'),
+		'beretta_reflex_silencer_mp' => array('Beretta Reflex & Silencer', 'description', 'image.png'),
+		'beretta_reflex_xmags_mp' => array('Beretta Reflex & Extended Mags', 'description', 'image.png'),
+		'beretta_silencer_xmags_mp' => array('Beretta Silencer & Extended Mags', 'description', 'image.png'),
 
-//TMP
-$w['tmp_mp'] = "TMP";
-$w['tmp_akimbo_mp'] = "TMP Akimbo";
-$w['tmp_eotech_mp'] = "TMP Holographic Sight";
-$w['tmp_fmj_mp'] = "TMP FMJ";
-$w['tmp_reflex_mp'] = "TMP Reflex";
-$w['tmp_silencer_mp'] = "TMP Silencer";
-$w['tmp_xmags_mp'] = "TMP Extended Mags";
-$w['tmp_akimbo_fmj_mp'] = "TMP Akimbo FMJ";
-$w['tmp_akimbo_silencer_mp'] = "TMP Akimbo Silencer";
-$w['tmp_akimbo_xmags_mp'] = "TMP Akimbo Extended Mags";
-$w['tmp_eotech_fmj_mp'] = "TMP Holographic Sight & FMJ";
-$w['tmp_eotech_silencer_mp'] = "TMP Holographic Sight & Silencer";
-$w['tmp_eotech_xmags_mp'] = "TMP Holographic Sight & Extended Mags";
-$w['tmp_fmj_reflex_mp'] = "TMP FMJ & Reflex";
-$w['tmp_fmj_silencer_mp'] = "TMP FMJ & Silencer";
-$w['tmp_fmj_xmags_mp'] = "TMP FMJ & Extended Mags";
-$w['tmp_reflex_silencer_mp'] = "TMP Reflex & Silencer";
-$w['tmp_reflex_xmags_mp'] = "TMP Reflex & Extended Mags";
-$w['tmp_silencer_xmags_mp'] = "TMP Silencer & Extended Mags";
+		//TMP
+		'tmp_mp' => array('TMP', 'description', 'image.png'),
+		'tmp_akimbo_mp' => array('TMP Akimbo', 'description', 'image.png'),
+		'tmp_eotech_mp' => array('TMP Holographic Sight', 'description', 'image.png'),
+		'tmp_fmj_mp' => array('TMP FMJ', 'description', 'image.png'),
+		'tmp_reflex_mp' => array('TMP Reflex', 'description', 'image.png'),
+		'tmp_silencer_mp' => array('TMP Silencer', 'description', 'image.png'),
+		'tmp_xmags_mp' => array('TMP Extended Mags', 'description', 'image.png'),
+		'tmp_akimbo_fmj_mp' => array('TMP Akimbo FMJ', 'description', 'image.png'),
+		'tmp_akimbo_silencer_mp' => array('TMP Akimbo Silencer', 'description', 'image.png'),
+		'tmp_akimbo_xmags_mp' => array('TMP Akimbo Extended Mags', 'description', 'image.png'),
+		'tmp_eotech_fmj_mp' => array('TMP Holographic Sight & FMJ', 'description', 'image.png'),
+		'tmp_eotech_silencer_mp' => array('TMP Holographic Sight & Silencer', 'description', 'image.png'),
+		'tmp_eotech_xmags_mp' => array('TMP Holographic Sight & Extended Mags', 'description', 'image.png'),
+		'tmp_fmj_reflex_mp' => array('TMP FMJ & Reflex', 'description', 'image.png'),
+		'tmp_fmj_silencer_mp' => array('TMP FMJ & Silencer', 'description', 'image.png'),
+		'tmp_fmj_xmags_mp' => array('TMP FMJ & Extended Mags', 'description', 'image.png'),
+		'tmp_reflex_silencer_mp' => array('TMP Reflex & Silencer', 'description', 'image.png'),
+		'tmp_reflex_xmags_mp' => array('TMP Reflex & Extended Mags', 'description', 'image.png'),
+		'tmp_silencer_xmags_mp' => array('TMP Silencer & Extended Mags', 'description', 'image.png'),
 
-//*********************
-//Shotguns
-//*********************
+		//*********************
+		//Shotguns
+		//*********************
 
-//SPAS-12
-$w['spas12_mp'] = "SPAS-12";
-$w['spas12_eotech_mp'] = "SPAS-12 Holographic Sight";
-$w['spas12_fmj_mp'] = "SPAS-12 FMJ";
-$w['spas12_grip_mp'] = "SPAS-12 Grip";
-$w['spas12_reflex_mp'] = "SPAS-12 Reflex";
-$w['spas12_silencer_mp'] = "SPAS-12 Silencer";
-$w['spas12_xmags_mp'] = "SPAS-12 Extended Mags";
-$w['spas12_eotech_fmj_mp'] = "SPAS-12 Holographic Sight & FMJ";
-$w['spas12_eotech_grip_mp'] = "SPAS-12 Holographic Sight & Grip";
-$w['spas12_eotech_silencer_mp'] = "SPAS-12 Holographic Sight & Silencer";
-$w['spas12_eotech_xmags_mp'] = "SPAS-12 Holographic Sight & Extended Mags";
-$w['spas12_fmj_grip_mp'] = "SPAS-12 FMJ & Grip";
-$w['spas12_fmj_reflex_mp'] = "SPAS-12 FMJ & Reflex";
-$w['spas12_fmj_silencer_mp'] = "SPAS-12 FMJ & Silencer";
-$w['spas12_fmj_xmags_mp'] = "SPAS-12 FMJ & Extended Mags";
-$w['spas12_grip_reflex_mp'] = "SPAS-12 Grip & Reflex";
-$w['spas12_grip_silencer_mp'] = "SPAS-12 Grip & Silencer";
-$w['spas12_grip_xmags_mp'] = "SPAS-12 Grip & Extended Mags";
-$w['spas12_reflex_silencer_mp'] = "SPAS-12 Reflex & Silencer";
-$w['spas12_reflex_xmags_mp'] = "SPAS-12 Reflex & Extended Mags";
-$w['spas12_silencer_xmags_mp'] = "SPAS-12 Silencer & Extended Mags";
+		//SPAS-12
+		'spas12_mp' => array('SPAS-12', 'description', 'image.png'),
+		'spas12_eotech_mp' => array('SPAS-12 Holographic Sight', 'description', 'image.png'),
+		'spas12_fmj_mp' => array('SPAS-12 FMJ', 'description', 'image.png'),
+		'spas12_grip_mp' => array('SPAS-12 Grip', 'description', 'image.png'),
+		'spas12_reflex_mp' => array('SPAS-12 Reflex', 'description', 'image.png'),
+		'spas12_silencer_mp' => array('SPAS-12 Silencer', 'description', 'image.png'),
+		'spas12_xmags_mp' => array('SPAS-12 Extended Mags', 'description', 'image.png'),
+		'spas12_eotech_fmj_mp' => array('SPAS-12 Holographic Sight & FMJ', 'description', 'image.png'),
+		'spas12_eotech_grip_mp' => array('SPAS-12 Holographic Sight & Grip', 'description', 'image.png'),
+		'spas12_eotech_silencer_mp' => array('SPAS-12 Holographic Sight & Silencer', 'description', 'image.png'),
+		'spas12_eotech_xmags_mp' => array('SPAS-12 Holographic Sight & Extended Mags', 'description', 'image.png'),
+		'spas12_fmj_grip_mp' => array('SPAS-12 FMJ & Grip', 'description', 'image.png'),
+		'spas12_fmj_reflex_mp' => array('SPAS-12 FMJ & Reflex', 'description', 'image.png'),
+		'spas12_fmj_silencer_mp' => array('SPAS-12 FMJ & Silencer', 'description', 'image.png'),
+		'spas12_fmj_xmags_mp' => array('SPAS-12 FMJ & Extended Mags', 'description', 'image.png'),
+		'spas12_grip_reflex_mp' => array('SPAS-12 Grip & Reflex', 'description', 'image.png'),
+		'spas12_grip_silencer_mp' => array('SPAS-12 Grip & Silencer', 'description', 'image.png'),
+		'spas12_grip_xmags_mp' => array('SPAS-12 Grip & Extended Mags', 'description', 'image.png'),
+		'spas12_reflex_silencer_mp' => array('SPAS-12 Reflex & Silencer', 'description', 'image.png'),
+		'spas12_reflex_xmags_mp' => array('SPAS-12 Reflex & Extended Mags', 'description', 'image.png'),
+		'spas12_silencer_xmags_mp' => array('SPAS-12 Silencer & Extended Mags', 'description', 'image.png'),
 
-//AA-12
-$w['aa12_mp'] = "AA-12";
-$w['aa12_eotech_mp'] = "AA-12 Holographic Sight";
-$w['aa12_fmj_mp'] = "AA-12 FMJ";
-$w['aa12_grip_mp'] = "AA-12 Grip";
-$w['aa12_reflex_mp'] = "AA-12 Reflex";
-$w['aa12_silencer_mp'] = "AA-12 Silencer";
-$w['aa12_xmags_mp'] = "AA-12 Extended Mags";
-$w['aa12_eotech_fmj_mp'] = "AA-12 Holographic Sight & FMJ";
-$w['aa12_eotech_grip_mp'] = "AA-12 Holographic Sight & Grip";
-$w['aa12_eotech_silencer_mp'] = "AA-12 Holographic Sight & Silencer";
-$w['aa12_eotech_xmags_mp'] = "AA-12 Holographic Sight & Extended Mags";
-$w['aa12_fmj_grip_mp'] = "AA-12 FMJ & Grip";
-$w['aa12_fmj_reflex_mp'] = "AA-12 FMJ & Reflex";
-$w['aa12_fmj_silencer_mp'] = "AA-12 FMJ & Silencer";
-$w['aa12_fmj_xmags_mp'] = "AA-12 FMJ & Extended Mags";
-$w['aa12_grip_reflex_mp'] = "AA-12 Grip & Reflex";
-$w['aa12_grip_silencer_mp'] = "AA-12 Grip & Silencer";
-$w['aa12_grip_xmags_mp'] = "AA-12 Grip & Extended Mags";
-$w['aa12_reflex_silencer_mp'] = "AA-12 Reflex & Silencer";
-$w['aa12_reflex_xmags_mp'] = "AA-12 Reflex & Extended Mags";
-$w['aa12_silencer_xmags_mp'] = "AA-12 Silencer & Extended Mags";
+		//AA-12
+		'aa12_mp' => array('AA-12', 'description', 'image.png'),
+		'aa12_eotech_mp' => array('AA-12 Holographic Sight', 'description', 'image.png'),
+		'aa12_fmj_mp' => array('AA-12 FMJ', 'description', 'image.png'),
+		'aa12_grip_mp' => array('AA-12 Grip', 'description', 'image.png'),
+		'aa12_reflex_mp' => array('AA-12 Reflex', 'description', 'image.png'),
+		'aa12_silencer_mp' => array('AA-12 Silencer', 'description', 'image.png'),
+		'aa12_xmags_mp' => array('AA-12 Extended Mags', 'description', 'image.png'),
+		'aa12_eotech_fmj_mp' => array('AA-12 Holographic Sight & FMJ', 'description', 'image.png'),
+		'aa12_eotech_grip_mp' => array('AA-12 Holographic Sight & Grip', 'description', 'image.png'),
+		'aa12_eotech_silencer_mp' => array('AA-12 Holographic Sight & Silencer', 'description', 'image.png'),
+		'aa12_eotech_xmags_mp' => array('AA-12 Holographic Sight & Extended Mags', 'description', 'image.png'),
+		'aa12_fmj_grip_mp' => array('AA-12 FMJ & Grip', 'description', 'image.png'),
+		'aa12_fmj_reflex_mp' => array('AA-12 FMJ & Reflex', 'description', 'image.png'),
+		'aa12_fmj_silencer_mp' => array('AA-12 FMJ & Silencer', 'description', 'image.png'),
+		'aa12_fmj_xmags_mp' => array('AA-12 FMJ & Extended Mags', 'description', 'image.png'),
+		'aa12_grip_reflex_mp' => array('AA-12 Grip & Reflex', 'description', 'image.png'),
+		'aa12_grip_silencer_mp' => array('AA-12 Grip & Silencer', 'description', 'image.png'),
+		'aa12_grip_xmags_mp' => array('AA-12 Grip & Extended Mags', 'description', 'image.png'),
+		'aa12_reflex_silencer_mp' => array('AA-12 Reflex & Silencer', 'description', 'image.png'),
+		'aa12_reflex_xmags_mp' => array('AA-12 Reflex & Extended Mags', 'description', 'image.png'),
+		'aa12_silencer_xmags_mp' => array('AA-12 Silencer & Extended Mags', 'description', 'image.png'),
 
-//Striker
-$w['striker_mp'] = "Striker";
-$w['striker_eotech_mp'] = "Striker Holographic Sight";
-$w['striker_fmj_mp'] = "Striker FMJ";
-$w['striker_grip_mp'] = "Striker Grip";
-$w['striker_reflex_mp'] = "Striker Reflex";
-$w['striker_silencer_mp'] = "Striker Silencer";
-$w['striker_xmags_mp'] = "Striker Extended Mags";
-$w['striker_eotech_fmj_mp'] = "Striker Holographic Sight & FMJ";
-$w['striker_eotech_grip_mp'] = "Striker Holographic Sight & Grip";
-$w['striker_eotech_silencer_mp'] = "Striker Holographic Sight & Silencer";
-$w['striker_eotech_xmags_mp'] = "Striker Holographic Sight & Extended Mags";
-$w['striker_fmj_grip_mp'] = "Striker FMJ & Grip";
-$w['striker_fmj_reflex_mp'] = "Striker FMJ & Reflex";
-$w['striker_fmj_silencer_mp'] = "Striker FMJ & Silencer";
-$w['striker_fmj_xmags_mp'] = "Striker FMJ & Extended Mags";
-$w['striker_grip_reflex_mp'] = "Striker Grip & Reflex";
-$w['striker_grip_silencer_mp'] = "Striker Grip & Silencer";
-$w['striker_grip_xmags_mp'] = "Striker Grip & Extended Mags";
-$w['striker_reflex_silencer_mp'] = "Striker Reflex & Silencer";
-$w['striker_reflex_xmags_mp'] = "Striker Reflex & Extended Mags";
-$w['striker_silencer_xmags_mp'] = "Striker Silencer & Extended Mags";
+		//Striker
+		'striker_mp' => array('Striker', 'description', 'image.png'),
+		'striker_eotech_mp' => array('Striker Holographic Sight', 'description', 'image.png'),
+		'striker_fmj_mp' => array('Striker FMJ', 'description', 'image.png'),
+		'striker_grip_mp' => array('Striker Grip', 'description', 'image.png'),
+		'striker_reflex_mp' => array('Striker Reflex', 'description', 'image.png'),
+		'striker_silencer_mp' => array('Striker Silencer', 'description', 'image.png'),
+		'striker_xmags_mp' => array('Striker Extended Mags', 'description', 'image.png'),
+		'striker_eotech_fmj_mp' => array('Striker Holographic Sight & FMJ', 'description', 'image.png'),
+		'striker_eotech_grip_mp' => array('Striker Holographic Sight & Grip', 'description', 'image.png'),
+		'striker_eotech_silencer_mp' => array('Striker Holographic Sight & Silencer', 'description', 'image.png'),
+		'striker_eotech_xmags_mp' => array('Striker Holographic Sight & Extended Mags', 'description', 'image.png'),
+		'striker_fmj_grip_mp' => array('Striker FMJ & Grip', 'description', 'image.png'),
+		'striker_fmj_reflex_mp' => array('Striker FMJ & Reflex', 'description', 'image.png'),
+		'striker_fmj_silencer_mp' => array('Striker FMJ & Silencer', 'description', 'image.png'),
+		'striker_fmj_xmags_mp' => array('Striker FMJ & Extended Mags', 'description', 'image.png'),
+		'striker_grip_reflex_mp' => array('Striker Grip & Reflex', 'description', 'image.png'),
+		'striker_grip_silencer_mp' => array('Striker Grip & Silencer', 'description', 'image.png'),
+		'striker_grip_xmags_mp' => array('Striker Grip & Extended Mags', 'description', 'image.png'),
+		'striker_reflex_silencer_mp' => array('Striker Reflex & Silencer', 'description', 'image.png'),
+		'striker_reflex_xmags_mp' => array('Striker Reflex & Extended Mags', 'description', 'image.png'),
+		'striker_silencer_xmags_mp' => array('Striker Silencer & Extended Mags', 'description', 'image.png'),
 
-//Ranger
-$w['ranger_mp'] = "Ranger";
-$w['ranger_akimbo_mp'] = "Ranger Akimbo";
-$w['ranger_fmj_mp'] = "Ranger FMJ";
-$w['ranger_akimbo_fmj_mp'] = "Ranger Akimbo FMJ";
+		//Ranger
+		'ranger_mp' => array('Ranger', 'description', 'image.png'),
+		'ranger_akimbo_mp' => array('Ranger Akimbo', 'description', 'image.png'),
+		'ranger_fmj_mp' => array('Ranger FMJ', 'description', 'image.png'),
+		'ranger_akimbo_fmj_mp' => array('Ranger Akimbo FMJ', 'description', 'image.png'),
 
-//M1014
-$w['m1014_mp'] = "M1014";
-$w['m1014_eotech_mp'] = "M1014 Holographic Sight";
-$w['m1014_fmj_mp'] = "M1014 FMJ";
-$w['m1014_grip_mp'] = "M1014 Grip";
-$w['m1014_reflex_mp'] = "M1014 Reflex";
-$w['m1014_silencer_mp'] = "M1014 Silencer";
-$w['m1014_xmags_mp'] = "M1014 Extended Mags";
-$w['m1014_eotech_fmj_mp'] = "M1014 Holographic Sight & FMJ";
-$w['m1014_eotech_grip_mp'] = "M1014 Holographic Sight & Grip";
-$w['m1014_eotech_silencer_mp'] = "M1014 Holographic Sight & Silencer";
-$w['m1014_eotech_xmags_mp'] = "M1014 Holographic Sight & Extended Mags";
-$w['m1014_fmj_grip_mp'] = "M1014 FMJ & Grip";
-$w['m1014_fmj_reflex_mp'] = "M1014 FMJ & Reflex";
-$w['m1014_fmj_silencer_mp'] = "M1014 FMJ & Silencer";
-$w['m1014_fmj_xmags_mp'] = "M1014 FMJ & Extended Mags";
-$w['m1014_grip_reflex_mp'] = "M1014 Grip & Reflex";
-$w['m1014_grip_silencer_mp'] = "M1014 Grip & Silencer";
-$w['m1014_grip_xmags_mp'] = "M1014 Grip & Extended Mags";
-$w['m1014_reflex_silencer_mp'] = "M1014 Reflex & Silencer";
-$w['m1014_reflex_xmags_mp'] = "M1014 Reflex & Extended Mags";
-$w['m1014_silencer_xmags_mp'] = "M1014 Silencer & Extended Mags";
+		//M1014
+		'm1014_mp' => array('M1014', 'description', 'image.png'),
+		'm1014_eotech_mp' => array('M1014 Holographic Sight', 'description', 'image.png'),
+		'm1014_fmj_mp' => array('M1014 FMJ', 'description', 'image.png'),
+		'm1014_grip_mp' => array('M1014 Grip', 'description', 'image.png'),
+		'm1014_reflex_mp' => array('M1014 Reflex', 'description', 'image.png'),
+		'm1014_silencer_mp' => array('M1014 Silencer', 'description', 'image.png'),
+		'm1014_xmags_mp' => array('M1014 Extended Mags', 'description', 'image.png'),
+		'm1014_eotech_fmj_mp' => array('M1014 Holographic Sight & FMJ', 'description', 'image.png'),
+		'm1014_eotech_grip_mp' => array('M1014 Holographic Sight & Grip', 'description', 'image.png'),
+		'm1014_eotech_silencer_mp' => array('M1014 Holographic Sight & Silencer', 'description', 'image.png'),
+		'm1014_eotech_xmags_mp' => array('M1014 Holographic Sight & Extended Mags', 'description', 'image.png'),
+		'm1014_fmj_grip_mp' => array('M1014 FMJ & Grip', 'description', 'image.png'),
+		'm1014_fmj_reflex_mp' => array('M1014 FMJ & Reflex', 'description', 'image.png'),
+		'm1014_fmj_silencer_mp' => array('M1014 FMJ & Silencer', 'description', 'image.png'),
+		'm1014_fmj_xmags_mp' => array('M1014 FMJ & Extended Mags', 'description', 'image.png'),
+		'm1014_grip_reflex_mp' => array('M1014 Grip & Reflex', 'description', 'image.png'),
+		'm1014_grip_silencer_mp' => array('M1014 Grip & Silencer', 'description', 'image.png'),
+		'm1014_grip_xmags_mp' => array('M1014 Grip & Extended Mags', 'description', 'image.png'),
+		'm1014_reflex_silencer_mp' => array('M1014 Reflex & Silencer', 'description', 'image.png'),
+		'm1014_reflex_xmags_mp' => array('M1014 Reflex & Extended Mags', 'description', 'image.png'),
+		'm1014_silencer_xmags_mp' => array('M1014 Silencer & Extended Mags', 'description', 'image.png'),
 
-//Model 1887
-$w['model1887_mp'] = "Model 1887";
-$w['model1887_akimbo_mp'] = "Model 1887 Akimbo";
-$w['model1887_fmj_mp'] = "Model 1887 FMJ";
-$w['model1887_akimbo_fmj_mp'] = "Model 1887 Akimbo FMJ";
+		//Model 1887
+		'model1887_mp' => array('Model 1887', 'description', 'image.png'),
+		'model1887_akimbo_mp' => array('Model 1887 Akimbo', 'description', 'image.png'),
+		'model1887_fmj_mp' => array('Model 1887 FMJ', 'description', 'image.png'),
+		'model1887_akimbo_fmj_mp' => array('Model 1887 Akimbo FMJ', 'description', 'image.png'),
 
-//*********************
-//Handguns
-//*********************
+		//*********************
+		//Handguns
+		//*********************
 
-//USP .45
-$w['usp_mp'] = "USP";
-$w['usp_akimbo_mp'] = "USP Akimbo";
-$w['usp_fmj_mp'] = "USP FMJ";
-$w['usp_silencer_mp'] = "USP Silencer";
-$w['usp_tactical_mp'] = "USP Tactical";
-$w['usp_xmags_mp'] = "USP Extended Mags";
-$w['usp_akimbo_fmj_mp'] = "USP Akimbo FMJ";
-$w['usp_akimbo_silencer_mp'] = "USP Akimbo Silencer";
-$w['usp_akimbo_xmags_mp'] = "USP Akimbo Extended Mags";
-$w['usp_fmj_silencer_mp'] = "USP FMJ & Silencer";
-$w['usp_fmj_tactical_mp'] = "USP FMJ & Tactical";
-$w['usp_fmj_xmags_mp'] = "USP FMJ & Extended Mags";
-$w['usp_silencer_tactical_mp'] = "USP Silencer & Tactical";
-$w['usp_silencer_xmags_mp'] = "USP Silencer & Extended Mags";
-$w['usp_tactical_xmags_mp'] = "USP Tactical & Extended Mags";
+		//USP .45
+		'usp_mp' => array('USP', 'description', 'image.png'),
+		'usp_akimbo_mp' => array('USP Akimbo', 'description', 'image.png'),
+		'usp_fmj_mp' => array('USP FMJ', 'description', 'image.png'),
+		'usp_silencer_mp' => array('USP Silencer', 'description', 'image.png'),
+		'usp_tactical_mp' => array('USP Tactical', 'description', 'image.png'),
+		'usp_xmags_mp' => array('USP Extended Mags', 'description', 'image.png'),
+		'usp_akimbo_fmj_mp' => array('USP Akimbo FMJ', 'description', 'image.png'),
+		'usp_akimbo_silencer_mp' => array('USP Akimbo Silencer', 'description', 'image.png'),
+		'usp_akimbo_xmags_mp' => array('USP Akimbo Extended Mags', 'description', 'image.png'),
+		'usp_fmj_silencer_mp' => array('USP FMJ & Silencer', 'description', 'image.png'),
+		'usp_fmj_tactical_mp' => array('USP FMJ & Tactical', 'description', 'image.png'),
+		'usp_fmj_xmags_mp' => array('USP FMJ & Extended Mags', 'description', 'image.png'),
+		'usp_silencer_tactical_mp' => array('USP Silencer & Tactical', 'description', 'image.png'),
+		'usp_silencer_xmags_mp' => array('USP Silencer & Extended Mags', 'description', 'image.png'),
+		'usp_tactical_xmags_mp' => array('USP Tactical & Extended Mags', 'description', 'image.png'),
 
-//.44 Magnum
-$w['coltanaconda_mp'] = ".44 Magnum";
-$w['coltanaconda_akimbo_mp'] = ".44 Magnum Akimbo";
-$w['coltanaconda_fmj_mp'] = ".44 Magnum FMJ";
-$w['coltanaconda_tactical_mp'] = ".44 Magnum Tactical";
-$w['coltanaconda_akimbo_fmj_mp'] = ".44 Magnum Akimbo FMJ";
-$w['coltanaconda_fmj_tactical_mp'] = ".44 Magnum FMJ Tactical";
+		//.44 Magnum
+		'coltanaconda_mp' => array('.44 Magnum', 'description', 'image.png'),
+		'coltanaconda_akimbo_mp' => array('.44 Magnum Akimbo', 'description', 'image.png'),
+		'coltanaconda_fmj_mp' => array('.44 Magnum FMJ', 'description', 'image.png'),
+		'coltanaconda_tactical_mp' => array('.44 Magnum Tactical', 'description', 'image.png'),
+		'coltanaconda_akimbo_fmj_mp' => array('.44 Magnum Akimbo FMJ', 'description', 'image.png'),
+		'coltanaconda_fmj_tactical_mp' => array('.44 Magnum FMJ Tactical', 'description', 'image.png'),
 
-//Desert Eagle
-$w['deserteagle_mp'] = "Desert Eagle";
-$w['deserteagle_akimbo_mp'] = "Desert Eagle Akimbo";
-$w['deserteagle_fmj_mp'] = "Desert Eagle FMJ";
-$w['deserteagle_tactical_mp'] = "Desert Eagle Tactical";
-$w['deserteagle_akimbo_fmj_mp'] = "Desert Eagle Akimbo FMJ";
-$w['deserteagle_fmj_tactical_mp'] = "Desert Eagle FMJ Tactical";
-$w['deserteaglegold_mp'] = "Desert Eagle Gold";
+		//Desert Eagle
+		'deserteagle_mp' => array('Desert Eagle', 'description', 'image.png'),
+		'deserteagle_akimbo_mp' => array('Desert Eagle Akimbo', 'description', 'image.png'),
+		'deserteagle_fmj_mp' => array('Desert Eagle FMJ', 'description', 'image.png'),
+		'deserteagle_tactical_mp' => array('Desert Eagle Tactical', 'description', 'image.png'),
+		'deserteagle_akimbo_fmj_mp' => array('Desert Eagle Akimbo FMJ', 'description', 'image.png'),
+		'deserteagle_fmj_tactical_mp' => array('Desert Eagle FMJ Tactical', 'description', 'image.png'),
+		'deserteaglegold_mp' => array('Desert Eagle Gold', 'description', 'image.png'),
 
-//*********************
-//Launchers
-//*********************
+		//*********************
+		//Launchers
+		//*********************
 
-$w['at4_mp'] = "AT4-HS";
-$w['m79_mp'] = "Thumper";
-$w['stinger_mp'] = "Stinger";
-$w['javelin_mp'] = "Javelin";
-$w['rpg_mp'] = "RPG-7";
+		'at4_mp' => array('AT4-HS', 'description', 'image.png'),
+		'm79_mp' => array('Thumper', 'description', 'image.png'),
+		'stinger_mp' => array('Stinger', 'description', 'image.png'),
+		'javelin_mp' => array('Javelin', 'description', 'image.png'),
+		'rpg_mp' => array('RPG-7', 'description', 'image.png'),
 
-//*********************
-//Equipment
-//*********************
+		//*********************
+		//Equipment
+		//*********************
 
-$w['frag_grenade_mp'] = "Frag Grenade";
-$w['frag_grenade_short_mp'] = "Short Fuse Frag Grenade";
-$w['smoke_grenade_mp'] = "Smoke Grenade";
-$w['claymore_mp'] = "Claymore Mine";
-$w['throwingknife_mp'] = "Throwing Knife";
-$w['c4_mp'] = "C4";
+		'frag_grenade_mp' => array('Frag Grenade', 'description', 'image.png'),
+		'frag_grenade_short_mp' => array('Short Fuse Frag Grenade', 'description', 'image.png'),
+		'smoke_grenade_mp' => array('Smoke Grenade', 'description', 'image.png'),
+		'claymore_mp' => array('Claymore Mine', 'description', 'image.png'),
+		'throwingknife_mp' => array('Throwing Knife', 'description', 'image.png'),
+		'c4_mp' => array('C4', 'description', 'image.png'),
 
-//*********************
-//Special Grenades
-//*********************
+		//*********************
+		//Special Grenades
+		//*********************
 
-$w['semtex_mp'] = "Semtex";
-$w['concussion_grenade_mp'] = "Concussion Grenade";
-$w['flash_grenade_mp'] = "Flashbang";
+		'semtex_mp' => array('Semtex', 'description', 'image.png'),
+		'concussion_grenade_mp' => array('Concussion Grenade', 'description', 'image.png'),
+		'flash_grenade_mp' => array('Flashbang', 'description', 'image.png'),
 
-//*********************
-//Killstreaks
-//*********************
+		//*********************
+		//Killstreaks
+		//*********************
 
-$w['harrier_20mm_mp'] = "Harrier Strike 20mm";
-$w['harrier_ffar_mp'] = "Harrier Strike";
-$w['harrier_missile_mp'] = "Harrier Striker Missile";
-$w['pavelow_minigun_mp'] = "Pave Low";
-$w['sentry_minigun_mp'] = "Sentry Gun";
-$w['stealth_bomb_mp'] = "Stealth Bomber";
-$w['cobra_20mm_mp'] = "Attack Helicopter";
-$w['cobra_player_minigun_mp'] = "Chopper Gunner";
-$w['ac130_105mm_mp'] = "AC-130 105mm";
-$w['ac130_40mm_mp'] = "AC-130 40mm";
-$w['ac130_25mm_mp'] = "AC-130 25mm";
-$w['remotemissile_projectile_mp'] = "Predator Missile";
-$w['artillery_mp'] = "Precision Airstrike";
+		'harrier_20mm_mp' => array('Harrier Strike 20mm', 'description', 'image.png'),
+		'harrier_ffar_mp' => array('Harrier Strike', 'description', 'image.png'),
+		'harrier_missile_mp' => array('Harrier Striker Missile', 'description', 'image.png'),
+		'pavelow_minigun_mp' => array('Pave Low', 'description', 'image.png'),
+		'sentry_minigun_mp' => array('Sentry Gun', 'description', 'image.png'),
+		'stealth_bomb_mp' => array('Stealth Bomber', 'description', 'image.png'),
+		'cobra_20mm_mp' => array('Attack Helicopter', 'description', 'image.png'),
+		'cobra_player_minigun_mp' => array('Chopper Gunner', 'description', 'image.png'),
+		'ac130_105mm_mp' => array('AC-130 105mm', 'description', 'image.png'),
+		'ac130_40mm_mp' => array('AC-130 40mm', 'description', 'image.png'),
+		'ac130_25mm_mp' => array('AC-130 25mm', 'description', 'image.png'),
+		'remotemissile_projectile_mp' => array('Predator Missile', 'description', 'image.png'),
+		'artillery_mp' => array('Precision Airstrike', 'description', 'image.png'),
 
-//*********************
-//Misc
-//*********************
+		//*********************
+		//Misc
+		//*********************
 
-$w['mod_melee'] = "Knife";
-$w['destructible_car'] = "Vehicle Explosion";
-$w['barrel_mp'] = "Barrel Explosion";
-$w['turret_minigun_mp'] = "Minigun";
-$w['briefcase_bomb_mp'] = "Briefcase Bomb";
-$w['scavenger_bag_mp'] = "Scavenger Bag";
-$w['defaultweapon_mp'] = "Default Weapon";
-$w['mod_falling'] = "Falling...";
+		'mod_melee' => array('Knife', 'description', 'image.png'),
+		'destructible_car' => array('Vehicle Explosion', 'description', 'image.png'),
+		'barrel_mp' => array('Barrel Explosion', 'description', 'image.png'),
+		'turret_minigun_mp' => array('Minigun', 'description', 'image.png'),
+		'briefcase_bomb_mp' => array('Briefcase Bomb', 'description', 'image.png'),
+		'scavenger_bag_mp' => array('Scavenger Bag', 'description', 'image.png'),
+		'defaultweapon_mp' => array('Default Weapon', 'description', 'image.png'),
+		'mod_falling' => array('Falling...', 'description', 'image.png'),
 
-//No weapon?
-$w['none'] = "Bad luck...";
+		//No weapon?
+		'none' => array('Bad luck...', 'description', 'image.png'),
+	),
+	
+/**
+ * Map: name, description, image
+ */
 
-//*********************
-// Map names
-//*********************
-// Stock MW2
-$m['mp_abandon'] = "Carnival";
-$m['mp_afghan'] = "Afghan";
-$m['mp_boneyard'] = "Scrapyard";
-$m['mp_brecourt'] = "Wasteland";
-$m['mp_checkpoint'] = "Karachi";
-$m['mp_compact'] = "Salvage";
-$m['mp_crash'] = "Crash";
-$m['mp_complex'] = "Bailout";
-$m['mp_derail'] = "Derail";
-$m['mp_estate'] = "Estate";
-$m['mp_favela'] = "Favela";
-$m['mp_fuel2'] = "Fuel";
-$m['mp_highrise'] = "Highrise";
-$m['mp_nightshift'] = "Skidrow";
-$m['mp_invasion'] = "Invasion";
-$m['mp_quarry'] = "Quarry";
-$m['mp_rundown'] = "Rundown";
-$m['mp_rust'] = "Rust";
-$m['mp_subbase'] = "Subbase";
-$m['mp_terminal'] = "Terminal";
-$m['mp_trailerpark'] = "Trailerpark";
-$m['mp_underpass'] = "Underpass";
-$m['mp_storm'] = "Storm";
-$m['mp_strike'] = "Strike";
-$m['mp_overgrown'] = "Overgrown";
-$m['mp_vacant'] = "Vacant";
+	'maps' => array(
+		'image_path' => 'http://image.www.gametracker.com/images/maps/160x120/cod4/',
+		
+		// Stock MW2
+		'mp_afghan' => array('Afghan', 'description', 'mp_afghan.jpg'),
+		'mp_boneyard' => array('Scrapyard', 'description', 'mp_boneyard.jpg'),
+		'mp_brecourt' => array('Wasteland', 'description', 'mp_brecourt.jpg'),
+		'mp_checkpoint' => array('Karachi', 'description', 'mp_checkpoint.jpg'),
+		'mp_derail' => array('Derail', 'description', 'mp_derail.jpg'),
+		'mp_estate' => array('Estate', 'description', 'mp_estate.jpg'),
+		'mp_favela' => array('Favela', 'description', 'mp_favela.jpg'),
+		'mp_highrise' => array('Highrise', 'description', 'mp_highrise.jpg'),
+		'mp_nightshift' => array('Skidrow', 'description', 'mp_nightshift.jpg'),
+		'mp_invasion' => array('Invasion', 'description', 'mp_invasion.jpg'),
+		'mp_quarry' => array('Quarry', 'description', 'mp_quarry.jpg'),
+		'mp_rundown' => array('Rundown', 'description', 'mp_rundown.jpg'),
+		'mp_rust' => array('Rust', 'description', 'mp_rust.jpg'),
+		'mp_subbase' => array('Subbase', 'description', 'mp_subbase.jpg'),
+		'mp_terminal' => array('Terminal', 'description', 'mp_terminal.jpg'),
+		'mp_underpass' => array('Underpass', 'description', 'mp_underpass.jpg'),
+		
+		// Stimulus Package
+		'mp_crash' => array('Crash', 'description', 'mp_crash.jpg'),
+		'mp_overgrown' => array('Overgrown', 'description', 'mp_overgrown.jpg'),
+		'mp_complex' => array('Bailout', 'description', 'mp_complex.jpg'),
+		'mp_compact' => array('Salvage', 'description', 'mp_compact.jpg'),
+		'mp_storm' => array('Storm', 'description', 'mp_storm.jpg'),
+		
+		// Resurgence Pack
+		'mp_strike' => array('Strike', 'description', 'mp_strike.jpg'),
+		'mp_trailerpark' => array('Trailerpark', 'description', 'mp_trailerpark.jpg'),
+		'mp_vacant' => array('Vacant', 'description', 'mp_vacant.jpg'),
+		'mp_fuel2' => array('Fuel', 'description', 'mp_fuel2.jpg'),
+		'mp_abandon' => array('Carnival', 'description', 'mp_abandon.jpg'),
+	),
 
-//*********************
-// Event names
-//*********************
+/**
+ * Bodypart names
+ */
 
-//*********************
-// Bodypart names
-//*********************
-$b['head'] = $text["head"];
-$b['neck'] = $text["neck"];
-$b['torso_lower'] = $text["torso_lower"];
-$b['torso_upper'] = $text["torso_upper"];
-$b['left_arm_upper'] = $text["left_arm_upper"];
-$b['left_arm_lower'] = $text["left_arm_lower"];
-$b['left_hand'] = $text["left_hand"];
-$b['right_arm_upper'] = $text["right_arm_upper"];
-$b['right_arm_lower'] = $text["right_arm_lower"];
-$b['right_hand'] = $text["right_hand"];
-$b['left_leg_upper'] = $text["left_leg_upper"];
-$b['left_leg_lower'] = $text["left_leg_lower"];
-$b['left_foot'] = $text["left_foot"];
-$b['right_leg_upper'] = $text["right_leg_upper"];
-$b['right_leg_lower'] = $text["right_leg_lower"];
-$b['right_foot'] = $text["right_foot"];
-$b['none'] = $text["totaldisrupt"];
+	'body_parts' => array(
+		/**
+		 * fixed_name => array ('console_name' => 'Easy Name')
+		 * DO NOT CHANGE 'fixed_name's
+		 */
+		'head' => array('head' => 'Head'),
+		'neck' => array('neck' => 'Neck'),
+		'torso_lower' => array('torso_lower' => 'Abdomen'),
+		'torso_upper' => array('torso_upper' => 'Chest'),
+		'left_arm_upper' => array('left_arm_upper' => 'Left Arm Upper'),
+		'left_arm_lower' => array('left_arm_lower' => 'Left Arm Lower'),
+		'left_hand' => array('left_hand' => 'Left Hand'),
+		'right_arm_upper' => array('right_arm_upper' => 'Right Arm Upper'),
+		'right_arm_lower' => array('right_arm_lower' => 'Right Arm Lower'),
+		'right_hand' => array('right_hand' => 'Right Hand'),
+		'left_leg_upper' => array('left_leg_upper' => 'Left Leg Upper'),
+		'left_leg_lower' => array('left_leg_lower' => 'Left Leg Lower'),
+		'left_foot' => array('left_foot' => 'Left Foot'),
+		'right_leg_upper' => array('right_leg_upper' => 'Right Leg Upper'),
+		'right_leg_lower' => array('right_leg_lower' => 'Right Leg Lower'),
+		'right_foot' => array('right_foot' => 'Right Foot'),
+		'none' => array('none' => 'Total Disrupt'),
+	),
 
-*/
+);
