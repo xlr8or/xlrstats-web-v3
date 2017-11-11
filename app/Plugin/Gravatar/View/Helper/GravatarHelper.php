@@ -26,7 +26,7 @@ class GravatarHelper extends AppHelper {
 	 *
 	 * @var string
 	 */
-	private $_url = 'http://www.gravatar.com/avatar/';
+	private $_url = 'https://www.gravatar.com/avatar/';
 	
 	/**
 	 * Size of the image
